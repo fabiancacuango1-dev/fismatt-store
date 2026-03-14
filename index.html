@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftPlugin Pro — Automatiza tu Navegador | Descarga Gratis</title>
+    <meta name="description" content="SoftPlugin Pro es el plugin definitivo para navegadores Chromium. Automatiza tareas, mejora tu productividad y ahorra tiempo. Descárgalo gratis ahora.">
+    <meta name="keywords" content="plugin navegador, extensión chrome, automatización, productividad, software gratis, plugin chromium">
+    <meta name="author" content="SoftPlugin Pro">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://softpluginpro.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="SoftPlugin Pro — Automatiza tu Navegador">
+    <meta property="og:description" content="El plugin definitivo para navegadores Chromium. Automatiza tareas y mejora tu productividad.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://softpluginpro.com/">
+    <meta property="og:image" content="assets/img/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SoftPlugin Pro — Automatiza tu Navegador">
+    <meta name="twitter:description" content="El plugin definitivo para navegadores Chromium. Automatiza tareas y mejora tu productividad.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        'primary-dark': '#4f46e5',
+                        secondary: '#0ea5e9',
+                        accent: '#8b5cf6',
+                        dark: '#0f172a',
+                        'dark-light': '#1e293b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "SoftPlugin Pro",
+        "operatingSystem": "Windows",
+        "applicationCategory": "BrowserExtension",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "description": "Plugin profesional para navegadores basados en Chromium. Automatiza tareas y mejora la productividad.",
+        "softwareVersion": "1.0",
+        "author": {
+            "@type": "Organization",
+            "name": "SoftPlugin Pro",
+            "email": "rectores_federal09@icloud.com"
+        }
+    }
+    </script>
+</head>
+<body class="bg-dark text-white font-sans antialiased">
+
+    <!-- ============================================ -->
+    <!-- NAVBAR -->
+    <!-- ============================================ -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Logo -->
+                <a href="#inicio" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center shadow-lg shadow-primary/25 group-hover:shadow-primary/50 transition-shadow">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">SoftPlugin Pro</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="#inicio" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Inicio</a>
+                    <a href="#caracteristicas" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Características</a>
+                    <a href="#descarga" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Descarga</a>
+                    <a href="#soporte" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Soporte</a>
+                    <a href="#faq" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">FAQ</a>
+                    <a href="#contacto" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Contacto</a>
+                    <a href="#descarga" class="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-primary px-5 py-2.5 rounded-xl text-sm font-semibold transition-all hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5">
+                        Descargar Gratis
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Abrir menú">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-dark-light/95 backdrop-blur-xl border-t border-white/5">
+            <div class="px-4 py-6 space-y-3">
+                <a href="#inicio" class="mobile-link block px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all">Inicio</a>
+                <a href="#caracteristicas" class="mobile-link block px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all">Características</a>
+                <a href="#descarga" class="mobile-link block px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all">Descarga</a>
+                <a href="#soporte" class="mobile-link block px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all">Soporte</a>
+                <a href="#faq" class="mobile-link block px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all">FAQ</a>
+                <a href="#contacto" class="mobile-link block px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all">Contacto</a>
+                <a href="#descarga" class="block text-center bg-gradient-to-r from-primary to-accent px-5 py-3 rounded-xl font-semibold mt-4">
+                    Descargar Gratis
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================ -->
+    <!-- HERO SECTION -->
+    <!-- ============================================ -->
+    <section id="inicio" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 bg-gradient-to-br from-dark via-dark-light to-dark"></div>
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 2s;"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/5 rounded-full blur-3xl"></div>
+
+        <!-- Grid Pattern -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyem0wLTMwVjBoLTEydjRoMTJ6TTI0IDI0djJoMTJ2LTJIMjR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-50"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <!-- Text Content -->
+                <div class="text-center lg:text-left animate-fade-in">
+                    <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6">
+                        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                        <span class="text-sm text-primary font-medium">Versión 1.0 — Disponible ahora</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight mb-6">
+                        Automatiza tu
+                        <span class="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent"> navegador</span>
+                        al máximo
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
+                        SoftPlugin Pro es el plugin definitivo para navegadores basados en Chromium. Automatiza tareas repetitivas, mejora tu flujo de trabajo y lleva tu productividad al siguiente nivel.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
+                        <a href="#descarga" class="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-primary px-8 py-4 rounded-2xl text-lg font-bold transition-all hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-1">
+                            <svg class="w-6 h-6 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Descargar Gratis
+                        </a>
+                        <a href="#caracteristicas" class="inline-flex items-center justify-center gap-2 border border-white/10 hover:border-white/25 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-white/5 transition-all">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Ver más
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-6 max-w-md mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">100%</div>
+                            <div class="text-xs sm:text-sm text-gray-500 mt-1">Gratis</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Chromium</div>
+                            <div class="text-xs sm:text-sm text-gray-500 mt-1">Compatible</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">24/7</div>
+                            <div class="text-xs sm:text-sm text-gray-500 mt-1">Soporte</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image / Mockup -->
+                <div class="relative animate-fade-in-up hidden lg:block">
+                    <div class="relative">
+                        <!-- Glow Effect -->
+                        <div class="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-secondary/20 rounded-3xl blur-2xl"></div>
+
+                        <!-- Browser Mockup -->
+                        <div class="relative bg-dark-light/80 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
+                            <!-- Browser Top Bar -->
+                            <div class="flex items-center gap-2 px-4 py-3 border-b border-white/5">
+                                <div class="flex gap-1.5">
+                                    <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                                    <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                                    <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                                </div>
+                                <div class="flex-1 mx-4">
+                                    <div class="bg-white/5 rounded-lg px-4 py-1.5 text-xs text-gray-500 text-center">
+                                        chrome-extension://softpluginpro
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Plugin Preview Content -->
+                            <div class="p-8">
+                                <div class="space-y-4">
+                                    <div class="flex items-center gap-3 mb-6">
+                                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-bold text-white">SoftPlugin Pro</h3>
+                                            <p class="text-xs text-gray-400">v1.0 — Activo</p>
+                                        </div>
+                                        <div class="ml-auto w-12 h-6 bg-green-500/20 rounded-full flex items-center justify-end px-1">
+                                            <div class="w-5 h-5 bg-green-500 rounded-full"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-3">
+                                        <div class="flex items-center justify-between p-3 bg-white/5 rounded-xl">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center">
+                                                    <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="text-sm text-gray-300">Automatización activa</span>
+                                            </div>
+                                            <span class="text-xs text-green-400 font-medium">Running</span>
+                                        </div>
+                                        <div class="flex items-center justify-between p-3 bg-white/5 rounded-xl">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-8 h-8 bg-accent/20 rounded-lg flex items-center justify-center">
+                                                    <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="text-sm text-gray-300">Tareas completadas</span>
+                                            </div>
+                                            <span class="text-xs text-accent font-medium">1,247</span>
+                                        </div>
+                                        <div class="flex items-center justify-between p-3 bg-white/5 rounded-xl">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-8 h-8 bg-secondary/20 rounded-lg flex items-center justify-center">
+                                                    <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="text-sm text-gray-300">Tiempo ahorrado</span>
+                                            </div>
+                                            <span class="text-xs text-secondary font-medium">48h</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FEATURES / CARACTERÍSTICAS -->
+    <!-- ============================================ -->
+    <section id="caracteristicas" class="relative py-24 lg:py-32">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark-light/50 to-dark"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20 scroll-animate">
+                <span class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-4">Características</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                    Todo lo que necesitas en un
+                    <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">solo plugin</span>
+                </h2>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    SoftPlugin Pro está diseñado para simplificar tu flujo de trabajo y automatizar las tareas repetitivas de tu navegador.
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Feature 1 -->
+                <div class="group scroll-animate p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Automatización Inteligente</h3>
+                    <p class="text-gray-400 leading-relaxed">Automatiza tareas repetitivas en tu navegador con un solo clic. Configura flujos de trabajo personalizados.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="group scroll-animate p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-accent/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-accent/5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Seguridad Avanzada</h3>
+                    <p class="text-gray-400 leading-relaxed">Tu información está protegida. El plugin opera de forma local y segura sin enviar datos a terceros.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="group scroll-animate p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-secondary/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-secondary/5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Ahorra Tiempo</h3>
+                    <p class="text-gray-400 leading-relaxed">Reduce horas de trabajo manual a minutos. Optimiza tu productividad y enfócate en lo que importa.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="group scroll-animate p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-green-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-green-500/5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-green-500/20 to-green-500/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Interfaz Intuitiva</h3>
+                    <p class="text-gray-400 leading-relaxed">Panel de control simple y moderno. No necesitas conocimientos técnicos para configurar el plugin.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="group scroll-animate p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-orange-500/5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-orange-500/20 to-orange-500/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Actualizaciones Constantes</h3>
+                    <p class="text-gray-400 leading-relaxed">Mejoras continuas y nuevas funcionalidades. Siempre tendrás la versión más actualizada del plugin.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="group scroll-animate p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-pink-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-pink-500/5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-pink-500/20 to-pink-500/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Compatible con Chromium</h3>
+                    <p class="text-gray-400 leading-relaxed">Funciona con Chrome, Edge, Brave, Opera y todos los navegadores basados en Chromium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- VENTAJAS / BENEFITS -->
+    <!-- ============================================ -->
+    <section class="relative py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark to-dark-light/30"></div>
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left Content -->
+                <div class="scroll-animate">
+                    <span class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-4">¿Por qué elegirnos?</span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8">
+                        Ventajas de usar
+                        <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">SoftPlugin Pro</span>
+                    </h2>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-green-500/10 rounded-xl flex items-center justify-center">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">100% Gratuito</h3>
+                                <p class="text-gray-400">Sin costos ocultos, sin suscripciones. Descarga y usa el plugin completamente gratis.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-green-500/10 rounded-xl flex items-center justify-center">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Fácil Instalación</h3>
+                                <p class="text-gray-400">Instálalo en menos de 2 minutos. Solo descarga, ejecuta el Setup y listo.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-green-500/10 rounded-xl flex items-center justify-center">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Soporte Dedicado</h3>
+                                <p class="text-gray-400">Asistencia en tiempo real vía WhatsApp y correo electrónico. Estamos para ayudarte.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-green-500/10 rounded-xl flex items-center justify-center">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Ligero y Rápido</h3>
+                                <p class="text-gray-400">No ralentiza tu navegador. Diseñado para funcionar sin consumir recursos innecesarios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Visual -->
+                <div class="scroll-animate hidden lg:block">
+                    <div class="relative">
+                        <div class="absolute -inset-8 bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10 rounded-3xl blur-3xl"></div>
+                        <div class="relative bg-dark-light/60 backdrop-blur-xl rounded-3xl border border-white/10 p-10">
+                            <div class="grid grid-cols-2 gap-6">
+                                <div class="text-center p-6 bg-white/5 rounded-2xl">
+                                    <div class="text-4xl font-black bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">5x</div>
+                                    <div class="text-sm text-gray-400">Más rápido</div>
+                                </div>
+                                <div class="text-center p-6 bg-white/5 rounded-2xl">
+                                    <div class="text-4xl font-black bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent mb-2">0</div>
+                                    <div class="text-sm text-gray-400">Costo</div>
+                                </div>
+                                <div class="text-center p-6 bg-white/5 rounded-2xl">
+                                    <div class="text-4xl font-black bg-gradient-to-r from-secondary to-green-500 bg-clip-text text-transparent mb-2">24/7</div>
+                                    <div class="text-sm text-gray-400">Soporte</div>
+                                </div>
+                                <div class="text-center p-6 bg-white/5 rounded-2xl">
+                                    <div class="text-4xl font-black bg-gradient-to-r from-green-500 to-primary bg-clip-text text-transparent mb-2">99%</div>
+                                    <div class="text-sm text-gray-400">Satisfacción</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- DOWNLOAD / DESCARGA -->
+    <!-- ============================================ -->
+    <section id="descarga" class="relative py-24 lg:py-32">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark-light/30 via-dark to-dark"></div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyem0wLTMwVjBoLTEydjRoMTJ6TTI0IDI0djJoMTJ2LTJIMjR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-30"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 scroll-animate">
+                <span class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-4">Descarga</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                    Obtén
+                    <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">SoftPlugin Pro</span>
+                    ahora
+                </h2>
+                <p class="text-gray-400 text-lg">
+                    Descarga el instalador y comienza a automatizar tu navegador en minutos.
+                </p>
+            </div>
+
+            <!-- Download Card -->
+            <div class="max-w-2xl mx-auto scroll-animate">
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-secondary rounded-3xl blur-lg opacity-30"></div>
+                    <div class="relative bg-dark-light/80 backdrop-blur-xl rounded-3xl border border-white/10 p-8 sm:p-12 text-center">
+                        <!-- Icon -->
+                        <div class="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-accent rounded-3xl flex items-center justify-center mb-8 shadow-2xl shadow-primary/30">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                        </div>
+
+                        <h3 class="text-2xl sm:text-3xl font-bold mb-3">SoftPlugin Pro v1.0</h3>
+                        <p class="text-gray-400 mb-2">Instalador para Windows — ImportadorNotas-Setup.zip</p>
+                        <p class="text-sm text-gray-500 mb-8">Compatible con navegadores basados en Chromium</p>
+
+                        <!-- Download Button -->
+                        <a href="assets/downloads/ImportadorNotas-Setup.zip" download id="download-btn" class="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-primary px-10 py-5 rounded-2xl text-xl font-bold transition-all hover:shadow-2xl hover:shadow-primary/40 hover:-translate-y-1 mb-8 w-full sm:w-auto">
+                            <svg class="w-7 h-7 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Descargar Ahora
+                        </a>
+
+                        <!-- Installation Steps -->
+                        <div class="border-t border-white/5 pt-8 mt-2">
+                            <h4 class="font-semibold text-lg mb-6">Instrucciones de Instalación</h4>
+                            <div class="grid sm:grid-cols-3 gap-6 text-left">
+                                <div class="flex gap-3">
+                                    <div class="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
+                                        <span class="text-primary font-bold text-sm">1</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-sm">Descarga</p>
+                                        <p class="text-xs text-gray-500 mt-1">Haz clic en el botón de descarga</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div class="flex-shrink-0 w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center">
+                                        <span class="text-accent font-bold text-sm">2</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-sm">Descomprime</p>
+                                        <p class="text-xs text-gray-500 mt-1">Extrae el ZIP y ejecuta el Setup</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div class="flex-shrink-0 w-8 h-8 bg-secondary/10 rounded-lg flex items-center justify-center">
+                                        <span class="text-secondary font-bold text-sm">3</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-sm">¡Listo!</p>
+                                        <p class="text-xs text-gray-500 mt-1">El plugin se instala automáticamente</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Compatibility -->
+                        <div class="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-500">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Google Chrome
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Microsoft Edge
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Brave
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Opera
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SOPORTE / SUPPORT -->
+    <!-- ============================================ -->
+    <section id="soporte" class="relative py-24 lg:py-32">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark-light/30 to-dark"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 scroll-animate">
+                <span class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-4">Soporte</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                    ¿Necesitas
+                    <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">ayuda?</span>
+                </h2>
+                <p class="text-gray-400 text-lg">
+                    Estamos aquí para asistirte. Elige el canal que prefieras para comunicarte con nosotros.
+                </p>
+            </div>
+
+            <!-- Support Cards -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-4xl mx-auto">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="group scroll-animate block p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-green-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-green-500/10 text-center">
+                    <div class="w-16 h-16 mx-auto bg-gradient-to-br from-green-500/20 to-green-600/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">WhatsApp</h3>
+                    <p class="text-gray-400 text-sm mb-4">Chat directo con un asesor</p>
+                    <span class="inline-flex items-center gap-2 text-green-400 font-semibold text-sm group-hover:gap-3 transition-all">
+                        Abrir Chat
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </span>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:rectores_federal09@icloud.com" class="group scroll-animate block p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10 text-center">
+                    <div class="w-16 h-16 mx-auto bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Correo Electrónico</h3>
+                    <p class="text-gray-400 text-sm mb-4">rectores_federal09@icloud.com</p>
+                    <span class="inline-flex items-center gap-2 text-primary font-semibold text-sm group-hover:gap-3 transition-all">
+                        Enviar Correo
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </span>
+                </a>
+
+                <!-- Contact Advisor -->
+                <a href="https://wa.me/593983274499?text=Hola%2C%20necesito%20ayuda%20con%20SoftPlugin%20Pro" target="_blank" rel="noopener noreferrer" class="group scroll-animate block p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-accent/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-accent/10 text-center sm:col-span-2 lg:col-span-1">
+                    <div class="w-16 h-16 mx-auto bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Contactar Asesor</h3>
+                    <p class="text-gray-400 text-sm mb-4">Asistencia personalizada</p>
+                    <span class="inline-flex items-center gap-2 text-accent font-semibold text-sm group-hover:gap-3 transition-all">
+                        Contactar
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CONTACT FORM / FORMULARIO -->
+    <!-- ============================================ -->
+    <section id="contacto" class="relative py-24 lg:py-32">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark-light/50 to-dark"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+                <!-- Left - Info -->
+                <div class="scroll-animate">
+                    <span class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-4">Contacto</span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                        Envíanos un
+                        <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">mensaje</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-10">
+                        ¿Tienes alguna pregunta, sugerencia o necesitas ayuda? Completa el formulario y te responderemos lo antes posible.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Correo Electrónico</p>
+                                <p class="text-gray-400 text-sm">rectores_federal09@icloud.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold">WhatsApp</p>
+                                <p class="text-gray-400 text-sm">+593 983 274 499</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right - Form -->
+                <div class="scroll-animate">
+                    <form id="contact-form" class="bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl p-8 sm:p-10">
+                        <div class="space-y-6">
+                            <!-- Name -->
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Nombre completo</label>
+                                <input type="text" id="name" name="name" required autocomplete="name"
+                                    class="w-full px-4 py-3.5 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all"
+                                    placeholder="Tu nombre">
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required autocomplete="email"
+                                    class="w-full px-4 py-3.5 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all"
+                                    placeholder="tu@email.com">
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" required
+                                    class="w-full px-4 py-3.5 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all resize-none"
+                                    placeholder="Escribe tu mensaje aquí..."></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" id="submit-btn"
+                                class="w-full bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-primary px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                                </svg>
+                                Enviar Mensaje
+                            </button>
+                        </div>
+
+                        <!-- Form Status Message -->
+                        <div id="form-status" class="mt-4 hidden"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FAQ / PREGUNTAS FRECUENTES -->
+    <!-- ============================================ -->
+    <section id="faq" class="relative py-24 lg:py-32">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark-light/30 to-dark"></div>
+
+        <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 scroll-animate">
+                <span class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-4">FAQ</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                    Preguntas
+                    <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">frecuentes</span>
+                </h2>
+                <p class="text-gray-400 text-lg">
+                    Respuestas a las dudas más comunes sobre SoftPlugin Pro.
+                </p>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="space-y-4 scroll-animate">
+                <!-- FAQ 1 -->
+                <div class="faq-item bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors" aria-expanded="false">
+                        <span class="font-semibold text-lg pr-4">¿Cómo instalo el plugin?</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed">
+                            Es muy sencillo: descarga el archivo Setup.exe desde la sección de descarga, ejecútalo como administrador y sigue las instrucciones del asistente de instalación. En menos de 2 minutos el plugin estará instalado y listo para usar en tu navegador.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors" aria-expanded="false">
+                        <span class="font-semibold text-lg pr-4">¿En qué navegadores funciona?</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed">
+                            SoftPlugin Pro es compatible con todos los navegadores basados en Chromium, incluyendo: Google Chrome, Microsoft Edge, Brave, Opera, Vivaldi y más. No es compatible con Firefox ni Safari.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors" aria-expanded="false">
+                        <span class="font-semibold text-lg pr-4">¿Es gratis?</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed">
+                            Sí, SoftPlugin Pro es completamente gratuito. No hay costos ocultos, suscripciones ni pagos de ningún tipo. Descargalo y úsalo libremente.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors" aria-expanded="false">
+                        <span class="font-semibold text-lg pr-4">¿Cómo contacto soporte?</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed">
+                            Puedes contactar soporte de varias formas: a través de nuestro chat de WhatsApp haciendo clic en el botón verde, enviándonos un correo a rectores_federal09@icloud.com, o completando el formulario de contacto en esta página. Respondemos en el menor tiempo posible.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors" aria-expanded="false">
+                        <span class="font-semibold text-lg pr-4">¿El plugin es seguro?</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed">
+                            Absolutamente. SoftPlugin Pro opera de forma local en tu navegador y no envía información personal a servidores externos. Tu privacidad y seguridad son nuestra prioridad.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors" aria-expanded="false">
+                        <span class="font-semibold text-lg pr-4">¿Necesito conocimientos técnicos?</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed">
+                            No, el plugin está diseñado para ser intuitivo y fácil de usar. La instalación es guiada y la interfaz del plugin es simple. Cualquier persona puede utilizarlo sin experiencia técnica previa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CTA FINAL -->
+    <!-- ============================================ -->
+    <section class="relative py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10"></div>
+        <div class="absolute inset-0 bg-dark/80"></div>
+
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-animate">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                ¿Listo para
+                <span class="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">automatizar</span>
+                tu navegador?
+            </h2>
+            <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+                Descarga SoftPlugin Pro ahora y comienza a ahorrar tiempo con la automatización inteligente de tu navegador.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#descarga" class="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-primary px-10 py-5 rounded-2xl text-lg font-bold transition-all hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-1">
+                    <svg class="w-6 h-6 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                    </svg>
+                    Descargar Ahora
+                </a>
+                <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 border border-white/10 hover:border-green-500/30 px-10 py-5 rounded-2xl text-lg font-semibold hover:bg-green-500/5 transition-all">
+                    <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Hablar con un Asesor
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer class="relative border-t border-white/5">
+        <div class="absolute inset-0 bg-dark-light/50"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Brand -->
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <a href="#inicio" class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold">SoftPlugin Pro</span>
+                    </a>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Plugin profesional para navegadores basados en Chromium. Automatiza tareas y mejora tu productividad.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Enlaces</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-white text-sm transition-colors">Inicio</a></li>
+                        <li><a href="#caracteristicas" class="text-gray-400 hover:text-white text-sm transition-colors">Características</a></li>
+                        <li><a href="#descarga" class="text-gray-400 hover:text-white text-sm transition-colors">Descarga</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white text-sm transition-colors">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-semibold mb-4">Soporte</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#contacto" class="text-gray-400 hover:text-white text-sm transition-colors">Formulario de Contacto</a></li>
+                        <li><a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white text-sm transition-colors">WhatsApp</a></li>
+                        <li><a href="mailto:rectores_federal09@icloud.com" class="text-gray-400 hover:text-white text-sm transition-colors">Correo Electrónico</a></li>
+                        <li><a href="#soporte" class="text-gray-400 hover:text-white text-sm transition-colors">Centro de Ayuda</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-gray-400 text-sm">
+                            <svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            rectores_federal09@icloud.com
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-400 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            +593 983 274 499
+                        </li>
+                    </ul>
+
+                    <!-- WhatsApp Button in Footer -->
+                    <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-4 bg-green-500/10 hover:bg-green-500/20 border border-green-500/20 px-4 py-2 rounded-xl text-green-400 text-sm font-medium transition-all">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Chat WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-white/5 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2026 SoftPlugin Pro. Todos los derechos reservados.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Política de Privacidad</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Términos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <!-- ============================================ -->
+    <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-2xl shadow-green-500/30 hover:shadow-green-500/50 transition-all hover:scale-110 group"
+        aria-label="Contactar por WhatsApp">
+        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <!-- Tooltip -->
+        <span class="absolute right-full mr-3 bg-dark-light text-white text-sm px-3 py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+            ¿Necesitas ayuda?
+        </span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
