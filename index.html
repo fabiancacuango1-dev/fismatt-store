@@ -11,16 +11,16 @@
     <link rel="canonical" href="https://softpluginpro.com/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="FISMATT SYSTEMS — Automatiza tu Navegador">
-    <meta property="og:description" content="El plugin definitivo para navegadores Chromium. Automatiza tareas y mejora tu productividad.">
+    <meta property="og:title" content="FISMATT SYSTEMS — Soluciones Educativas para Docentes">
+    <meta property="og:description" content="Herramientas profesionales para gestionar calificaciones Minduc, INEVAL-PRO y más. Diseñadas para docentes de Ecuador. 100% seguro y gratuito.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://softpluginpro.com/">
+    <meta property="og:url" content="https://fis-matt.com/">
     <meta property="og:image" content="assets/img/og-image.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FISMATT SYSTEMS — Automatiza tu Navegador">
-    <meta name="twitter:description" content="El plugin definitivo para navegadores Chromium. Automatiza tareas y mejora tu productividad.">
+    <meta name="twitter:title" content="FISMATT SYSTEMS — Soluciones Educativas">
+    <meta name="twitter:description" content="Importador Minduc, INEVAL-PRO, generador de horarios. Herramientas para docentes de Ecuador. 100% seguro y profesional.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
@@ -59,22 +59,20 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
+        "@type": "Organization",
         "name": "FISMATT SYSTEMS",
-        "operatingSystem": "Windows",
-        "applicationCategory": "BrowserExtension",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
+        "url": "https://fis-matt.com",
+        "description": "Soluciones educativas profesionales para docentes de Ecuador. Herramientas para gestionar calificaciones Minduc, INEVAL-PRO y generación de horarios escolares.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "email": "rectores_federal09@icloud.com",
+            "telephone": "+593 983 274 499"
         },
-        "description": "Plugin profesional para navegadores basados en Chromium. Automatiza tareas y mejora la productividad.",
-        "softwareVersion": "1.0",
-        "author": {
-            "@type": "Organization",
-            "name": "FISMATT SYSTEMS",
-            "email": "rectores_federal09@icloud.com"
-        }
+        "areaServed": "EC",
+        "sameAs": [
+            "https://chromewebstore.google.com/detail/pjdakeeclfpkheobgmenlonbbpmokbbh"
+        ]
     }
     </script>
 </head>
@@ -1068,7 +1066,10 @@
 
                 <!-- Right - Form -->
                 <div class="scroll-animate">
-                    <form id="contact-form" class="bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl p-8 sm:p-10">
+                    <form id="contact-form" action="https://formsubmit.co/rectores_federal09@icloud.com" method="POST" class="bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl p-8 sm:p-10">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://fis-matt.com/">
+                        
                         <div class="space-y-6">
                             <!-- Name -->
                             <div>
@@ -1102,10 +1103,12 @@
                                 </svg>
                                 Enviar Mensaje
                             </button>
-                        </div>
 
-                        <!-- Form Status Message -->
-                        <div id="form-status" class="mt-4 hidden"></div>
+                            <!-- Info Text -->
+                            <p class="text-xs text-gray-500 text-center">
+                                Tu información es segura y protegida.
+                            </p>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -1338,8 +1341,8 @@
                     &copy; 2026 FISMATT SYSTEMS. Todos los derechos reservados.
                 </p>
                 <div class="flex items-center gap-6">
-                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Política de Privacidad</a>
-                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Términos de Uso</a>
+                    <a href="/legal/privacidad.html" class="text-gray-500 hover:text-white text-sm transition-colors">Política de Privacidad</a>
+                    <a href="/legal/terminos.html" class="text-gray-500 hover:text-white text-sm transition-colors">Términos de Uso</a>
                 </div>
             </div>
         </div>

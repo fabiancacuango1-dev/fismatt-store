@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+Disallow: /assets/downloads/
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://fis-matt.com/sitemap.xml
+
+# Bots específicos
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+# Bloquear algunos bots problema
+User-agent: BadBot
+User-agent: AhrefsBot
+User-agent: SemrushBot
+Disallow: /
