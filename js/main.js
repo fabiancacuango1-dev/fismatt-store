@@ -1,5 +1,5 @@
 /* ============================================
-   SoftPlugin Pro — Main JavaScript
+   FISMATT SYSTEMS — Main JavaScript
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -160,7 +160,7 @@ function initContactForm() {
         submitBtn.disabled = true;
 
         // Build mailto link
-        const subject = encodeURIComponent(`Consulta de ${name} — SoftPlugin Pro`);
+        const subject = encodeURIComponent(`Consulta de ${name} — FISMATT SYSTEMS`);
         const body = encodeURIComponent(
             `Nombre: ${name}\nCorreo: ${email}\n\nMensaje:\n${message}`
         );
