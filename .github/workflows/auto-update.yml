@@ -1,0 +1,90 @@
+name: Auto-Update Products on Release
+
+on:
+  release:
+    types: [published, created]
+  workflow_dispatch:
+
+jobs:
+  update-products:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Git config
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Actions"
+      
+      - name: Get latest release info
+        id: latest_release
+        run: |
+          LATEST_TAG=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest | grep 'tag_name' | head -1 | sed -E 's/.*"([^"]+)".*/\1/')
+          echo "tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+          echo "Latest release: $LATEST_TAG"
+      
+      - name: Update products.json with new versions
+        run: |
+          sudo apt-get install -y jq
+          
+          TAG=${{ steps.latest_release.outputs.tag }}
+          
+          # Update products.json with new URLs and versions
+          jq --arg tag "$TAG" \
+             --arg timestamp "$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+             '.products.eduhorarios.version = $tag |
+              .products.eduhorarios.url = "https://github.com/${{ github.repository }}/releases/download/\($tag)/EduHorarios-AI-\($tag).zip" |
+              .products.importador-minduc.version = $tag |
+              .products.importador-minduc.url = "https://github.com/${{ github.repository }}/releases/download/\($tag)/ImportadorNotas-Setup.zip" |
+              .products.ineval-pro.version = $tag |
+              .products.ineval-pro.url = "https://github.com/${{ github.repository }}/releases/download/\($tag)/INEVAL-PRO-\($tag).zip" |
+              .metadata.lastUpdate = $timestamp' \
+             config/products.json > config/products.json.tmp
+          
+          mv config/products.json.tmp config/products.json
+      
+      - name: Commit and push updates
+        run: |
+          git add config/products.json
+          
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🔄 Auto-update products to ${{ steps.latest_release.outputs.tag }}
+            
+Automatic update from GitHub release event
+- EduHorarios AI: ${{ steps.latest_release.outputs.tag }}
+- Importador Minduc: ${{ steps.latest_release.outputs.tag }}
+- INEVAL-PRO: ${{ steps.latest_release.outputs.tag }}
+
+Updated at: $(date)"
+            
+            git push origin main
+            echo "✅ Pushed updates to main"
+          fi
+      
+      - name: Verify deployment
+        run: |
+          echo "Verificando deployment en fis-matt.com..."
+          sleep 5
+          curl -s -I "https://fis-matt.com/config/products.json" | head -5
+  
+  notify:
+    needs: update-products
+    runs-on: ubuntu-latest
+    if: always()
+    
+    steps:
+      - name: Send notification
+        env:
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+        run: |
+          if [ "${{ needs.update-products.result }}" = "success" ]; then
+            echo "✅ EduHorarios y productos actualizados exitosamente"
+          else
+            echo "❌ Error en auto-update"
+          fi

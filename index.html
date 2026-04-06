@@ -1519,5 +1519,52 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    
+    <!-- Dynamic Product Version Loader -->
+    <script>
+        // Load product versions from config/products.json
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('/config/products.json');
+                const config = await response.json();
+                
+                // Update download button with latest version
+                const downloadBtn = document.querySelector('#download-btn');
+                if (downloadBtn && config.products.importador-minduc) {
+                    const product = config.products['importador-minduc'];
+                    downloadBtn.href = product.url;
+                    downloadBtn.title = `Versión ${product.version}`;
+                    
+                    // Actualizar texto del botón con versión
+                    const btnText = downloadBtn.querySelector('svg').nextSibling;
+                    if (btnText) {
+                        btnText.textContent = `Descargar Ahora (v${product.version})`;
+                    }
+                }
+                
+                // Update subdomain link for EduHorarios (if exists)
+                const eduHorariosLink = document.querySelector('a[href*="horarios.fis-matt.com"]');
+                if (eduHorariosLink && config.products.eduhorarios) {
+                    const eduProduct = config.products.eduhorarios;
+                    eduHorariosLink.title = `EduHorarios AI v${eduProduct.version}`;
+                    // Agregar badge de versión
+                    const versionBadge = document.createElement('span');
+                    versionBadge.className = 'ml-2 text-xs bg-blue-600 text-white px-2 py-1 rounded';
+                    versionBadge.textContent = `v${eduProduct.version}`;
+                    if (eduHorariosLink.parentElement) {
+                        eduHorariosLink.parentElement.appendChild(versionBadge);
+                    }
+                }
+                
+                // Log last update time
+                console.log(`🔄 Productos actualizados: ${config.metadata.lastUpdate}`);
+                
+            } catch (error) {
+                console.error('Error cargando versiones de productos:', error);
+                // Fallback a versión hardcoded si falla
+                console.log('Usando versiones hardcoded');
+            }
+        });
+    </script>
 </body>
 </html>
