@@ -1,0 +1,38 @@
+# GitHub Pages Jekyll Configuration
+# Seguridad y Headers
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Headers de seguridad
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# MIME types adicionales
+include:
+  - .gitignore
+  - .nojekyll
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Security headers (vía meta tags)
+kramdown:
+  auto_ids: true
+  
+# Assets
+sass:
+  sass_dir: css
+
+# Headers personalizados via Netlify redirect (si fuera Netlify)
+# Para GitHub Pages, necesitamos .htaccess o configurar en el servidor

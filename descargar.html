@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; img-src 'self' data: https:; connect-src 'self' https:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <!-- Preload & DNS -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    
+    <!-- Standard Meta -->
+    <title>Descargador Seguro - FISMATT SYSTEMS</title>
+    <meta name="description" content="Descargador seguro y verificado de FISMATT SYSTEMS v1.0 para Windows">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center">
+    <div class="max-w-md w-full mx-4">
+        <div class="bg-white rounded-xl shadow-2xl p-8 text-center">
+            <!-- Icon -->
+            <div class="w-16 h-16 mx-auto bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mb-6">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg>
+            </div>
+
+            <h1 class="text-2xl font-bold text-gray-900 mb-3">Descarga Segura</h1>
+            <p class="text-gray-600 mb-8">FISMATT SYSTEMS v1.0 para Windows</p>
+
+            <!-- Info -->
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 text-left">
+                <h3 class="font-semibold text-gray-900 mb-2">ℹ️ Información del archivo:</h3>
+                <ul class="text-sm text-gray-700 space-y-1">
+                    <li>📦 Nombre: ImportadorNotas-Setup.zip</li>
+                    <li>💾 Tamaño: 2.2 MB</li>
+                    <li>✅ Estado: Verificado y seguro</li>
+                    <li>🔒 Encriptación: HTTPS</li>
+                </ul>
+            </div>
+
+            <!-- Download Button -->
+            <a href="javascript:descargar()" onclick="descargar(); return false;" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-all hover:shadow-lg mb-4 inline-block">
+                ⬇️ Descargar Ahora (2.2 MB)
+            </a>
+
+            <!-- Alternative Link -->
+            <p class="text-sm text-gray-500 mb-4">o copia este enlace:</p>
+            <div class="bg-gray-100 p-3 rounded-lg mb-6 break-all">
+                <code class="text-xs text-gray-700" id="link-copy">
+                    https://fis-matt.com/assets/downloads/ImportadorNotas-Setup.zip
+                </code>
+            </div>
+
+            <!-- Copy Button -->
+            <button onclick="copiarLink()" class="w-full border-2 border-gray-300 text-gray-700 hover:border-gray-400 font-semibold py-2 px-6 rounded-lg transition-all">
+                📋 Copiar Enlace
+            </button>
+
+            <!-- Support -->
+            <p class="text-xs text-gray-500 mt-8">
+                ¿Problemas con la descarga? 
+                <a href="mailto:rectores_federal09@icloud.com" class="text-blue-600 hover:underline">Contacta soporte</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function descargar() {
+            // Usar fetch para descargar de forma segura
+            fetch('/assets/downloads/ImportadorNotas-Setup.zip')
+                .then(response => response.blob())
+                .then(blob => {
+                    // Crear elemento invisible
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'ImportadorNotas-Setup.zip';
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                    a.remove();
+                })
+                .catch(err => {
+                    alert('Error en la descarga. Intenta de nuevo.');
+                    console.error(err);
+                });
+        }
+
+        function copiarLink() {
+            const link = document.getElementById('link-copy').textContent;
+            navigator.clipboard.writeText(link).then(() => {
+                alert('Enlace copiado al portapapeles ✅');
+            });
+        }
+    </script>
+</body>
+</html>
