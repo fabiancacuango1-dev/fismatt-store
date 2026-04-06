@@ -1,0 +1,312 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║               ⚡ GUÍA RÁPIDA: GITHUB ACTIONS EN 5 MINUTOS ⚡                   ║
+║                         Deploy Automático HTML Puro                            ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+
+════════════════════════════════════════════════════════════════════════════════
+                    📋 ARCHIVO DEPLOY.YML — COPIA ESTO
+════════════════════════════════════════════════════════════════════════════════
+
+Nombre del archivo: .github/workflows/deploy.yml
+
+Contenido (copia y pega exactamente):
+
+=============================================================================
+
+name: Deploy a GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+=============================================================================
+
+
+════════════════════════════════════════════════════════════════════════════════
+                  🚀 INSTALACIÓN RÁPIDA — 4 PASOS
+════════════════════════════════════════════════════════════════════════════════
+
+PASO 1: Crea la carpeta .github/workflows (en tu máquina local)
+
+$ mkdir -p .github/workflows
+
+
+PASO 2: Crea el archivo deploy.yml
+
+$ touch .github/workflows/deploy.yml
+
+
+PASO 3: Pega el contenido en deploy.yml
+
+(Abre el archivo con editor y pega el contenido de arriba)
+
+O por terminal:
+
+$ cat > .github/workflows/deploy.yml << 'EOF'
+name: Deploy a GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+EOF
+
+
+PASO 4: Haz git push
+
+$ git add .
+$ git commit -m "Add GitHub Actions deploy workflow"
+$ git push
+
+
+════════════════════════════════════════════════════════════════════════════════
+                  ⚙️ CONFIGURAR GITHUB PAGES — 3 PASOS
+════════════════════════════════════════════════════════════════════════════════
+
+Abre tu repositorio en GitHub:
+https://github.com/fabiancacuango1-dev/fismatt-store
+
+
+PASO A: Activa GitHub Pages
+
+1. Settings (esquina superior derecha)
+2. Pages (menú izquierdo)
+3. Build and deployment → Source
+4. Selecciona: "GitHub Actions"
+5. Guarda (automático)
+
+
+PASO B: Configura dominio personalizado (SI USAS fis-matt.com)
+
+1. En Pages, busca "Custom domain"
+2. Escribe: fis-matt.com
+3. Haz clic en "Save"
+4. GitHub crea autom un archivo CNAME
+
+
+PASO C: Configura DNS en tu registrador (SI USAS fis-matt.com)
+
+Donde compraste el dominio (GoDaddy, Namecheap, etc.):
+
+1. Busca "DNS Settings" o "DNS Manager"
+2. Agrega/Modifica:
+
+   OPCIÓN 1 (Recomendado - CNAME):
+   ──────────────────────────────
+   Type:  CNAME
+   Name:  www (o dejar en blanco)
+   Value: fabiancacuango1-dev.github.io
+
+   OPCIÓN 2 (Si CNAME no funciona - A records):
+   ──────────────────────────────────────────
+   Type:  A
+   Name:  @ (root)
+   Value: 185.199.110.153
+   
+   Type:  A
+   Name:  @ (root)
+   Value: 185.199.111.153
+   
+   Type:  A
+   Name:  @ (root)
+   Value: 185.199.112.153
+   
+   Type:  A
+   Name:  @ (root)
+   Value: 185.199.113.153
+
+3. Guarda
+4. Espera 24-48 horas para propagación
+
+
+════════════════════════════════════════════════════════════════════════════════
+                    ✅ VERIFICAR QUE FUNCIONA
+════════════════════════════════════════════════════════════════════════════════
+
+1. Ve a tu repositorio → pestaña "Actions"
+   https://github.com/fabiancacuango1-dev/fismatt-store/actions
+
+2. Busca "Deploy a GitHub Pages"
+
+3. Si ves ✅ verde = ¡FUNCIONA!
+   Si ves ❌ rojo = hay error (haz clic para ver detalles)
+
+
+════════════════════════════════════════════════════════════════════════════════
+                         🎯 AHORA QUÉ PASA
+════════════════════════════════════════════════════════════════════════════════
+
+Cada vez que hagas:
+
+$ git push
+
+AUTOMÁTICAMENTE:
+
+1. GitHub detecta el push
+2. Ejecuta el workflow deploy.yml
+3. Sube tu código a GitHub Pages
+4. Tu web se actualiza (1-2 minutos después)
+
+TÚ NO HACES NADA MÁS.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                    ❌ ERRORES COMUNES y SOLUCIÓN RÁPIDA
+════════════════════════════════════════════════════════════════════════════════
+
+ERROR: "❌ Deploy failed - index.html not found"
+→ Verifica que index.html está en RAÍZ del repo, no en subcarpeta
+
+ERROR: "⏸️ Workflow not running"
+→ Settings → Actions → Habilita "Allow all actions and reusable workflows"
+
+ERROR: "CSS/JS no cargan"
+→ Abre DevTools (F12)
+→ Mira Console para errores 404
+→ Verifica que cssrutas sean relativas: href="css/styles.css"
+
+ERROR: "Dominio personalizado no funciona"
+→ Espera 24 horas para DNS
+→ Verifica CNAME en tu registrador
+→ Habilita HTTPS en GitHub Pages
+
+
+════════════════════════════════════════════════════════════════════════════════
+                       📊 FLUJO VISUAL
+════════════════════════════════════════════════════════════════════════════════
+
+TÚ:
+  cambios locales
+           ↓
+  git add .
+           ↓
+  git commit -m "cambios"
+           ↓
+  git push ← PRESIONAS ESTO
+
+GITHUB (AUTOMÁTICO):
+  Detecta push a main
+           ↓
+  Inicia workflow deploy.yml
+           ↓
+  Checkout (descarga código)
+           ↓
+  Setup Pages (prepara)
+           ↓
+  Upload artifact (sube archivos)
+           ↓
+  Deploy to GitHub Pages (publica)
+           ↓
+  ✅ Listo
+
+RESULTADO:
+  Tu sitio está actualizado en:
+  https://fis-matt.com/
+  (o https://fabiancacuango1-dev.github.io/fismatt-store/)
+
+
+════════════════════════════════════════════════════════════════════════════════
+                         📝 CHECKLIST FINAL
+════════════════════════════════════════════════════════════════════════════════
+
+Antes de usar:
+
+☐ .github/workflows/deploy.yml existe en tu repo local
+☐ index.html está en RAÍZ (no en carpeta)
+☐ css/ está en RAÍZ
+☐ js/ está en RAÍZ
+☐ git push completado (el archivo está en GitHub)
+☐ GitHub Pages activado con "GitHub Actions" como source
+☐ Si usas dominio: DNS configurado + Custom domain agregado en GitHub
+
+Después de primer push:
+
+☐ Abre Actions pestaña
+☐ Busca "Deploy a GitHub Pages"
+☐ Debe mostrar ✅ verde
+
+Prueba:
+
+☐ Abre tu sitio en navegador
+☐ Verifica que se cargó correctamente
+☐ Abre DevTools (F12) → Console
+☐ No debe haber errores 404 en css/ o js/
+
+
+════════════════════════════════════════════════════════════════════════════════
+
+LISTO. Ahora solo necesitas:
+1. Crear .github/workflows/deploy.yml con el contenido de arriba
+2. Hacer git push
+3. Activar GitHub Pages en Settings
+
+¡Eso es todo!
+
+════════════════════════════════════════════════════════════════════════════════
+
+Creado: 29 de marzo de 2026
+Estado: ✅ LISTO PARA USAR

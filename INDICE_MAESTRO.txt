@@ -1,0 +1,388 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║                        📚 ÍNDICE MAESTRO DE DOCUMENTACIÓN                      ║
+║                   Transformación SaaS — FISMATT SYSTEMS                        ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+
+════════════════════════════════════════════════════════════════════════════════
+                        CÓMO USAR ESTA DOCUMENTACIÓN
+════════════════════════════════════════════════════════════════════════════════
+
+╔─ PASO 1: ENTENDER LA VISIÓN ────────────────────────────────────────╗
+│                                                                       │
+│  📄 RESUMEN_VISUAL_LEE_ESTO.txt (5-10 minutos)                      │
+│     ↳ Antes vs Después visual                                       │
+│     ↳ Números clave                                                 │
+│     ↳ Arquitectura en 1 minuto                                      │
+│     ↳ Fases de implementación                                       │
+│     ↳ Costos                                                        │
+│     ↳ Decisiones necesarias                                         │
+│                                                                       │
+│  ✅ RESULTADO: Entiendes qué transformaremos                         │
+│  ✅ ACCIÓN: Decides si apruebas o hay ajustes                       │
+│                                                                       │
+└───────────────────────────────────────────────────────────────────────┘
+
+╔─ PASO 2: CONOCER EL PLAN ESTRATÉGICO ───────────────────────────────╗
+│                                                                       │
+│  📄 PROPUESTA_EJECUTIVA_SAAS.md (15-20 minutos)                     │
+│     ↳ Análisis de la situación actual                               │
+│     ↳ Visión de transformación                                      │
+│     ↳ Stack técnico explicado                                       │
+│     ↳ Plan de migración (8-10 semanas)                              │
+│     ↳ Riesgos identificados                                         │
+│     ↳ Estimaciones de costo                                         │
+│     ↳ Recursos documentados                                         │
+│                                                                       │
+│  📍 AUDIENCIA: Stakeholders, gerencia, decidores                     │
+│  ✅ RESULTADO: Plan claro con justificación de todas las decisiones │
+│  ✅ ACCIÓN: Apruebas y compartís con dirección                      │
+│                                                                       │
+└───────────────────────────────────────────────────────────────────────┘
+
+╔─ PASO 3: PROFUNDIDAD TÉCNICA ───────────────────────────────────────╗
+│                                                                       │
+│  📄 ARQUITECTURA_SAAS_COMPLETA.md (30-40 minutos)                   │
+│     ↳ Análisis profundo de problemas actuales                       │
+│     ↳ Solución arquitectónica detallada                             │
+│     ↳ Frontend: React + Vite                                        │
+│     ↳ Backend: Firebase (Auth, Firestore, Functions)                │
+│     ↳ Hosting: Vercel + Firebase Hosting                            │
+│     ↳ Estructura de carpetas (200+ archivos)                        │
+│     ↳ Modelos de datos (Firestore collections)                      │
+│     ↳ User flows (4 journeys principales)                           │
+│     ↳ Componentes a implementar (30+)                               │
+│     ↳ Security & Privacy (GDPR, encryption)                         │
+│     ↳ Plan de migración (8 fases detalladas)                        │
+│                                                                       │
+│  📍 AUDIENCIA: Architects, lead developers, technical leads          │
+│  ✅ RESULTADO: Especificación completa lista para desarrollo         │
+│  ✅ ACCIÓN: Developers usan como referencia durante implementación   │
+│                                                                       │
+└───────────────────────────────────────────────────────────────────────┘
+
+╔─ PASO 4: MANOS A LA OBRA ──────────────────────────────────────────╗
+│                                                                       │
+│  📄 IMPLEMENTACION_PASO_1_SETUP.md (45-60 minutos ejecución)        │
+│     ↳ Pre-requisitos                                                │
+│     ↳ Paso 1: Crear proyecto Vite + React                           │
+│     ↳ Paso 2: Configurar Tailwind CSS                               │
+│     ↳ Paso 3: Setup Firebase project                                │
+│     ↳ Paso 4: Crear archivo de config Firebase                      │
+│     ↳ Paso 5: Implementar Auth Context                              │
+│     ↳ Paso 6: Setup react-router-dom                                │
+│     ↳ Paso 7: Landing page component (primera página)              │
+│     ↳ Paso 8: Verificar setup local (npm run dev)                  │
+│     ↳ CÓDIGO ACTUAL: Completamente copiable y no conceptual         │
+│                                                                       │
+│  📍 AUDIENCIA: Developers que ejecutarán el plan                     │
+│  ✅ RESULTADO: Proyecto React funcional con Firebase conectado      │
+│  ✅ ACCIÓN: Semana 1-2 completada, npm run dev funciona             │
+│                                                                       │
+└───────────────────────────────────────────────────────────────────────┘
+
+╔─ PASO 5: AUTENTICACIÓN (PRÓXIMO) ─────────────────────────────────╗
+│                                                                       │
+│  📄 IMPLEMENTACION_PASO_2_AUTH.md (Aún no creado, siguiente)        │
+│     ↳ Login page                                                    │
+│     ↳ Register page                                                 │
+│     ↳ Password reset                                                │
+│     ↳ Google Sign-In integration                                    │
+│     ↳ Error handling                                                │
+│     ↳ Form validation                                               │
+│     ↳ Semana 3-4: implementación                                    │
+│                                                                       │
+│  🔄 ESTADO: En tu lista TODO                                        │
+│                                                                       │
+└───────────────────────────────────────────────────────────────────────┘
+
+╔─ PASO 6: DASHBOARD (PRÓXIMO) ─────────────────────────────────────╗
+│                                                                       │
+│  📄 IMPLEMENTACION_PASO_3_DASHBOARD.md (Aún no creado, siguiente)   │
+│     ↳ Dashboard layout                                              │
+│     ↳ Estadísticas de usuario                                       │
+│     ↳ Gestión de perfil                                             │
+│     ↳ Productos integrados (primeros mockups)                       │
+│     ↳ Historial de uso                                              │
+│     ↳ Semana 5-6: implementación                                    │
+│                                                                       │
+│  🔄 ESTADO: En tu lista TODO                                        │
+│                                                                       │
+└───────────────────────────────────────────────────────────────────────┘
+
+╔─ PASO 7: PRODUCTOS REALES (PRÓXIMO) ───────────────────────────────╗
+│                                                                       │
+│  📄 IMPLEMENTACION_PASO_4_PRODUCTOS.md (Aún no creado, siguiente)   │
+│     ↳ INEVAL-PRO integración                                        │
+│     ↳ Minduc integración                                            │
+│     ↳ EduHorarios integración                                       │
+│     ↳ APIs necesarias                                               │
+│     ↳ Semana 7-8: implementación                                    │
+│                                                                       │
+│  🔄 ESTADO: En tu lista TODO                                        │
+│                                                                       │
+└───────────────────────────────────────────────────────────────────────┘
+
+╔─ PASO 8: DEPLOYMENT A PRODUCCIÓN ──────────────────────────────────╗
+│                                                                       │
+│  📄 IMPLEMENTACION_PASO_5_DEPLOY.md (Aún no creado, siguiente)      │
+│     ↳ Testing completo                                              │
+│     ↳ Build para producción                                         │
+│     ↳ Deploy a Vercel                                               │
+│     ↳ Configurar Firestore production                               │
+│     ↳ Políticas de privacidad                                       │
+│     ↳ Go-live checklist                                             │
+│     ↳ Semana 9-10: deployment                                       │
+│                                                                       │
+│  🔄 ESTADO: En tu lista TODO                                        │
+│                                                                       │
+└───────────────────────────────────────────────────────────────────────┘
+
+
+════════════════════════════════════════════════════════════════════════════════
+                        MATRIZ DE LECTORÍA
+════════════════════════════════════════════════════════════════════════════════
+
+¿QUIÉN SOS?             │  LEER PRIMERO           │  LUEGO               │  DESPUÉS
+─────────────────────────────────────────────────────────────────────────────────
+Stakeholder/CEO         │  RESUMEN_VISUAL         │  PROPUESTA_EXEC      │  Esperar
+(No técnico)            │  5 min, entiendes todo  │  Decisión final      │  MVP
+                        │                         │                      │
+─────────────────────────────────────────────────────────────────────────────────
+Arquitecto/Lead         │  PROPUESTA_EXEC         │  ARQUITECTURA        │  Paso 2
+(Técnico, decisión)     │  Visión + plan          │  Especificación      │  Auth
+                        │                         │                      │
+─────────────────────────────────────────────────────────────────────────────────
+Developer               │  IMPLEMENTACION_1       │  ARQUITECTURA        │  Paso 3
+(Código hands-on)       │  Empezar ahora          │  Referencia mientras │  Paso 4...
+                        │                         │  codeas              │
+─────────────────────────────────────────────────────────────────────────────────
+PM/Scrum Master         │  RESUMEN_VISUAL         │  PROPUESTA_EXEC      │  Paso X
+(Timeline, recursos)    │  Fases y costos         │  Estimaciones        │  Seguimiento
+                        │                         │                      │
+─────────────────────────────────────────────────────────────────────────────────
+Tester/QA               │  ARQUITECTURA           │  Paso 1              │  Test plan
+(Validación)            │  Entender estructura    │  Para correr local    │  (Próximo)
+                        │                         │                      │
+
+
+════════════════════════════════════════════════════════════════════════════════
+                        MAPA RÁPIDO POR OBJETIVO
+════════════════════════════════════════════════════════════════════════════════
+
+🎯 "Necesito entender de qué se trata en 5 minutos"
+   → RESUMEN_VISUAL_LEE_ESTO.txt
+
+🎯 "Necesito justificar esto con directivos"
+   → PROPUESTA_EJECUTIVA_SAAS.md
+
+🎯 "Necesito conocer la arquitectura técnica profunda"
+   → ARQUITECTURA_SAAS_COMPLETA.md
+
+🎯 "Quiero empezar a codear AHORA"
+   → IMPLEMENTACION_PASO_1_SETUP.md
+
+🎯 "Necesito un plan semanal"
+   → PROPUESTA_EJECUTIVA_SAAS.md → Sección "Plan Faseado"
+
+🎯 "¿Cuáles son los riesgos?"
+   → PROPUESTA_EJECUTIVA_SAAS.md + ARQUITECTURA_SAAS_COMPLETA.md
+
+🎯 "¿Cuánto cuesta?"
+   → RESUMEN_VISUAL_LEE_ESTO.txt + PROPUESTA_EJECUTIVA_SAAS.md
+
+🎯 "¿Cuántas personas necesito?"
+   → PROPUESTA_EJECUTIVA_SAAS.md
+
+🎯 "¿Cuánto tiempo toma?"
+   → RESUMEN_VISUAL_LEE_ESTO.txt (fases visuales)
+
+🎯 "¿Cómo está organizado el código?"
+   → ARQUITECTURA_SAAS_COMPLETA.md → Sección "Estructura de Carpetas"
+
+
+════════════════════════════════════════════════════════════════════════════════
+                        TAMAÑO Y COMPLEJIDAD
+════════════════════════════════════════════════════════════════════════════════
+
+Document                      │ Tamaño    │ Nivel      │ Tiempo lectura
+──────────────────────────────────────────────────────────────────────
+RESUMEN_VISUAL                │ 3-4 KB    │ Básico     │ 5-10 min
+PROPUESTA_EJECUTIVA           │ 40 KB     │ Intermedio │ 15-25 min
+ARQUITECTURA_SAAS_COMPLETA    │ 80 KB     │ Avanzado   │ 30-45 min
+IMPLEMENTACION_PASO_1         │ 25 KB     │ Práctico   │ 45 min ejecución
+                              │           │            │ 15 min lectura
+
+
+════════════════════════════════════════════════════════════════════════════════
+                    CHECKLIST DE IMPLEMENTACIÓN
+════════════════════════════════════════════════════════════════════════════════
+
+SEMANA 1-2: SETUP
+    ☐ Leer IMPLEMENTACION_PASO_1_SETUP.md
+    ☐ Verificar Node.js instalado
+    ☐ Crear Firebase project
+    ☐ npm create vite@latest
+    ☐ Configurar Tailwind
+    ☐ Conectar Firebase
+    ☐ npm run dev funcionando
+    ☐ Commit inicial a git
+
+SEMANA 3-4: AUTH
+    ☐ Esperar IMPLEMENTACION_PASO_2_AUTH.md
+    ☐ Implementar login page
+    ☐ Implementar register
+    ☐ Google Sign-In
+    ☐ Testing de auth flows
+
+SEMANA 5-6: CORE
+    ☐ Esperar IMPLEMENTACION_PASO_3_DASHBOARD.md
+    ☐ Dashboard layout
+    ☐ Perfil de usuario
+    ☐ Estadísticas básicas
+
+SEMANA 7-8: PRODUCTOS
+    ☐ Esperar IMPLEMENTACION_PASO_4_PRODUCTOS.md
+    ↳ Integración de cada producto
+
+SEMANA 9-10: DEPLOY
+    ☐ Esperar IMPLEMENTACION_PASO_5_DEPLOY.md
+    ↳ Testing + deployment
+
+
+════════════════════════════════════════════════════════════════════════════════
+                    CÓMO HACER PREGUNTAS SOBRE ESTOS DOCS
+════════════════════════════════════════════════════════════════════════════════
+
+Si tienes dudas sobre:
+
+"Entiendo el plan pero tengo una pregunta de arquitectura"
+    → Pregunta en contexto de ARQUITECTURA_SAAS_COMPLETA.md
+
+"Voy en Paso 1 y me atasco"
+    → Dice qué falla exactamente (línea de código, error, etc)
+
+"¿Esto que dice en el doc?" o "¿Por qué se hace así?"
+    → Copias la frase exacta y preguntas
+
+"Quiero cambiar algo"
+    → Desc qué y por qué, haremos un análisis de impacto
+
+"¿Esto es mucho de código?"
+    → No es pseudocode - es código real, copiar-pegar funciona
+
+
+════════════════════════════════════════════════════════════════════════════════
+                        DOCUMENTOS NO GENERADOS AÚN
+════════════════════════════════════════════════════════════════════════════════
+
+Se generarán CUANDO PIDAS o CUANDO LLEGUES A ESA FASE:
+
+🔔 IMPLEMENTACION_PASO_2_AUTH.md
+   → Cuándo: Cuando termines Paso 1 y digas "OK, siguiente"
+   → Durará: ~30-40KB
+
+🔔 IMPLEMENTACION_PASO_3_DASHBOARD.md
+   → Cuándo: Cuando termines Paso 2 y tengas auth funcionando
+   → Durará: ~30-40KB
+
+🔔 IMPLEMENTACION_PASO_4_PRODUCTOS.md
+   → Cuándo: Cuando necesites integrar INEVAL-PRO, Minduc, etc.
+   → Durará: ~50-60KB (mayor complejidad)
+
+🔔 IMPLEMENTACION_PASO_5_DEPLOY.md
+   → Cuándo: Cuando todo esté listo para producción
+   → Durará: ~20-25KB
+
+🔔 TROUBLESHOOTING_GUIA.md
+   → Cuándo: Si encuentras problemas durante implementación
+   → Contenido: Soluciones a problemas comunes
+
+🔔 FIREBASE_ADMIN_GUIDE.md
+   → Cuándo: Para configuraciones avanzadas de Firebase
+   → Contenido: Cloud Functions, reglas de seguridad, triggers
+
+
+════════════════════════════════════════════════════════════════════════════════
+                        REGLAS DE ORO
+════════════════════════════════════════════════════════════════════════════════
+
+1. NO SALTES PASOS
+   Si quieres Dashboard (Paso 3) antes de terminar Auth (Paso 2),
+   el proyecto no funcionará. Sigue el orden.
+
+2. LEER COMPLETO ANTES DE EMPEZAR
+   No hagas "leo línea 1, empiezo a codear". Lee el documento completo.
+
+3. COMMIT A GIT DESPUÉS DE CADA PASO
+   Si algo se rompe, puedes volver atrás.
+
+4. PREGUNTAS ESPECÍFICAS > PREGUNTAS GENÉRICAS
+   "No funciona" ❌
+   "npm run dev da error X en línea Y" ✅
+
+5. ACTUALIZA ESTA DOCUMENTACIÓN
+   Si encuentras errores o mejoras, dilo.
+
+6. NO SALTES A MONGODB O POSTGRES
+   Firebase es suficiente. Si después quieres cambiar, lo hacemos.
+
+7. VERIFICA CADA PASO LOCALMENTE
+   npm run dev debe funcionar después de cada paso.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                        CONTACTO Y SOPORTE
+════════════════════════════════════════════════════════════════════════════════
+
+Durante la implementación:
+
+📧 Preguntas de arquitectura
+   → Manda el documento + pregunta específica
+
+📧 Preguntas de código
+   → Copia el error exacto + qué intentabas hacer
+
+📧 Preguntas de timeline/recursos
+   → Ver PROPUESTA_EJECUTIVA_SAAS.md sección "Plan"
+
+📧 Problemas técnicos no previstos
+   → Describe: SO, versión node, qué hacías, error completo
+
+
+════════════════════════════════════════════════════════════════════════════════
+                        PRÓXIMOS PASOS
+════════════════════════════════════════════════════════════════════════════════
+
+ACCIÓN INMEDIATA (Ahora):
+1. Lee RESUMEN_VISUAL_LEE_ESTO.txt (5 min)
+2. Decide: ¿Apruebas esta arquitectura?
+
+SI NO APRUEBAS:
+3. Dile qué cambios necesitas
+4. Generamos propuesta revisada
+
+SI APRUEBAS:
+3. Lee PROPUESTA_EJECUTIVA_SAAS.md (20 min)
+4. Aprueba con dirección si es necesario
+5. Prepara equipo de desarrollo
+
+CUANDO ESTÉ LISTO EL EQUIPO:
+6. Siguen IMPLEMENTACION_PASO_1_SETUP.md paso a paso
+7. Reporta cuando npm run dev funcione ✅
+8. Pido siguiente documento
+
+CADA VEZ QUE TERMINES UN PASO:
+9. Commit a git
+10. Dice "Paso X completo, siguiente"
+11. Creo el próximo documento
+
+
+════════════════════════════════════════════════════════════════════════════════
+
+🎯 DECISIÓN FINAL:
+¿Leemos RESUMEN_VISUAL primero o tienes preguntas antes?
+
+════════════════════════════════════════════════════════════════════════════════

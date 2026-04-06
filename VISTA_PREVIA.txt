@@ -1,0 +1,229 @@
+================================================================================
+                    VISTA PREVIA - TIENDA VIRTUAL ONLINE
+================================================================================
+
+ESTRUCTURA DEL SITIO ACTUALIZADO:
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                              NAVBAR (FIJO)                                  │
+│  Logo | Inicio | Productos ⭐ | Demo en Vivo ⭐ | Características | FAQ    │
+│                         [Ver Tienda] (Botón)                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+                              ⬇️ SCROLL DOWN ⬇️
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        SECCIÓN: HERO (Inicio)                               │
+│  "Automatiza tu navegador al máximo"                                        │
+│  [Ir a Tienda] [Ver más]                                                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+                              ⬇️ SCROLL DOWN ⬇️
+
+╔═════════════════════════════════════════════════════════════════════════════╗
+║                    SECCIÓN: TIENDA VIRTUAL (#productos)                    ║
+║                        "Nuestros Productos"                                 ║
+├─────────────────────────────────────────┬─────────────────────────────────┤
+║                                         │                                 ║
+║    ╔─────────────────────────────────╗  │  ╔─────────────────────────╗   ║
+║    ║  📊 INEVAL-PRO                  ║  │  ║  ⚡ SOFTPLUGIN PRO      ║   ║
+║    ║       [Simulador]               ║  │  ║    [Extensión]         ║   ║
+║    ║                                 ║  │  ║                        ║   ║
+║    ║ Simulador interactivo para      ║  │  ║ Plugin revolucionario  ║   ║
+║    ║ prepararse en evaluaciones.     ║  │  ║ para automatizar.      ║   ║
+║    ║                                 ║  │  ║                        ║   ║
+║    ║ ✓ Miles de preguntas            ║  │  ║ ✓ Automatización       ║   ║
+║    ║ ✓ Análisis detallado            ║  │  ║ ✓ Compatible Chromium  ║   ║
+║    ║ ✓ Acceso desde cualquier lugar  ║  │  ║ ✓ 100% Seguro          ║   ║
+║    ║ ✓ Interfaz intuitiva            ║  │  ║ ✓ Soporte 24/7         ║   ║
+║    ║                                 ║  │  ║                        ║   ║
+║    ║    [Acceder a INEVAL-PRO] →    ║  │  ║   [Instalar Extensión] ║   ║
+║    ║    https://ineval-pro.web.app  ║  │  ║   https://chromewebst.  ║   ║
+║    ╚─────────────────────────────────╝  │  ╚─────────────────────────╝   ║
+║                                         │                                 ║
+║     (Color: Gradiente Primario)        │    (Color: Gradiente Acento)    ║
+└─────────────────────────────────────────┴─────────────────────────────────┘
+
+                              ⬇️ SCROLL DOWN ⬇️
+
+╔═════════════════════════════════════════════════════════════════════════════╗
+║                    SECCIÓN: DEMO EN VIVO (#live)                           ║
+║                  "Prueba nuestros productos ahora"                          ║
+├─────────────────────────────────────────┬─────────────────────────────────┤
+║                                         │                                 ║
+║    ┌─────────────────────────────────┐  │  ┌─────────────────────────┐   ║
+║    │  ▶️  INEVAL-PRO                 │  │  │  ▶️  SOFTPLUGIN PRO    │   ║
+║    │      Simulador en Vivo          │  │  │      Extensión en Vivo │   ║
+║    │                                 │  │  │                        │   ║
+║    │ Practica con miles de preguntas │  │  │ Automatiza tus tareas  │   ║
+║    │ y recibe análisis.              │  │  │ diarias directamente.  │   ║
+║    │                                 │  │  │                        │   ║
+║    │      [Acceder Ahora] →          │  │  │     [Instalar Ahora]  │   ║
+║    │      https://ineval-pro.web.app │  │  │     https://chromeest. │   ║
+║    └─────────────────────────────────┘  │  └─────────────────────────┘   ║
+║                                         │                                 ║
+└─────────────────────────────────────────┴─────────────────────────────────┘
+
+                              ⬇️ SCROLL DOWN ⬇️
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                  SECCIÓN: CARACTERÍSTICAS (#caracteristicas)                │
+│  "Todo lo que necesitas en un solo plugin"                                  │
+│  [Grid de 6 características]                                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+                              ⬇️ SCROLL DOWN ⬇️
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         SECCIÓN: SOPORTE (#soporte)                         │
+│  "¿Necesitas ayuda?"                                                        │
+│  [WhatsApp] [Email] [Contactar Asesor]                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+                              ⬇️ SCROLL DOWN ⬇️
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                       SECCIÓN: CONTACTO (#contacto)                         │
+│  "Envíanos un mensaje"                                                      │
+│  [Formulario de contacto]                                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+                              ⬇️ SCROLL DOWN ⬇️
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          SECCIÓN: FAQ (#faq)                                │
+│  "Preguntas frecuentes"                                                     │
+│  [Accordion con 6 preguntas]                                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+                              ⬇️ SCROLL DOWN ⬇️
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                      CALL-TO-ACTION FINAL                                   │
+│  "¿Listo para automatizar tu navegador?"                                    │
+│  [Ir a Tienda] [Hablar con un Asesor]                                       │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+                              ⬇️ SCROLL DOWN ⬇️
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                              FOOTER                                         │
+│  Logo | Enlaces | Soporte | Contacto                                       │
+│  [WhatsApp Flotante: esquina inferior derecha]                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+================================================================================
+                            CAMBIOS PRINCIPALES
+================================================================================
+
+1. NAVBAR ACTUALIZADA ✅
+   • Agregado: "Productos" → #productos
+   • Agregado: "Demo en Vivo" → #live
+   • Botón CTA cambió de "Descargar Gratis" a "Ver Tienda"
+
+2. NUEVA SECCIÓN: TIENDA VIRTUAL ✅
+   • Ubicación: Línea 295 en index.html
+   • Dos tarjetas de productos elegantes
+   • Colores diferenciados (Primario vs Acento)
+   • Links directos a cada producto
+   • Efectos hover interactivos
+
+3. NUEVA SECCIÓN: DEMO EN VIVO ✅
+   • Ubicación: Línea 464 en index.html
+   • Previsualizaciones de cada producto
+   • Acceso directo a ambas plataformas
+   • Diseño tipo "showcase"
+
+4. FOOTER ACTUALIZADO ✅
+   • Nuevos enlaces en sección "Enlaces"
+   • Removidos links a "Descarga"
+
+5. CTA PRINCIPAL ACTUALIZADO ✅
+   • Hero button ahora apunta a #productos (Tienda)
+   • Flujo mejorado: Hero → Tienda → Productos
+
+================================================================================
+                              CARACTERÍSTICAS
+================================================================================
+
+INEVAL-PRO:
+  👉 Miles de preguntas actualizadas
+  👉 Análisis detallado de resultados
+  👉 Acceso desde cualquier dispositivo
+  👉 Interfaz intuitiva y moderna
+  
+  URL: https://ineval-pro.web.app
+
+SOFTPLUGIN PRO:
+  👉 Automatización inteligente
+  👉 Compatible con todos los Chromium
+  👉 100% Seguro y con privacidad
+  👉 Soporte dedicado 24/7
+  
+  URL: https://chromewebstore.google.com/detail/pjdakeeclfpkheobgmenlonbbpmokbbh
+
+================================================================================
+                            MOBILE RESPONSIVE
+================================================================================
+
+En dispositivos móviles (< 768px):
+• Grid de 1 columna (en lugar de 2)
+• Tarjetas se apilan verticalmente
+• Todos los controles funcionales
+• Menú hamburguesa accesible
+• Botones con tamaño óptimo para touch
+
+================================================================================
+                              COLORES USADOS
+================================================================================
+
+Primario (INEVAL-PRO):    #6366f1 (Indigo) → #8b5cf6 (Purple)
+Acento (SoftPlugin):       #8b5cf6 (Purple) → #0ea5e9 (Cyan)
+Fondo Oscuro:             #0f172a
+Fondo Secundario:         #1e293b
+Texto:                    Blanco / Gris
+
+================================================================================
+                            ✨ DISEÑO ELEGANTE ✨
+================================================================================
+
+• Glassmorphism (backdrop blur)
+• Gradientes suaves
+• Sombras elevadas en hover
+• Animaciones fluidas (Intersection Observer)
+• Espaciado profesional
+• Tipografía moderna (Inter)
+• Iconografía coherente
+
+================================================================================
+                            PRÓXIMOS PASOS
+================================================================================
+
+1. Prueba en el navegador:
+   Abre: index.html en tu navegador
+   
+2. Navega por todas las secciones:
+   • Inicio → Productos → Demo → Características → etc
+   
+3. Prueba los links:
+   • Haz clic en los botones CTA
+   • Verifica que abren en las URLs correctas
+   
+4. Prueba en móvil:
+   • Responsive design
+   • Menú hamburguesa
+   
+5. Envía a tus clientes:
+   • El sitio está listo para producción
+   • Todos los links funcionan
+   • Diseño profesional y productivo
+
+================================================================================
+                        ¡PROYECTO COMPLETADO! ✅
+================================================================================
+
+La tienda virtual online de SoftPlugin Pro está completamente estructurada,
+elegante y lista para atraer y convertir clientes a tus dos productos.
+
+Última actualización: 28 de marzo de 2026
+Versión: 2.0 (Con tienda virtual integrada)

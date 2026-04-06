@@ -1,0 +1,411 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║              🖼️ GUÍA VISUAL — DÓNDE CLIQUEAR EN GITHUB 🖼️                    ║
+║                    Configuración GitHub Pages Paso a Paso                      ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+
+════════════════════════════════════════════════════════════════════════════════
+                   PASO 1: SETTINGS → PAGES
+════════════════════════════════════════════════════════════════════════════════
+
+En GitHub: https://github.com/fabiancacuango1-dev/fismatt-store
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                               │
+│  Code    Pull requests    Discussions    Actions  ← AQUÍ VERÁS EL DEPLOY    │
+│                                                                               │
+│  [☰] Settings  ← CLIQUEA AQUÍ                                               │
+│                                                                               │
+│                                                                               │
+│  SIDEBAR IZQUIERDO:                                                          │
+│  ────────────────────                                                        │
+│  • General                                                                   │
+│  • Collaborators                                                             │
+│  • Security                                                                  │
+│  • Code security and analysis                                               │
+│  • Branches                                                                  │
+│  • Webhooks                                                                  │
+│  • Deploy keys                                                               │
+│  • Environments                                                              │
+│  • Pages  ← CLIQUEA AQUÍ                                                    │
+│  • Integrations                                                              │
+│  • Actions → General                                                         │
+│                                                                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+QUÉ HACER:
+─────────
+1. Haz clic en Settings (esquina superior derecha)
+2. En el sidebar izquierdo, busca "Pages"
+3. Haz clic en "Pages"
+
+
+════════════════════════════════════════════════════════════════════════════════
+           PASO 2: EN PAGES — CAMBIAR SOURCE A "GITHUB ACTIONS"
+════════════════════════════════════════════════════════════════════════════════
+
+Una vez en Pages, verás:
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                               │
+│  Pages                                                                       │
+│  ─────────────────────────────────────────────────────────────────────────  │
+│                                                                               │
+│  GitHub Pages                                                                │
+│                                                                               │
+│  Build and deployment                                                        │
+│  ───────────────────────                                                     │
+│                                                                               │
+│  Source:  [Dropdown ▼]  ← CLIQUEA AQUÍ                                      │
+│                                                                               │
+│           • Deploy from a branch                                             │
+│           • GitHub Actions                  ← SELECCIONA ESTO                │
+│                                                                               │
+│  [Selección actual: GitHub Actions] ✅                                       │
+│                                                                               │
+│  ───────────────────────────────────────────────────────────────────────────│
+│                                                                               │
+│  Custom domain:                                                              │
+│  ───────────────                                                             │
+│  [ fis-matt.com  ]  ← OPCIONAL (si tienes dominio personalizado)            │
+│  [ Save ]                                                                    │
+│                                                                               │
+│  ───────────────────────────────────────────────────────────────────────────│
+│                                                                               │
+│  HTTPS:  [ ✓ Enforce HTTPS ]                                               │
+│                                                                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+QUÉ HACER:
+─────────
+1. En "Build and deployment" → Source
+2. Selecciona "GitHub Actions"
+3. (Automáticamente se guarda)
+4. Si usas dominio personalizado:
+   - Agrega fis-matt.com
+   - Haz clic en Save
+   - Habilita "Enforce HTTPS"
+
+
+════════════════════════════════════════════════════════════════════════════════
+         PASO 3: VER WORKFLOW EN ACTIONS
+════════════════════════════════════════════════════════════════════════════════
+
+Ve a la pestaña "Actions": https://github.com/fabiancacuango1-dev/fismatt-store/actions
+
+QUÉ VAS A VER:
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                               │
+│  Actions                                                                     │
+│  ─────────────────────────────────────────────────────────────────────────  │
+│                                                                               │
+│  WORKFLOWS (en la izquierda):                                                │
+│  ──────────────────────────────                                              │
+│  ✓ Deploy a GitHub Pages      ← AQUÍ APARECE TU WORKFLOW                    │
+│                                                                               │
+│  RECENT COMMITS (en la izquierda):                                           │
+│  ──────────────────────────────────                                          │
+│  Add GitHub Actions deploy workflow                                          │
+│  Add og-image.png                                                            │
+│  Initial commit                                                              │
+│                                                                               │
+│  ───────────────────────────────────────────────────────────────────────────│
+│                                                                               │
+│  JOBS (en el centro):                                                        │
+│  ───────────────────                                                         │
+│  Deploy a GitHub Pages  ✅ 2 min (timestamp)                                │
+│                                                                               │
+│  [Haz clic para ver detalles]                                                │
+│                                                                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+QUÉ VAS A VER DESPUÉS DE CADA PUSH:
+
+ESTADO EN PROGRESO:  🟡
+  Deploy a GitHub Pages (in progress)
+
+ESTADO EXITOSO:      ✅ 
+  Deploy a GitHub Pages  [✓ Success]  2 minutes
+
+ESTADO FALLIDO:      ❌
+  Deploy a GitHub Pages  [✗ Failed]   click for logs
+
+SI ALGO FALLA:
+─────────────
+Haz clic en el job fallido:
+→ Verás los pasos:
+   [✓] Checkout
+   [✓] Setup Pages
+   [✗] Upload artifact  ← AQUÍ FALLÓ
+   [ ] Deploy to GitHub Pages
+
+Haz clic en el paso fallido → Ver error exacto
+
+
+════════════════════════════════════════════════════════════════════════════════
+              PASO 4: VERIFICAR CNAME (SI USAS DOMINIO PERSONALIZADO)
+════════════════════════════════════════════════════════════════════════════════
+
+Después de habilitar dominio personalizado, GitHub crea automáticamente
+un archivo CNAME que debe estar en tu repo.
+
+DÓNDE VER:
+
+En tu repo principal:
+  https://github.com/fabiancacuango1-dev/fismatt-store
+
+Archivos visibles:
+  • .github/
+    ├── workflows/
+    │   └── deploy.yml
+  • CNAME                  ← DEBE ESTAR AQUÍ (lo crea GitHub automático)
+  • index.html
+  • css/
+  • js/
+  • assets/
+  • README.md
+
+QUÉ CONTIENE CNAME:
+───────────────────
+$ cat CNAME
+fis-matt.com
+
+(Solo una línea con tu dominio)
+
+
+════════════════════════════════════════════════════════════════════════════════
+              PASO 5: CONFIGURAR DNS EN TU REGISTRADOR
+════════════════════════════════════════════════════════════════════════════════
+
+Si usas fis-matt.com, debes configurar DNS donde compraste el dominio.
+
+EJEMPLO: GoDaddy (otros registradores son parecidos)
+
+1. Ve a https://www.godaddy.com (login)
+2. Busca tu dominio en "My Products"
+3. Haz clic en "DNS" o "Manage DNS"
+
+Ahí verás algo así:
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                               │
+│  DNS Management                                                              │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│                                                                               │
+│  Records:                                                                    │
+│  ───────                                                                     │
+│                                                                               │
+│  Type    Name           Value              TTL                              │
+│  ─────   ────           ─────              ───                              │
+│  A       @              12.34.56.78        3600      [edit]  [delete]      │
+│  A       www            12.34.56.78        3600      [edit]  [delete]      │
+│                                                                               │
+│  [+ Add Record]                                                              │
+│                                                                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+QUÉ HACER:
+
+OPCIÓN A (RECOMENDADO - CNAME):
+────────────────────────────────
+Edita o crea un registro CNAME:
+
+Type:   CNAME
+Name:   www (o "www.fis-matt.com")
+Value:  fabiancacuango1-dev.github.io
+TTL:    1800 o 3600
+
+Y crea otro CNAME para @:
+
+Type:   CNAME
+Name:   @ (deixa en blanco o "@")
+Value:  fabiancacuango1-dev.github.io
+TTL:    1800 o 3600
+
+
+OPCIÓN B (SI CNAME NO FUNCIONA - USAR A RECORDS):
+──────────────────────────────────────────────────
+Edita los registros A existentes:
+
+Para raíz (@):
+Type:   A
+Name:   @ (raíz)
+Value:  185.199.110.153
+
+Agrega más:
+Type:   A
+Name:   @ (raíz)
+Value:  185.199.111.153
+
+Type:   A
+Name:   @ (raíz)
+Value:  185.199.112.153
+
+Type:   A
+Name:   @ (raíz)
+Value:  185.199.113.153
+
+
+GUARDAR Y ESPERAR:
+──────────────────
+1. Lee los cambios en tu registrador
+2. GitHub Pages también verifica (automático)
+3. Espera 24-48 horas máximo
+4. Verifica en Settings → Pages que el dominio sea "fis-matt.com"
+
+
+════════════════════════════════════════════════════════════════════════════════
+              PASO 6: VERIFICAR QUE FUNCIONA
+════════════════════════════════════════════════════════════════════════════════
+
+OPCIÓN 1: Ver en Actions que deploy fue exitoso
+
+https://github.com/fabiancacuango1-dev/fismatt-store/actions
+
+Busca "Deploy a GitHub Pages" y verifica que tiene ✅
+
+OPCIÓN 2: Abrir tu sitio en navegador
+
+Si usas GitHub Pages estándar:
+   https://fabiancacuango1-dev.github.io/fismatt-store/
+
+Si usas dominio personalizado (después de 24 horas):
+   https://fis-matt.com/
+
+OPCIÓN 3: Abrir DevTools y verificar que no hay errores
+
+1. Abre tu sitio en navegador
+2. Presiona F12 (DevTools)
+3. Ve a pestaña "Console"
+4. NO debe haber errores 404 en:
+   - GET css/styles.css
+   - GET js/main.js
+   - GET assets/img/*
+
+
+════════════════════════════════════════════════════════════════════════════════
+                    🎬 FLUJO VISUAL DEL DEPLOY AUTOMÁTICO
+════════════════════════════════════════════════════════════════════════════════
+
+LOCAL (Tu máquina):
+──────────────────
+
+┌─ Terminal ─────────────────────────────────────┐
+│                                                 │
+│ $ nano index.html                               │
+│ (haces cambios)                                 │
+│                                                 │
+│ $ git add .                                     │
+│ $ git commit -m "Cambios"                       │
+│ $ git push                                      │
+│ ↓                                               │
+└─────────────────────────────────────────────────┘
+                      ↓
+                      ↓
+GITHUB (Automático instantáneamente):
+────────────────────────────────────
+
+┌─ Repositorio ──────────────────────────────────┐
+│                                                 │
+│ Recibe: git push                                │
+│         ↓                                       │
+│ Detecta: rama main + .github/workflows/         │
+│         ↓                                       │
+│ Ejecuta: deploy.yml                             │
+│         ├─ [✓] Checkout (1s)                  │
+│         ├─ [✓] Setup Pages (2s)               │
+│         ├─ [✓] Upload artifact (5s)           │
+│         └─ [✓] Deploy to GitHub Pages (10s)   │
+│                                                 │
+│ Resultado: Sitio publicado                      │
+│                                                 │
+└─────────────────────────────────────────────────┘
+                      ↓
+                      ↓
+ONLINE (1-2 minutos después):
+──────────────────────────────
+
+Tu sitio está actualizado:
+   https://fis-matt.com/
+   ✅ Con todos tus cambios
+
+
+════════════════════════════════════════════════════════════════════════════════
+                       ✅ CHECKLIST VISUAL
+════════════════════════════════════════════════════════════════════════════════
+
+En tu repositorio de GitHub:
+
+☐ Archivo .github/workflows/deploy.yml existe
+   Ve a: Code → el archivo debe estar visible
+
+☐ GitHub Pages activado
+   Ve a: Settings → Pages → Source: "GitHub Actions"
+
+☐ Custom domain configurado (si aplica)
+   Ve a: Settings → Pages → Custom domain: fis-matt.com
+
+☐ Deploy ejecutado exitosamente
+   Ve a: Actions → Deploy a GitHub Pages → ✅
+
+☐ Sitio online
+   Abre en navegador: https://fis-matt.com/
+   Verifica que se cargó correctamente
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          📱 QUÉ VES EN ACTIONS
+════════════════════════════════════════════════════════════════════════════════
+
+PRIMERA VEZ (deploy.yml acabada de agregar):
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Actions                                                                      │
+│                                                                              │
+│ Deploy a GitHub Pages                                                       │
+│                                                                              │
+│ commit: "Add GitHub Actions deploy workflow"                                │
+│                                                                              │
+│ Status:  🟢 SUCCESS (in ~2 minutes)                                         │
+│                                                                              │
+│ Jobs:                                                                        │
+│  [✓] deploy                                                                 │
+│      Checkout              ✓                                               │
+│      Setup Pages           ✓                                               │
+│      Upload artifact       ✓                                               │
+│      Deploy to GitHub Pages ✓                                              │
+│                                                                              │
+│ Conclusion: success ✅                                                      │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+DEPLOY FALLIDO (si algo va mal):
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Actions                                                                      │
+│                                                                              │
+│ Deploy a GitHub Pages                                                       │
+│                                                                              │
+│ Status:  🔴 FAILURE                                                         │
+│                                                                              │
+│ Jobs:                                                                        │
+│  [✓] Checkout                                                               │
+│  [✓] Setup Pages                                                            │
+│  [✗] Upload artifact   ← FALLA AQUÍ                                         │
+│      Error: index.html not found                                            │
+│                                                                              │
+│ Haz clic en "Upload artifact" para ver detalles del error                   │
+│                                                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+════════════════════════════════════════════════════════════════════════════════
+
+LISTO. Ahora sabes exactamente dónde cliquear en GitHub para configurar todo.
+
+Si algo no entiendes, vuelve a este documento y busca "PASO X".
+
+════════════════════════════════════════════════════════════════════════════════
+Creado: 29 de marzo de 2026
