@@ -1,26 +1,67 @@
+# FISMATT SYSTEMS — SEO Robots Configuration
+# Domain: https://fis-matt.com
+# Last Updated: 2026-04-06
+
+# ================================================
+# DEFAULT RULES - Allow all indexing
+# ================================================
 User-agent: *
 Allow: /
+Allow: /index.html
+Allow: /legal/
+Allow: /assets/img/
+Allow: /css/
+Allow: /js/
 Disallow: /assets/downloads/
 Disallow: /admin/
 Disallow: /private/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /config/
+Disallow: /*.json$
+Disallow: /*.md$
+Disallow: /.DS_Store
 
-Sitemap: https://fis-matt.com/sitemap.xml
-
-# Bots específicos
+# ================================================
+# GOOGLE SPECIFIC - Prioritize indexing
+# ================================================
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
+Allow: /legal/
+Allow: /assets/img/
+Crawl-delay: 0.5
+Request-rate: 5/1s
 
+# ================================================
+# BING SPECIFIC
+# ================================================
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
-User-agent: YandexBot
+# ================================================
+# OTHER SEARCH ENGINES
+# ================================================
+User-agent: Yandexbot
 Allow: /
 Crawl-delay: 2
 
-# Bloquear algunos bots problema
-User-agent: BadBot
+User-agent: baiduspider
+Allow: /
+Crawl-delay: 1
+
+# ================================================
+# BLOCK MALICIOUS/AGGRESSIVE BOTS
+# ================================================
+User-agent: MJ12bot
+Disallow: /
+
 User-agent: AhrefsBot
 User-agent: SemrushBot
+User-agent: DotBot
 Disallow: /
+
+# ================================================
+# CRITICAL: SITEMAP LOCATION FOR GOOGLE
+# ================================================
+Sitemap: https://fis-matt.com/sitemap.xml
