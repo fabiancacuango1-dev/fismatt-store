@@ -53,15 +53,15 @@
             </div>
 
             <!-- Download Button -->
-            <a href="javascript:descargar()" onclick="descargar(); return false;" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-all hover:shadow-lg mb-4 inline-block">
+            <a href="https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.0.0/ImportadorNotas-Setup.zip" onclick="descargar(); return false;" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-all hover:shadow-lg mb-4 inline-block">
                 ⬇️ Descargar Ahora (2.2 MB)
             </a>
 
             <!-- Alternative Link -->
-            <p class="text-sm text-gray-500 mb-4">o copia este enlace:</p>
+            <p class="text-sm text-gray-500 mb-4">o copia este enlace GitHub:</p>
             <div class="bg-gray-100 p-3 rounded-lg mb-6 break-all">
                 <code class="text-xs text-gray-700" id="link-copy">
-                    https://fis-matt.com/assets/downloads/ImportadorNotas-Setup.zip
+                    https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.0.0/ImportadorNotas-Setup.zip
                 </code>
             </div>
 
@@ -79,33 +79,34 @@
     </div>
 
     <script>
+        // URL segura desde GitHub Releases
+        const DOWNLOAD_URL = "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.0.0/ImportadorNotas-Setup.zip";
+        const FILENAME = "ImportadorNotas-Setup.zip";
+        
         function descargar() {
-            // Usar fetch para descargar de forma segura
-            fetch('/assets/downloads/ImportadorNotas-Setup.zip')
-                .then(response => response.blob())
-                .then(blob => {
-                    // Crear elemento invisible
-                    const url = window.URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = 'ImportadorNotas-Setup.zip';
-                    document.body.appendChild(a);
-                    a.click();
-                    window.URL.revokeObjectURL(url);
-                    a.remove();
-                })
-                .catch(err => {
-                    alert('Error en la descarga. Intenta de nuevo.');
-                    console.error(err);
-                });
+            // Crear link temporal para descarga
+            const a = document.createElement('a');
+            a.href = DOWNLOAD_URL;
+            a.download = FILENAME;
+            a.target = '_blank';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
         }
 
         function copiarLink() {
-            const link = document.getElementById('link-copy').textContent;
-            navigator.clipboard.writeText(link).then(() => {
-                alert('Enlace copiado al portapapeles ✅');
+            navigator.clipboard.writeText(DOWNLOAD_URL).then(() => {
+                alert('Enlace de GitHub copiado al portapapeles ✅\n\n' + DOWNLOAD_URL);
+            }).catch(() => {
+                alert('Error al copiar. Enlace:\n' + DOWNLOAD_URL);
             });
         }
+
+        // Auto-download ao cargar si viene de botón directo
+        window.addEventListener('load', function() {
+            // Permitir que el usuario haga clic una vez
+            document.getElementById('link-copy').textContent = DOWNLOAD_URL;
+        });
     </script>
 </body>
 </html>
