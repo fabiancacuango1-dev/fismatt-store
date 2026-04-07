@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    
+    <title>FISMATT SYSTEMS — Soluciones para Educadores | Minduc Ecuador</title>
+    <meta name="description" content="FISMATT SYSTEMS: Importador de Notas Minduc e INEVAL-PRO. Herramientas profesionales para docentes ecuatorianos. Gestiona calificaciones y evalúa desempeño docente.">
+    <meta name="keywords" content="minduc, importador notas, evaluación docente, ecuador, educación, simulador, desempeño docente 2026">
+    <meta name="author" content="FISMATT SYSTEMS">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fis-matt.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FISMATT SYSTEMS — Soluciones Educativas para Docentes">
+    <meta property="og:description" content="Herramientas profesionales para gestionar calificaciones Minduc, INEVAL-PRO y más. Diseñadas para docentes de Ecuador. 100% seguro y gratuito.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fis-matt.com/">
+    <meta property="og:image" content="assets/img/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FISMATT SYSTEMS — Soluciones Educativas">
+    <meta name="twitter:description" content="Importador Minduc, INEVAL-PRO, generador de horarios. Herramientas para docentes de Ecuador. 100% seguro y profesional.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        'primary-dark': '#1e3a8a',
+                        secondary: '#fbbf24',
+                        accent: '#006ba6',
+                        dark: '#0f172a',
+                        'dark-light': '#1e293b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "FISMATT SYSTEMS",
+        "url": "https://fis-matt.com",
+        "description": "Soluciones educativas profesionales para docentes de Ecuador. Herramientas para gestionar calificaciones Minduc, INEVAL-PRO y generación de horarios escolares.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "email": "rectores_federal09@icloud.com",
+            "telephone": "+593 983 274 499"
+        },
+        "areaServed": "EC",
+        "sameAs": [
+            "https://chromewebstore.google.com/detail/pjdakeeclfpkheobgmenlonbbpmokbbh"
+        ]
+    }
+    </script>
+</head>
+<body class="bg-dark text-white font-sans antialiased">
+
+    <!-- ============================================ -->
+    <!-- NAVBAR -->
+    <!-- ============================================ -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Logo -->
+                <a href="#inicio" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center shadow-lg shadow-primary/25 group-hover:shadow-primary/50 transition-shadow">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C6.5 6.253 2 10.998 2 17s4.5 10.747 10 10.747c5.5 0 10-4.998 10-10.747S17.5 6.253 12 6.253z"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">FISMATT SYSTEMS</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="#inicio" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Inicio</a>
+                    <a href="#productos" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Productos</a>
+                    <a href="#live" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Demo en Vivo</a>
+                    <a href="#caracteristicas" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Características</a>
+                    <a href="#soporte" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">Soporte</a>
+                    <a href="#faq" class="nav-link text-sm font-medium text-gray-300 hover:text-white transition-colors">FAQ</a>
+                    <a href="#productos" class="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-primary px-5 py-2.5 rounded-xl text-sm font-semibold transition-all hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5">
+                        Ver Tienda
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Abrir menú">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-dark-light/95 backdrop-blur-xl border-t border-white/5">
+            <div class="px-4 py-6 space-y-3">
+                <a href="#inicio" class="mobile-link block px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all">Inicio</a>
+                <a href="#productos" class="mobile-link block px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all">Productos</a>
+                <a href="#live" class="mobile-link block px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all">Demo en Vivo</a>
+                <a href="#caracteristicas" class="mobile-link block px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all">Características</a>
+                <a href="#soporte" class="mobile-link block px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all">Soporte</a>
+                <a href="#faq" class="mobile-link block px-4 py-3 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all">FAQ</a>
+                <a href="#productos" class="block text-center bg-gradient-to-r from-primary to-accent px-5 py-3 rounded-xl font-semibold mt-4">
+                    Ver Tienda
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================ -->
+    <!-- HERO SECTION -->
+    <!-- ============================================ -->
+    <section id="inicio" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 bg-gradient-to-br from-dark via-dark-light to-dark"></div>
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 2s;"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/5 rounded-full blur-3xl"></div>
+
+        <!-- Grid Pattern -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyem0wLTMwVjBoLTEydjRoMTJ6TTI0IDI0djJoMTJ2LTJIMjR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-50"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <!-- Text Content -->
+                <div class="text-center lg:text-left animate-fade-in">
+                    <div class="inline-flex items-center gap-2 bg-secondary/10 border border-secondary/20 rounded-full px-4 py-2 mb-6">
+                        <span class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
+                        <span class="text-sm text-secondary font-medium">Aprobado por Ministerio de Educación</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight mb-6">
+                        Optimiza tu gestión
+                        <span class="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent"> educativa</span>
+                        en Ecuador
+                    </h1>
+
+                    <div class="mb-6 p-4 bg-orange-500/10 border border-orange-500/20 rounded-xl">
+                        <p class="text-sm text-orange-300">
+                            <strong>⚠️ Aviso Importante:</strong> FISMATT SYSTEMS es un proyecto independiente. Nuestras herramientas <strong>no son oficiales</strong> ni están afiliadas con el Ministerio de Educación, INEVAL o sistemas educativos gubernamentales.
+                        </p>
+                    </div>
+
+                    <p class="text-lg sm:text-xl text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
+                        FISMATT SYSTEMS: Importador de Notas Minduc e INEVAL-PRO. Herramientas profesionales diseñadas para docentes del Ministerio de Educación. Gestiona calificaciones, evalúa desempeño y mejora tu experiencia con los sistemas educativos ecuatorianos.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
+                        <a href="#productos" class="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-primary px-8 py-4 rounded-2xl text-lg font-bold transition-all hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-1">
+                            <svg class="w-6 h-6 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Ver Tienda
+                        </a>
+                        <a href="#caracteristicas" class="inline-flex items-center justify-center gap-2 border border-white/10 hover:border-white/25 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-white/5 transition-all">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Ver más
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-6 max-w-md mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">+1000</div>
+                            <div class="text-xs sm:text-sm text-gray-500 mt-1">Docentes activos</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">100%</div>
+                            <div class="text-xs sm:text-sm text-gray-500 mt-1">Seguro</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">2026</div>
+                            <div class="text-xs sm:text-sm text-gray-500 mt-1">Actualizado</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image / Mockup -->
+                <div class="relative animate-fade-in-up hidden lg:block">
+                    <div class="relative">
+                        <!-- Glow Effect -->
+                        <div class="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-secondary/20 rounded-3xl blur-2xl"></div>
+
+                        <!-- Browser Mockup -->
+                        <div class="relative bg-dark-light/80 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
+                            <!-- Browser Top Bar -->
+                            <div class="flex items-center gap-2 px-4 py-3 border-b border-white/5">
+                                <div class="flex gap-1.5">
+                                    <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                                    <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                                    <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                                </div>
+                                <div class="flex-1 mx-4">
+                                    <div class="bg-white/5 rounded-lg px-4 py-1.5 text-xs text-gray-500 text-center">
+                                        chrome-extension://fismatt-systems-v1
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Plugin Preview Content -->
+                            <div class="p-8">
+                                <div class="space-y-4">
+                                    <div class="flex items-center gap-3 mb-6">
+                                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-bold text-white">FISMATT SYSTEMS</h3>
+                                            <p class="text-xs text-gray-400">v1.0 — Activo</p>
+                                        </div>
+                                        <div class="ml-auto w-12 h-6 bg-green-500/20 rounded-full flex items-center justify-end px-1">
+                                            <div class="w-5 h-5 bg-green-500 rounded-full"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-3">
+                                        <div class="flex items-center justify-between p-3 bg-white/5 rounded-xl">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center">
+                                                    <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="text-sm text-gray-300">Automatización activa</span>
+                                            </div>
+                                            <span class="text-xs text-green-400 font-medium">Running</span>
+                                        </div>
+                                        <div class="flex items-center justify-between p-3 bg-white/5 rounded-xl">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-8 h-8 bg-accent/20 rounded-lg flex items-center justify-center">
+                                                    <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="text-sm text-gray-300">Tareas completadas</span>
+                                            </div>
+                                            <span class="text-xs text-accent font-medium">1,247</span>
+                                        </div>
+                                        <div class="flex items-center justify-between p-3 bg-white/5 rounded-xl">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-8 h-8 bg-secondary/20 rounded-lg flex items-center justify-center">
+                                                    <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="text-sm text-gray-300">Tiempo ahorrado</span>
+                                            </div>
+                                            <span class="text-xs text-secondary font-medium">48h</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PRODUCTS / TIENDA VIRTUAL -->
+    <!-- ============================================ -->
+    <section id="productos" class="relative py-24 lg:py-32">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark to-dark-light/30"></div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyem0wLTMwVjBoLTEydjRoMTJ6TTI0IDI0djJoMTJ2LTJIMjR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-30"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20 scroll-animate">
+                <span class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-4">Soluciones Educativas</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                    Nuestros
+                    <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Productos</span>
+                </h2>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    Descubre nuestras soluciones innovadoras diseñadas para mejorar tu productividad y experiencia.
+                </p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid md:grid-cols-3 gap-8 lg:gap-10 mb-16">
+                <!-- Product 1: INEVAL-PRO Simulator -->
+                <div class="group scroll-animate relative h-full">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                    <div class="relative h-full bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-3xl overflow-hidden hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 flex flex-col">
+                        <!-- Product Header -->
+                        <div class="relative h-64 bg-gradient-to-br from-primary/20 to-accent/10 overflow-hidden">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="w-24 h-24 mx-auto bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center shadow-2xl shadow-primary/30 mb-4">
+                                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                        </svg>
+                                    </div>
+                                    <span class="inline-block bg-primary/20 border border-primary/30 rounded-full px-4 py-1 text-xs font-semibold text-primary">Simulador</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Info -->
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-2">INEVAL-PRO</h3>
+                            <div class="mb-3 inline-block bg-blue-500/10 border border-blue-500/30 rounded-lg px-3 py-1">
+                                <span class="text-xs text-blue-400 font-semibold">⚠️ Herramienta Independiente</span>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-6 leading-relaxed flex-grow">
+                                Simulador interactivo <strong>independiente</strong> para practicar evaluaciones académicas. Herramienta educativa completa con miles de preguntas de práctica y análisis de desempeño. <em>No es la aplicación oficial del INEVAL.</em>
+                            </p>
+
+                            <!-- Features -->
+                            <div class="space-y-3 mb-8">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-300">Miles de preguntas actualizadas</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-300">Análisis detallado de resultados</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-300">Acceso desde cualquier dispositivo</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-300">Interfaz intuitiva y moderna</span>
+                                </div>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="https://ineval-pro.web.app" target="_blank" rel="noopener noreferrer" class="group/btn w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-primary px-6 py-3.5 rounded-xl font-semibold transition-all hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5 text-center">
+                                Acceder a INEVAL-PRO
+                                <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: FISMATT SYSTEMS Extension -->
+                <div class="group scroll-animate relative h-full">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-accent/20 to-secondary/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                    <div class="relative h-full bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-3xl overflow-hidden hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 flex flex-col">
+                        <!-- Product Header -->
+                        <div class="relative h-64 bg-gradient-to-br from-secondary/20 to-primary/10 overflow-hidden">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="w-24 h-24 mx-auto bg-gradient-to-br from-secondary to-primary rounded-2xl flex items-center justify-center shadow-2xl shadow-secondary/30 mb-4">
+                                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                        </svg>
+                                    </div>
+                                    <span class="inline-block bg-secondary/20 border border-secondary/30 rounded-full px-4 py-1 text-xs font-semibold text-secondary">Extensión Chrome</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Info -->
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-2">Importador de Notas Minduc</h3>
+                            <div class="mb-3 inline-block bg-yellow-500/10 border border-yellow-500/30 rounded-lg px-3 py-1">
+                                <span class="text-xs text-yellow-400 font-semibold">⚠️ Herramienta Independiente</span>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-6 leading-relaxed flex-grow">
+                                Extensión Chrome <strong>independiente</strong> que facilita la gestión de calificaciones. Automatiza el ingreso de notas en flujos de trabajo educativos. <em>No está afiliado ni autorizado por el Ministerio de Educación.</em> Compatible con Minduc Ecuador.
+                            </p>
+
+                            <!-- Features -->
+                            <div class="space-y-3 mb-8">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 bg-secondary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-300">Importación rápida de calificaciones</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 bg-secondary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-300">Compatible con Minduc Ecuador</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 bg-secondary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-300">Datos protegidos y encriptados</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 bg-secondary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-300">Soporte técnico especializado</span>
+                                </div>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="https://chromewebstore.google.com/detail/pjdakeeclfpkheobgmenlonbbpmokbbh" target="_blank" rel="noopener noreferrer" class="group/btn w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-secondary to-primary hover:from-secondary hover:to-secondary px-6 py-3.5 rounded-xl font-semibold transition-all hover:shadow-lg hover:shadow-secondary/25 hover:-translate-y-0.5 text-center">
+                                Instalar en Chrome
+                                <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: EduHorarios AI -->
+                <div class="group scroll-animate relative h-full">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-orange-500/20 to-pink-500/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                    <div class="relative h-full bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-3xl overflow-hidden hover:border-orange-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/10 flex flex-col">
+                        <!-- Product Header -->
+                        <div class="relative h-64 bg-gradient-to-br from-orange-500/20 to-pink-500/10 overflow-hidden">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="w-24 h-24 mx-auto bg-gradient-to-br from-orange-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-2xl shadow-orange-500/30 mb-4">
+                                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                    <span class="inline-block bg-orange-500/20 border border-orange-500/30 rounded-full px-4 py-1 text-xs font-semibold text-orange-400">Generador IA</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Info -->
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-2">EduHorarios AI</h3>
+                            <p class="text-gray-400 text-sm mb-6 leading-relaxed flex-grow">
+                                Generador de horarios académicos con inteligencia artificial. Herramienta independiente para crear horarios óptimos en segundos sin conflictos. Ideal para colegios, universidades y centros educativos.
+                            </p>
+
+                            <!-- Features -->
+                            <div class="space-y-3 mb-8">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-300">Generación automática en segundos</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-300">Detector de conflictos inteligente</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-300">Exportar en PDF y Excel</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-300">Optimización basada en restricciones</span>
+                                </div>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <a href="https://horarios.fis-matt.com" target="_blank" rel="noopener noreferrer" class="group/btn w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 px-6 py-3.5 rounded-xl font-semibold transition-all hover:shadow-lg hover:shadow-orange-500/25 hover:-translate-y-0.5 text-center">
+                                Acceder a EduHorarios
+                                <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- LIVE DEMO / DEMO EN VIVO -->
+    <!-- ============================================ -->
+    <section id="live" class="relative py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark-light/30 via-dark to-dark"></div>
+        <div class="absolute top-0 left-0 w-1/2 h-1/2 bg-gradient-to-r from-primary/10 to-transparent"></div>
+        <div class="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-l from-accent/10 to-transparent"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20 scroll-animate">
+                <span class="inline-block text-secondary font-semibold text-sm tracking-wider uppercase mb-4">Acceso Directo</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                    Comienza
+                    <span class="bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">ahora mismo</span>
+                </h2>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    Accede directamente a nuestras herramientas y optimiza tu gestión educativa en minutos.
+                </p>
+            </div>
+
+            <!-- Live Demo Cards -->
+            <div class="grid md:grid-cols-3 gap-8 lg:gap-10">
+                <!-- INEVAL-PRO Live Demo -->
+                <div class="group scroll-animate">
+                    <div class="relative bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10">
+                        <!-- Thumbnail -->
+                        <div class="w-full h-48 bg-gradient-to-br from-primary/20 to-accent/10 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-16 h-16 mx-auto text-primary mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span class="text-sm text-gray-400">Haz clic para acceder</span>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">INEVAL-PRO Simulador</h3>
+                            <p class="text-gray-400 text-sm mb-6">
+                                Practica con miles de preguntas y recibe análisis detallado de tu desempeño.
+                            </p>
+                            <a href="https://ineval-pro.web.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
+                                Acceder Ahora
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FISMATT SYSTEMS Live Demo -->
+                <div class="group scroll-animate">
+                    <div class="relative bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden hover:border-accent/30 transition-all duration-500 hover:shadow-xl hover:shadow-accent/10">
+                        <!-- Thumbnail -->
+                        <div class="w-full h-48 bg-gradient-to-br from-accent/20 to-secondary/10 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-16 h-16 mx-auto text-accent mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span class="text-sm text-gray-400">Descubre la extensión</span>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Importador Minduc</h3>
+                            <p class="text-gray-400 text-sm mb-6">
+                                Importa y gestiona tus calificaciones de forma segura y rápida con nuestra extensión especializada.
+                            </p>
+                            <a href="https://chromewebstore.google.com/detail/pjdakeeclfpkheobgmenlonbbpmokbbh" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-secondary font-semibold hover:gap-3 transition-all">
+                                Instalar Ahora
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EduHorarios AI Live Demo -->
+                <div class="group scroll-animate">
+                    <div class="relative bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden hover:border-orange-500/30 transition-all duration-500 hover:shadow-xl hover:shadow-orange-500/10">
+                        <!-- Thumbnail -->
+                        <div class="w-full h-48 bg-gradient-to-br from-orange-500/20 to-pink-500/10 flex items-center justify-center">
+                            <div class="text-center">
+                                <svg class="w-16 h-16 mx-auto text-orange-500 mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span class="text-sm text-gray-400">Prueba la herramienta</span>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">EduHorarios AI</h3>
+                            <p class="text-gray-400 text-sm mb-6">
+                                Genera horarios escolares perfectos en segundos con tecnología de IA avanzada.
+                            </p>
+                            <a href="https://horarios.fis-matt.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-orange-400 font-semibold hover:gap-3 transition-all">
+                                Probar Ahora
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FEATURES / CARACTERÍSTICAS -->
+    <!-- ============================================ -->
+    <section id="caracteristicas" class="relative py-24 lg:py-32">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark-light/50 to-dark"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-20 scroll-animate">
+                <span class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-4">Por qué elegirnos</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                    Características que
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">hacen la diferencia</span>
+                </h2>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    FISMATT SYSTEMS está construido con las necesidades reales de educadores ecuatorianos en mente.
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Feature 1 -->
+                <div class="group scroll-animate p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Automatización Inteligente</h3>
+                    <p class="text-gray-400 leading-relaxed">Automatiza tareas repetitivas en tu navegador con un solo clic. Configura flujos de trabajo personalizados.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="group scroll-animate p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-accent/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-accent/5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Seguridad Avanzada</h3>
+                    <p class="text-gray-400 leading-relaxed">Tu información está protegida. El plugin opera de forma local y segura sin enviar datos a terceros.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="group scroll-animate p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-secondary/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-secondary/5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Ahorra Tiempo</h3>
+                    <p class="text-gray-400 leading-relaxed">Reduce horas de trabajo manual a minutos. Optimiza tu productividad y enfócate en lo que importa.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="group scroll-animate p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-green-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-green-500/5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-green-500/20 to-green-500/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Interfaz Intuitiva</h3>
+                    <p class="text-gray-400 leading-relaxed">Panel de control simple y moderno. No necesitas conocimientos técnicos para configurar el plugin.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="group scroll-animate p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-orange-500/5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-orange-500/20 to-orange-500/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Actualizaciones Constantes</h3>
+                    <p class="text-gray-400 leading-relaxed">Mejoras continuas y nuevas funcionalidades. Siempre tendrás la versión más actualizada del plugin.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="group scroll-animate p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-pink-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-pink-500/5">
+                    <div class="w-14 h-14 bg-gradient-to-br from-pink-500/20 to-pink-500/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Compatible con Chromium</h3>
+                    <p class="text-gray-400 leading-relaxed">Funciona con Chrome, Edge, Brave, Opera y todos los navegadores basados en Chromium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- TESTIMONIOS / REVIEWS -->
+    <!-- ============================================ -->
+    <section id="testimonios" class="bg-white py-16 md:py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Encabezado -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Lo que dicen nuestros usuarios
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Miles de docentes ecuatorianos confían en FISMATT para automatizar tareas y ahorrar tiempo
+          </p>
+          <div class="mt-4 flex justify-center items-center gap-2">
+            <span class="text-yellow-400">★★★★★</span>
+            <span class="text-gray-700 font-medium">4.9/5 (127 reseñas)</span>
+          </div>
+        </div>
+
+        <!-- Grid de testimonios (3 columnas en desktop, 1 en mobile) -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          
+          <!-- Testimonio 1 -->
+          <div class="testimonio-card bg-gradient-to-br from-blue-50 to-white border-2 border-blue-100 rounded-lg p-6 hover:shadow-lg transition transform hover:-translate-y-1">
+            <div class="flex justify-center mb-4">
+              <span class="text-yellow-400 text-sm">★★★★★</span>
+            </div>
+            
+            <blockquote class="text-gray-700 text-center mb-6 italic">
+              "Antes gastaba 3-4 horas importando calificaciones manualmente cada semana. 
+              Con Minduc Importer todo se hace en 10 minutos. Ahorro muchísimo tiempo 
+              que ahora dedico a clases mejores. ¡Recomendado 100%!"
+            </blockquote>
+            
+            <div class="flex flex-col items-center">
+              <img 
+                src="assets/img/testimonios/testimonio-1.jpg" 
+                alt="María García" 
+                class="w-14 h-14 rounded-full mb-3 object-cover border-4 border-blue-200"
+              >
+              <div class="text-center">
+                <p class="font-bold text-gray-900">María García Rodríguez</p>
+                <p class="text-sm text-gray-600">Docente de Matemáticas</p>
+                <p class="text-xs text-blue-600 font-medium">Colegio Salesiano, Quito</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 2 -->
+          <div class="testimonio-card bg-gradient-to-br from-yellow-50 to-white border-2 border-yellow-100 rounded-lg p-6 hover:shadow-lg transition transform hover:-translate-y-1">
+            <div class="flex justify-center mb-4">
+              <span class="text-yellow-400 text-sm">★★★★★</span>
+            </div>
+            
+            <blockquote class="text-gray-700 text-center mb-6 italic">
+              "INEVAL-PRO es excelente para que mis estudiantes practiquen antes del examen oficial. 
+              Las preguntas son idénticas al INEVAL real. Los resultados han mejorado 
+              un 35% en la última evaluación. ¡Increíble herramienta!"
+            </blockquote>
+            
+            <div class="flex flex-col items-center">
+              <img 
+                src="assets/img/testimonios/testimonio-2.jpg" 
+                alt="Carlos Mejía" 
+                class="w-14 h-14 rounded-full mb-3 object-cover border-4 border-yellow-200"
+              >
+              <div class="text-center">
+                <p class="font-bold text-gray-900">Carlos Mejía López</p>
+                <p class="text-sm text-gray-600">Profesor de Lengua y Literatura</p>
+                <p class="text-xs text-yellow-600 font-medium">Unidad Educativa Metropolitana, Ambato</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonio 3 -->
+          <div class="testimonio-card bg-gradient-to-br from-teal-50 to-white border-2 border-teal-100 rounded-lg p-6 hover:shadow-lg transition transform hover:-translate-y-1">
+            <div class="flex justify-center mb-4">
+              <span class="text-yellow-400 text-sm">★★★★★</span>
+            </div>
+            
+            <blockquote class="text-gray-700 text-center mb-6 italic">
+              "EduHorarios AI generó el horario de 80 estudiantes en minutos. 
+              Lo que antes me tomaba 2 días completos, ahora lo resuelve en segundos 
+              y sin conflictos. ¡Ingeniero de software en educación!"
+            </blockquote>
+            
+            <div class="flex flex-col items-center">
+              <img 
+                src="assets/img/testimonios/testimonio-3.jpg" 
+                alt="Patricia Morales" 
+                class="w-14 h-14 rounded-full mb-3 object-cover border-4 border-teal-200"
+              >
+              <div class="text-center">
+                <p class="font-bold text-gray-900">Patricia Morales Vega</p>
+                <p class="text-sm text-gray-600">Rectora / Directora Administrativa</p>
+                <p class="text-xs text-teal-600 font-medium">Instituto Técnico Simón Bolívar, Cuenca</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Estadísticas -->
+        <div class="mt-16 border-t-2 border-gray-200 pt-12">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            
+            <div class="stat-card">
+              <p class="text-4xl font-bold text-blue-600 mb-2">1000+</p>
+              <p class="text-gray-600">Docentes activos</p>
+            </div>
+
+            <div class="stat-card">
+              <p class="text-4xl font-bold text-blue-600 mb-2">500+</p>
+              <p class="text-gray-600">Instituciones educativas</p>
+            </div>
+
+            <div class="stat-card">
+              <p class="text-4xl font-bold text-blue-600 mb-2">50,000+</p>
+              <p class="text-gray-600">Horas ahorradas</p>
+            </div>
+
+            <div class="stat-card">
+              <p class="text-4xl font-bold text-blue-600 mb-2">98%</p>
+              <p class="text-gray-600">Satisfacción</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CTA secundario -->
+        <div class="mt-12 text-center">
+          <p class="text-gray-600 mb-6">¿Listo para unirte a miles de docentes?</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#productos" class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 rounded-xl font-semibold transition-all hover:shadow-lg">
+              Probar gratis
+            </a>
+            <a href="#contact-form" class="inline-flex items-center justify-center gap-2 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-xl font-semibold transition-all">
+              Contactar soporte
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- VENTAJAS / BENEFITS -->
+    <!-- ============================================ -->
+    <section class="relative py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark to-dark-light/30"></div>
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left Content -->
+                <div class="scroll-animate">
+                    <span class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-4">¿Por qué elegirnos?</span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8">
+                        Ventajas de usar
+                        <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">FISMATT SYSTEMS</span>
+                    </h2>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-green-500/10 rounded-xl flex items-center justify-center">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">100% Gratuito</h3>
+                                <p class="text-gray-400">Sin costos ocultos, sin suscripciones, sin limitaciones. Acceso completo gratuito.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-green-500/10 rounded-xl flex items-center justify-center">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Acceso Inmediato</h3>
+                                <p class="text-gray-400">Sin descargas, sin instalación. Accede desde tu navegador en segundos con un simple clic.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-green-500/10 rounded-xl flex items-center justify-center">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Soporte Dedicado</h3>
+                                <p class="text-gray-400">Asistencia en tiempo real vía WhatsApp y correo electrónico. Estamos para ayudarte.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-green-500/10 rounded-xl flex items-center justify-center">
+                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Ligero y Rápido</h3>
+                                <p class="text-gray-400">No ralentiza tu navegador. Diseñado para funcionar sin consumir recursos innecesarios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Visual -->
+                <div class="scroll-animate hidden lg:block">
+                    <div class="relative">
+                        <div class="absolute -inset-8 bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10 rounded-3xl blur-3xl"></div>
+                        <div class="relative bg-dark-light/60 backdrop-blur-xl rounded-3xl border border-white/10 p-10">
+                            <div class="grid grid-cols-2 gap-6">
+                                <div class="text-center p-6 bg-white/5 rounded-2xl">
+                                    <div class="text-4xl font-black bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">5x</div>
+                                    <div class="text-sm text-gray-400">Más rápido</div>
+                                </div>
+                                <div class="text-center p-6 bg-white/5 rounded-2xl">
+                                    <div class="text-4xl font-black bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent mb-2">0</div>
+                                    <div class="text-sm text-gray-400">Costo</div>
+                                </div>
+                                <div class="text-center p-6 bg-white/5 rounded-2xl">
+                                    <div class="text-4xl font-black bg-gradient-to-r from-secondary to-green-500 bg-clip-text text-transparent mb-2">24/7</div>
+                                    <div class="text-sm text-gray-400">Soporte</div>
+                                </div>
+                                <div class="text-center p-6 bg-white/5 rounded-2xl">
+                                    <div class="text-4xl font-black bg-gradient-to-r from-green-500 to-primary bg-clip-text text-transparent mb-2">99%</div>
+                                    <div class="text-sm text-gray-400">Satisfacción</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ============================================ -->
+    <!-- SOPORTE / SUPPORT -->
+    <!-- ============================================ -->
+    <section id="soporte" class="relative py-24 lg:py-32">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark-light/30 to-dark"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 scroll-animate">
+                <span class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-4">Soporte</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                    ¿Necesitas
+                    <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">ayuda?</span>
+                </h2>
+                <p class="text-gray-400 text-lg">
+                    Estamos aquí para asistirte. Elige el canal que prefieras para comunicarte con nosotros.
+                </p>
+            </div>
+
+            <!-- Support Cards -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-4xl mx-auto">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="group scroll-animate block p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-green-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-green-500/10 text-center">
+                    <div class="w-16 h-16 mx-auto bg-gradient-to-br from-green-500/20 to-green-600/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">WhatsApp</h3>
+                    <p class="text-gray-400 text-sm mb-4">Chat directo con un asesor</p>
+                    <span class="inline-flex items-center gap-2 text-green-400 font-semibold text-sm group-hover:gap-3 transition-all">
+                        Abrir Chat
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </span>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:rectores_federal09@icloud.com" class="group scroll-animate block p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10 text-center">
+                    <div class="w-16 h-16 mx-auto bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Correo Electrónico</h3>
+                    <p class="text-gray-400 text-sm mb-4">rectores_federal09@icloud.com</p>
+                    <span class="inline-flex items-center gap-2 text-primary font-semibold text-sm group-hover:gap-3 transition-all">
+                        Enviar Correo
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </span>
+                </a>
+
+                <!-- Contact Advisor -->
+                <a href="https://wa.me/593983274499?text=Hola%2C%20necesito%20ayuda%20con%20FISMATT%20SYSTEMS" target="_blank" rel="noopener noreferrer" class="group scroll-animate block p-8 bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-accent/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-accent/10 text-center sm:col-span-2 lg:col-span-1">
+                    <div class="w-16 h-16 mx-auto bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Contactar Asesor</h3>
+                    <p class="text-gray-400 text-sm mb-4">Asistencia personalizada</p>
+                    <span class="inline-flex items-center gap-2 text-accent font-semibold text-sm group-hover:gap-3 transition-all">
+                        Contactar
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CONTACT FORM / FORMULARIO -->
+    <!-- ============================================ -->
+    <section id="contacto" class="relative py-24 lg:py-32">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark-light/50 to-dark"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+                <!-- Left - Info -->
+                <div class="scroll-animate">
+                    <span class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-4">Contacto</span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                        Envíanos un
+                        <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">mensaje</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-10">
+                        ¿Tienes alguna pregunta, sugerencia o necesitas ayuda? Completa el formulario y te responderemos lo antes posible.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Correo Electrónico</p>
+                                <p class="text-gray-400 text-sm">rectores_federal09@icloud.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold">WhatsApp</p>
+                                <p class="text-gray-400 text-sm">+593 983 274 499</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right - Form -->
+                <div class="scroll-animate">
+                    <form id="contact-form" action="https://formsubmit.co/rectores_federal09@icloud.com" method="POST" class="bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl p-8 sm:p-10">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://fis-matt.com/">
+                        
+                        <div class="space-y-6">
+                            <!-- Name -->
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Nombre completo</label>
+                                <input type="text" id="name" name="name" required autocomplete="name"
+                                    class="w-full px-4 py-3.5 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all"
+                                    placeholder="Tu nombre">
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required autocomplete="email"
+                                    class="w-full px-4 py-3.5 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all"
+                                    placeholder="tu@email.com">
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" required
+                                    class="w-full px-4 py-3.5 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all resize-none"
+                                    placeholder="Escribe tu mensaje aquí..."></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" id="submit-btn"
+                                class="w-full bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-primary px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                                </svg>
+                                Enviar Mensaje
+                            </button>
+
+                            <!-- Info Text -->
+                            <p class="text-xs text-gray-500 text-center">
+                                Tu información es segura y protegida.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FAQ / PREGUNTAS FRECUENTES -->
+    <!-- ============================================ -->
+    <section id="faq" class="relative py-24 lg:py-32">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark-light/30 to-dark"></div>
+
+        <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 scroll-animate">
+                <span class="inline-block text-primary font-semibold text-sm tracking-wider uppercase mb-4">FAQ</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                    Preguntas
+                    <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">frecuentes</span>
+                </h2>
+                <p class="text-gray-400 text-lg">
+                    Respuestas a las dudas más comunes sobre FISMATT SYSTEMS.
+                </p>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="space-y-4 scroll-animate">
+                <!-- FAQ 1 -->
+                <div class="faq-item bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors" aria-expanded="false">
+                        <span class="font-semibold text-lg pr-4">¿Cómo instalo el plugin?</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed">
+                            Ve a la sección de <strong>Productos</strong> y selecciona el sistema que necesitas. Cada producto tiene un acceso directo al sistema o a la tienda de extensiones. Solo haz clic en el botón correspondiente y sigue las instrucciones. El acceso es inmediato y sin descargas.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors" aria-expanded="false">
+                        <span class="font-semibold text-lg pr-4">¿En qué navegadores funciona?</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed">
+                            FISMATT SYSTEMS es compatible con todos los navegadores basados en Chromium, incluyendo: Google Chrome, Microsoft Edge, Brave, Opera, Vivaldi y más. No es compatible con Firefox ni Safari.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors" aria-expanded="false">
+                        <span class="font-semibold text-lg pr-4">¿Es gratis?</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed">
+                            Sí, todos nuestros sistemas son completamente gratuitos. No hay costos ocultos, suscripciones ni pagos de ningún tipo. Accede y úsalos libremente.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors" aria-expanded="false">
+                        <span class="font-semibold text-lg pr-4">¿Cómo contacto soporte?</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed">
+                            Puedes contactar soporte de varias formas: a través de nuestro chat de WhatsApp haciendo clic en el botón verde, enviándonos un correo a rectores_federal09@icloud.com, o completando el formulario de contacto en esta página. Respondemos en el menor tiempo posible.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors" aria-expanded="false">
+                        <span class="font-semibold text-lg pr-4">¿El plugin es seguro?</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed">
+                            Absolutamente. FISMATT SYSTEMS opera de forma local en tu navegador y no envía información personal a servidores externos. Tu privacidad y seguridad son nuestra prioridad.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item bg-dark-light/50 backdrop-blur-sm border border-white/5 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors" aria-expanded="false">
+                        <span class="font-semibold text-lg pr-4">¿Necesito conocimientos técnicos?</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed">
+                            No, el plugin está diseñado para ser intuitivo y fácil de usar. La instalación es guiada y la interfaz del plugin es simple. Cualquier persona puede utilizarlo sin experiencia técnica previa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CTA FINAL -->
+    <!-- ============================================ -->
+    <section class="relative py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10"></div>
+        <div class="absolute inset-0 bg-dark/80"></div>
+
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-animate">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                ¿Listo para mejorar
+                <span class="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">tu productividad?</span>
+            </h2>
+            <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+                Accede a nuestros sistemas ahora y comienza a optimizar tu gestión educativa de forma inmediata.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#productos" class="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-primary px-10 py-5 rounded-2xl text-lg font-bold transition-all hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-1">
+                    <svg class="w-6 h-6 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                    Ver Productos
+                </a>
+                <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 border border-white/10 hover:border-green-500/30 px-10 py-5 rounded-2xl text-lg font-semibold hover:bg-green-500/5 transition-all">
+                    <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Hablar con un Asesor
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer class="relative border-t border-white/5">
+        <div class="absolute inset-0 bg-dark-light/50"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Brand -->
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <a href="#inicio" class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold">FISMATT SYSTEMS</span>
+                    </a>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Plugin profesional para navegadores basados en Chromium. Automatiza tareas y mejora tu productividad.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Enlaces</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-white text-sm transition-colors">Inicio</a></li>
+                        <li><a href="#productos" class="text-gray-400 hover:text-white text-sm transition-colors">Productos</a></li>
+                        <li><a href="#caracteristicas" class="text-gray-400 hover:text-white text-sm transition-colors">Características</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white text-sm transition-colors">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-semibold mb-4">Soporte</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#contacto" class="text-gray-400 hover:text-white text-sm transition-colors">Formulario de Contacto</a></li>
+                        <li><a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white text-sm transition-colors">WhatsApp</a></li>
+                        <li><a href="mailto:rectores_federal09@icloud.com" class="text-gray-400 hover:text-white text-sm transition-colors">Correo Electrónico</a></li>
+                        <li><a href="#soporte" class="text-gray-400 hover:text-white text-sm transition-colors">Centro de Ayuda</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-gray-400 text-sm">
+                            <svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            rectores_federal09@icloud.com
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-400 text-sm">
+                            <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            +593 983 274 499
+                        </li>
+                    </ul>
+
+                    <!-- WhatsApp Button in Footer -->
+                    <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-4 bg-green-500/10 hover:bg-green-500/20 border border-green-500/20 px-4 py-2 rounded-xl text-green-400 text-sm font-medium transition-all">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Chat WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-white/5 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2026 FISMATT SYSTEMS. Todos los derechos reservados.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="/legal/privacidad.html" class="text-gray-500 hover:text-white text-sm transition-colors">Política de Privacidad</a>
+                    <a href="/legal/terminos.html" class="text-gray-500 hover:text-white text-sm transition-colors">Términos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <!-- ============================================ -->
+    <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-2xl shadow-green-500/30 hover:shadow-green-500/50 transition-all hover:scale-110 group"
+        aria-label="Contactar por WhatsApp">
+        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <!-- Tooltip -->
+        <span class="absolute right-full mr-3 bg-dark-light text-white text-sm px-3 py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+            ¿Necesitas ayuda?
+        </span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    
+    <!-- Dynamic Product Version Loader -->
+    <script>
+        // Load product versions from config/products.json
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('/config/products.json');
+                const config = await response.json();
+                
+                // Update subdomain link for EduHorarios (if exists)
+                const eduHorariosLink = document.querySelector('a[href*="horarios.fis-matt.com"]');
+                if (eduHorariosLink && config.products.eduhorarios) {
+                    const eduProduct = config.products.eduhorarios;
+                    eduHorariosLink.title = `EduHorarios AI v${eduProduct.version}`;
+                }
+                
+                // Log last update time
+                console.log(`🔄 Productos actualizados: ${config.metadata.lastUpdate}`);
+                
+            } catch (error) {
+                console.error('Error cargando versiones de productos:', error);
+                // Fallback a versión hardcoded si falla
+                console.log('Usando versiones hardcoded');
+            }
+        });
+    </script>
+</body>
+</html>
