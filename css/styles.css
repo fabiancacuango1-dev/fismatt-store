@@ -391,6 +391,21 @@ textarea:focus {
     box-shadow: 0 0 20px rgba(30, 64, 175, 0.3);
 }
 
+/* ---- Price Badge ---- */
+.price-badge {
+    animation: float 3s ease-in-out infinite;
+}
+
+.price-badge:hover {
+    animation-play-state: paused;
+    transform: scale(1.1);
+}
+
+@keyframes price-shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
 /* ---- Badge Premium ---- */
 .badge {
     display: inline-block;
