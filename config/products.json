@@ -1,33 +1,31 @@
 {
   "products": {
-    "importador-minduc": {
-      "name": "Importador Minduc",
-      "version": "1.0.0",
+    "sube-notas-masivas": {
+      "name": "Sube Notas Masivas al Sistema Académico",
+      "version": "2.1.0",
       "type": "chrome-extension",
       "url": "https://chromewebstore.google.com/detail/pjdakeeclfpkheobgmenlonbbpmokbbh",
       "price": 10,
       "currency": "USD",
       "billing": "annual",
-      "size": "2.2 MB",
       "released": "2026-04-06",
       "updated": "2026-04-06",
       "changelog": "Initial release"
     },
-    "ineval-pro": {
-      "name": "INEVAL-PRO",
+    "simulador-ser-maestro": {
+      "name": "Simulador Examen Ser Maestro 2026",
       "version": "1.0.0",
       "type": "simulator",
       "url": "https://ineval.fis-matt.com",
       "price": 10,
       "currency": "USD",
       "billing": "annual",
-      "size": "3.1 MB",
       "released": "2026-04-06",
       "updated": "2026-04-06",
       "changelog": "Initial release"
     },
-    "eduhorarios": {
-      "name": "EduHorarios AI",
+    "generador-horarios": {
+      "name": "Generador de Horarios Docentes y Cursos",
       "version": "1.0.0",
       "type": "scheduler",
       "url": "https://horarios.fis-matt.com",
@@ -36,11 +34,11 @@
       "billing": "annual",
       "released": "2026-04-06",
       "updated": "2026-04-06",
-      "changelog": "Initial release - AI-powered schedule generation",
+      "changelog": "AI-powered schedule generation",
       "subdomain": "https://horarios.fis-matt.com"
     },
-    "generador-documentos": {
-      "name": "Generador de Documentos",
+    "generador-boletines": {
+      "name": "Generador de Boletines Escolares",
       "version": "1.0.0",
       "type": "generator",
       "url": "https://generador.fis-matt.com",
@@ -49,7 +47,7 @@
       "billing": "annual",
       "released": "2026-04-11",
       "updated": "2026-04-11",
-      "changelog": "Initial release - Document generator for educators",
+      "changelog": "Initial release - Generador de boletines para docentes",
       "subdomain": "https://generador.fis-matt.com",
       "featured": true,
       "promoLabel": "50% OFF Lanzamiento"
