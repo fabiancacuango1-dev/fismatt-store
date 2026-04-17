@@ -1,5 +1,39 @@
 {
   "products": {
+    "sistema-academico-windows": {
+      "name": "Sistema Académico Completo — Instalador Windows",
+      "version": "1.0.0",
+      "type": "desktop-installer",
+      "platform": "windows",
+      "url": "https://wa.me/593983274499?text=Quiero%20el%20Sistema%20Académico%20para%20Windows",
+      "price": 35,
+      "originalPrice": 60,
+      "currency": "USD",
+      "billing": "one-time",
+      "released": "2026-04-17",
+      "updated": "2026-04-17",
+      "changelog": "Initial release — Sistema académico instalable completo",
+      "featured": true,
+      "starProduct": true,
+      "promoLabel": "Promoción Apertura"
+    },
+    "sistema-academico-mac": {
+      "name": "Sistema Académico Completo — Instalador macOS",
+      "version": "1.0.0",
+      "type": "desktop-installer",
+      "platform": "macos",
+      "url": "https://wa.me/593983274499?text=Quiero%20el%20Sistema%20Académico%20para%20Mac",
+      "price": 35,
+      "originalPrice": 60,
+      "currency": "USD",
+      "billing": "one-time",
+      "released": "2026-04-17",
+      "updated": "2026-04-17",
+      "changelog": "Initial release — Sistema académico instalable completo",
+      "featured": true,
+      "starProduct": true,
+      "promoLabel": "Promoción Apertura"
+    },
     "sube-notas-masivas": {
       "name": "Sube Notas Masivas al Sistema Académico",
       "version": "2.1.0",

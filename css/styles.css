@@ -406,6 +406,75 @@ textarea:focus {
     100% { background-position: 200% center; }
 }
 
+/* ============================================
+   ★ STAR PRODUCT STYLES
+   ============================================ */
+
+/* Star badge glow */
+.star-badge-glow {
+    animation: star-glow 2.5s ease-in-out infinite;
+}
+
+@keyframes star-glow {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(245, 158, 11, 0.15), 0 0 30px rgba(245, 158, 11, 0.05);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(245, 158, 11, 0.3), 0 0 50px rgba(245, 158, 11, 0.1);
+    }
+}
+
+/* Star card shine effect */
+.star-card {
+    position: relative;
+}
+
+.star-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 40%,
+        rgba(245, 158, 11, 0.03) 45%,
+        rgba(245, 158, 11, 0.06) 50%,
+        rgba(245, 158, 11, 0.03) 55%,
+        transparent 60%
+    );
+    animation: star-shine 6s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes star-shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(0deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(0deg); }
+}
+
+/* Star download button pulse */
+.star-download-btn {
+    animation: star-btn-pulse 2.5s ease-in-out infinite;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes star-btn-pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 12px rgba(245, 158, 11, 0);
+    }
+}
+
+.star-download-btn:hover {
+    animation: none;
+    box-shadow: 0 15px 40px rgba(245, 158, 11, 0.35);
+}
+
 /* ---- Badge Premium ---- */
 .badge {
     display: inline-block;
