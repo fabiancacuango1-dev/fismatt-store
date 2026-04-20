@@ -671,7 +671,27 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
                                 </svg>
                             </a>
-                            <p class="text-center text-gray-500 text-xs mt-3">Compatible con macOS Ventura / Sonoma / Sequoia — Descarga directa .dmg — Arrastrar a Aplicaciones</p>
+                            <p class="text-center text-gray-500 text-xs mt-3">Compatible con macOS Ventura / Sonoma / Sequoia</p>
+                            <!-- AVISO GATEKEEPER macOS -->
+                            <div class="mt-4 p-4 bg-orange-500/10 border border-orange-500/30 rounded-xl">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-orange-400 text-lg flex-shrink-0">⚠️</span>
+                                    <div>
+                                        <p class="text-orange-300 text-xs font-bold mb-2">Si macOS dice "está dañado" — sigue estos pasos:</p>
+                                        <ol class="text-gray-400 text-xs space-y-1.5 list-none">
+                                            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold flex-shrink-0">1.</span> Abre el <strong class="text-white">Terminal</strong> (Spotlight → busca "Terminal")</li>
+                                            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold flex-shrink-0">2.</span> Copia y pega este comando exacto:</li>
+                                        </ol>
+                                        <div class="my-2 bg-dark/80 border border-white/10 rounded-lg px-3 py-2 font-mono text-xs text-green-400 select-all break-all">
+                                            xattr -cr ~/Downloads/SistemaAcademico-v2.0.0-macOS.dmg
+                                        </div>
+                                        <ol class="text-gray-400 text-xs space-y-1.5 list-none">
+                                            <li class="flex items-start gap-2"><span class="text-orange-400 font-bold flex-shrink-0">3.</span> Presiona <strong class="text-white">Enter</strong> y vuelve a abrir el .dmg</li>
+                                        </ol>
+                                        <p class="text-gray-500 text-[10px] mt-2">Esto ocurre porque macOS bloquea aplicaciones sin firma de Apple. El sistema es 100% seguro.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1248,6 +1268,31 @@
                         <p class="text-gray-400 leading-relaxed">
                             <strong>Precios muy accesibles.</strong> Nuestro producto estrella, el <strong>Sistema Académico Completo</strong> (instalable en Windows y Mac), está en promoción de apertura por solo <strong>$35</strong> (precio regular $60). Nuestras herramientas en línea cuestan entre <strong>$5 y $10/año</strong>. Sin cuotas ocultas, sin cobros sorpresa.
                         </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-dark-light/50 backdrop-blur-sm border border-orange-500/15 rounded-2xl overflow-hidden">
+                    <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-orange-500/5 transition-colors" aria-expanded="false">
+                        <span class="font-semibold text-lg pr-4">⚠️ En Mac dice "está dañado y no puede abrirse" — ¿qué hago?</span>
+                        <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6">
+                        <p class="text-gray-400 leading-relaxed mb-3">
+                            El archivo <strong class="text-white">no está dañado</strong>. macOS bloquea aplicaciones que no tienen firma de Apple. Es una protección de seguridad llamada <strong class="text-white">Gatekeeper</strong>. La solución es simple:
+                        </p>
+                        <ol class="text-gray-400 space-y-2 text-sm mb-3">
+                            <li><strong class="text-white">1.</strong> Abre el <strong class="text-white">Terminal</strong> (presiona ⌘+Espacio y escribe "Terminal")</li>
+                            <li><strong class="text-white">2.</strong> Copia y pega este comando:</li>
+                        </ol>
+                        <div class="bg-dark/80 border border-white/10 rounded-lg px-4 py-3 font-mono text-sm text-green-400 mb-3 select-all">
+                            xattr -cr ~/Downloads/SistemaAcademico-v2.0.0-macOS.dmg
+                        </div>
+                        <ol class="text-gray-400 space-y-2 text-sm mb-3">
+                            <li><strong class="text-white">3.</strong> Presiona <strong class="text-white">Enter</strong> y vuelve a abrir el .dmg normalmente</li>
+                        </ol>
+                        <p class="text-gray-500 text-sm">Alternativa: ve a <strong class="text-white">Configuración del Sistema → Privacidad y Seguridad</strong> y haz clic en <strong class="text-white">"Abrir de todas formas"</strong>. Si tienes problemas, escríbenos por WhatsApp y te ayudamos en minutos.</p>
                     </div>
                 </div>
 
