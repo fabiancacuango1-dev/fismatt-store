@@ -1,1 +1,8 @@
 .DS_Store
+
+# Instaladores binarios — nunca trackear con Git (se suben directo a GitHub Releases)
+instaladores/*.exe
+instaladores/*.dmg
+instaladores/*.zip
+instaladores/*.pkg
+instaladores/.DS_Store
