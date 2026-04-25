@@ -3,110 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Security Headers -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; img-src 'self' data: https:; connect-src 'self' https:;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-    
-    <!-- Preload & DNS -->
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
-    
-    <!-- Standard Meta -->
-    <title>Descargador Seguro - FISMATT SYSTEMS</title>
-    <meta name="description" content="Descargador seguro y verificado de FISMATT SYSTEMS v1.0 para Windows">
+    <title>Descarga Segura &mdash; FISMATT SYSTEMS</title>
+    <meta name="description" content="Descarga segura del Sistema Académico FISMATT SYSTEMS v1.10.25">
     <meta name="robots" content="noindex, nofollow">
-    
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
-            min-height: 100vh;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="flex items-center justify-center">
-    <div class="max-w-md w-full mx-4">
-        <div class="bg-white rounded-xl shadow-2xl p-8 text-center">
-            <!-- Icon -->
-            <div class="w-16 h-16 mx-auto bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mb-6">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+<body class="flex items-center justify-center min-h-screen p-4 bg-[#f5f5f5]" style="font-family:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;">
+    <div class="max-w-md w-full">
+        <div class="bg-white p-8 rounded-2xl text-center" style="box-shadow:0 2px 20px rgba(0,0,0,0.06);">
+            <a href="/" class="inline-flex items-center gap-2 mb-8">
+                <svg width="24" height="24" viewBox="0 0 30 30" fill="none">
+                    <rect width="30" height="30" rx="6" fill="#111"/>
+                    <path d="M16 8V6L9 14h5v6l7-8h-5z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
                 </svg>
-            </div>
-
-            <h1 class="text-2xl font-bold text-gray-900 mb-3">Descarga Segura</h1>
-            <p class="text-gray-600 mb-8">FISMATT SYSTEMS v1.0 para Windows</p>
-
-            <!-- Info -->
-            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 text-left">
-                <h3 class="font-semibold text-gray-900 mb-2">ℹ️ Información del archivo:</h3>
-                <ul class="text-sm text-gray-700 space-y-1">
-                    <li>📦 Nombre: ImportadorNotas-Setup.zip</li>
-                    <li>💾 Tamaño: 2.2 MB</li>
-                    <li>✅ Estado: Verificado y seguro</li>
-                    <li>🔒 Encriptación: HTTPS</li>
-                </ul>
-            </div>
-
-            <!-- Download Button -->
-            <a href="https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.0.0/ImportadorNotas-Setup.zip" onclick="descargar(); return false;" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-all hover:shadow-lg mb-4 inline-block">
-                ⬇️ Descargar Ahora (2.2 MB)
+                <span class="font-extrabold text-[14px] text-[#111]">FISMATT</span>
             </a>
 
-            <!-- Alternative Link -->
-            <p class="text-sm text-gray-500 mb-4">o copia este enlace GitHub:</p>
-            <div class="bg-gray-100 p-3 rounded-lg mb-6 break-all">
-                <code class="text-xs text-gray-700" id="link-copy">
-                    https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.0.0/ImportadorNotas-Setup.zip
-                </code>
+            <div class="w-14 h-14 mx-auto rounded-2xl bg-[#111] flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
             </div>
 
-            <!-- Copy Button -->
-            <button onclick="copiarLink()" class="w-full border-2 border-gray-300 text-gray-700 hover:border-gray-400 font-semibold py-2 px-6 rounded-lg transition-all">
-                📋 Copiar Enlace
-            </button>
+            <h1 class="text-2xl font-black text-[#111] mb-1">Descarga Segura</h1>
+            <p class="text-[13px] text-[#8d8d8d] mb-8">Sistema Académico v1.10.25</p>
 
-            <!-- Support -->
-            <p class="text-xs text-gray-500 mt-8">
-                ¿Problemas con la descarga? 
-                <a href="mailto:rectores_federal09@icloud.com" class="text-blue-600 hover:underline">Contacta soporte</a>
+            <div class="bg-[#f5f5f5] p-4 rounded-xl text-left mb-6 text-[13px]">
+                <p class="font-semibold text-[#111] mb-2">Información del archivo</p>
+                <div class="space-y-1 text-[#707070]">
+                    <p>Nombre: <span class="text-[#111] font-medium">SistemaAcademico-v1.10.25-Setup.exe</span></p>
+                    <p>Plataforma: <span class="text-[#111] font-medium">Windows 10/11</span></p>
+                    <p>Estado: <span class="text-[#128a09] font-medium">Verificado y seguro</span></p>
+                </div>
+            </div>
+
+            <a href="instaladores/SistemaAcademico-v1.10.25-Setup.exe" class="w-full flex items-center justify-center gap-2 bg-[#111] text-white font-bold py-3.5 rounded-full text-[14px] transition-all hover:bg-[#333] mb-3">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Descargar Windows (.exe)
+            </a>
+
+            <a href="instaladores/SistemaAcademico-v1.10.25-macOS.dmg" class="w-full flex items-center justify-center gap-2 font-semibold py-3.5 rounded-full text-[14px] border-[1.5px] border-[#e5e5e5] text-[#111] transition-all hover:border-[#111] mb-6">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                Descargar macOS (.dmg)
+            </a>
+
+            <p class="text-[12px] text-[#8d8d8d]">
+                ¿Problemas? <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="underline text-[#111] hover:no-underline">WhatsApp</a> &middot;
+                <a href="mailto:rectores_federal09@icloud.com" class="underline text-[#111] hover:no-underline">Correo</a>
             </p>
         </div>
     </div>
-
-    <script>
-        // URL segura desde GitHub Releases
-        const DOWNLOAD_URL = "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.0.0/ImportadorNotas-Setup.zip";
-        const FILENAME = "ImportadorNotas-Setup.zip";
-        
-        function descargar() {
-            // Crear link temporal para descarga
-            const a = document.createElement('a');
-            a.href = DOWNLOAD_URL;
-            a.download = FILENAME;
-            a.target = '_blank';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        }
-
-        function copiarLink() {
-            navigator.clipboard.writeText(DOWNLOAD_URL).then(() => {
-                alert('Enlace de GitHub copiado al portapapeles ✅\n\n' + DOWNLOAD_URL);
-            }).catch(() => {
-                alert('Error al copiar. Enlace:\n' + DOWNLOAD_URL);
-            });
-        }
-
-        // Auto-download ao cargar si viene de botón directo
-        window.addEventListener('load', function() {
-            // Permitir que el usuario haga clic una vez
-            document.getElementById('link-copy').textContent = DOWNLOAD_URL;
-        });
-    </script>
 </body>
 </html>

@@ -1,13 +1,13 @@
 /* ============================================
-   FISMATT SYSTEMS — Main JavaScript
+   FISMATT SYSTEMS — Main JavaScript v3.0
+   Premium Redesign
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
     initMobileMenu();
-    initScrollAnimations();
+    initScrollReveal();
     initFAQ();
-    initContactForm();
     initSmoothScroll();
     initActiveNavLinks();
 });
@@ -17,11 +17,14 @@ function initNavbar() {
     const navbar = document.getElementById('navbar');
     if (!navbar) return;
 
+    let ticking = false;
     function onScroll() {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                navbar.classList.toggle('scrolled', window.scrollY > 30);
+                ticking = false;
+            });
+            ticking = true;
         }
     }
 
@@ -39,43 +42,37 @@ function initMobileMenu() {
         const isOpen = menu.classList.contains('open');
         if (isOpen) {
             menu.classList.remove('open');
-            menu.classList.add('hidden');
+            setTimeout(() => menu.classList.add('hidden'), 400);
         } else {
             menu.classList.remove('hidden');
-            // Force reflow for animation
             menu.offsetHeight;
             menu.classList.add('open');
         }
     });
 
-    // Close menu on link click
     menu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             menu.classList.remove('open');
-            setTimeout(() => menu.classList.add('hidden'), 300);
+            setTimeout(() => menu.classList.add('hidden'), 400);
         });
     });
 }
 
-/* ---- Scroll Animations (Intersection Observer) ---- */
-function initScrollAnimations() {
-    const elements = document.querySelectorAll('.scroll-animate');
+/* ---- Scroll Reveal (Intersection Observer) ---- */
+function initScrollReveal() {
+    const elements = document.querySelectorAll('.scroll-reveal');
     if (!elements.length) return;
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
+        entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Stagger delay for siblings
-                const delay = index * 100;
-                setTimeout(() => {
-                    entry.target.classList.add('visible');
-                }, Math.min(delay, 400));
+                entry.target.classList.add('visible');
                 observer.unobserve(entry.target);
             }
         });
     }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.08,
+        rootMargin: '0px 0px -40px 0px'
     });
 
     elements.forEach(el => observer.observe(el));
@@ -95,9 +92,9 @@ function initFAQ() {
             document.querySelectorAll('.faq-item.active').forEach(activeItem => {
                 if (activeItem !== item) {
                     activeItem.classList.remove('active');
-                    const activeContent = activeItem.querySelector('.faq-content');
-                    activeContent.classList.remove('show');
-                    activeContent.classList.add('hidden');
+                    const ac = activeItem.querySelector('.faq-content');
+                    ac.classList.remove('show');
+                    setTimeout(() => ac.classList.add('hidden'), 500);
                     activeItem.querySelector('.faq-toggle').setAttribute('aria-expanded', 'false');
                 }
             });
@@ -106,107 +103,17 @@ function initFAQ() {
             if (isActive) {
                 item.classList.remove('active');
                 content.classList.remove('show');
-                setTimeout(() => content.classList.add('hidden'), 400);
+                setTimeout(() => content.classList.add('hidden'), 500);
                 toggle.setAttribute('aria-expanded', 'false');
             } else {
                 item.classList.add('active');
                 content.classList.remove('hidden');
-                // Force reflow
                 content.offsetHeight;
                 content.classList.add('show');
                 toggle.setAttribute('aria-expanded', 'true');
             }
         });
     });
-}
-
-/* ---- Contact Form (mailto fallback) ---- */
-function initContactForm() {
-    const form = document.getElementById('contact-form');
-    if (!form) return;
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const name = sanitizeInput(form.querySelector('#name').value.trim());
-        const email = sanitizeInput(form.querySelector('#email').value.trim());
-        const message = sanitizeInput(form.querySelector('#message').value.trim());
-
-        // Validation
-        if (!name || !email || !message) {
-            showFormStatus('Por favor, completa todos los campos.', 'error');
-            return;
-        }
-
-        if (!isValidEmail(email)) {
-            showFormStatus('Por favor ingresa un correo electrónico válido.', 'error');
-            return;
-        }
-
-        if (name.length > 100) {
-            showFormStatus('El nombre es demasiado largo.', 'error');
-            return;
-        }
-
-        if (message.length > 5000) {
-            showFormStatus('El mensaje es demasiado largo.', 'error');
-            return;
-        }
-
-        // Show loading
-        const submitBtn = document.getElementById('submit-btn');
-        const originalContent = submitBtn.innerHTML;
-        submitBtn.innerHTML = '<span class="spinner"></span> Enviando...';
-        submitBtn.disabled = true;
-
-        // Build mailto link
-        const subject = encodeURIComponent(`Consulta de ${name} — FISMATT SYSTEMS`);
-        const body = encodeURIComponent(
-            `Nombre: ${name}\nCorreo: ${email}\n\nMensaje:\n${message}`
-        );
-        const mailtoLink = `mailto:rectores_federal09@icloud.com?subject=${subject}&body=${body}`;
-
-        // Simulate brief delay for UX
-        setTimeout(() => {
-            window.location.href = mailtoLink;
-
-            // Reset form
-            submitBtn.innerHTML = originalContent;
-            submitBtn.disabled = false;
-            form.reset();
-
-            showFormStatus('¡Se abrió tu cliente de correo! Envía el mensaje para completar tu consulta.', 'success');
-        }, 800);
-    });
-}
-
-/* ---- Form Helpers ---- */
-function sanitizeInput(str) {
-    const div = document.createElement('div');
-    div.textContent = str;
-    return div.innerHTML;
-}
-
-function isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
-
-function showFormStatus(message, type) {
-    const statusEl = document.getElementById('form-status');
-    if (!statusEl) return;
-
-    statusEl.classList.remove('hidden');
-    statusEl.className = `mt-4 p-4 rounded-xl text-sm font-medium ${
-        type === 'success'
-            ? 'bg-green-500/10 border border-green-500/20 text-green-400'
-            : 'bg-red-500/10 border border-red-500/20 text-red-400'
-    }`;
-    statusEl.textContent = message;
-
-    // Auto-hide after 6 seconds
-    setTimeout(() => {
-        statusEl.classList.add('hidden');
-    }, 6000);
 }
 
 /* ---- Smooth Scroll for Anchor Links ---- */
@@ -221,8 +128,8 @@ function initSmoothScroll() {
 
             e.preventDefault();
 
-            const navbarHeight = document.getElementById('navbar')?.offsetHeight || 80;
-            const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+            const navbarHeight = document.getElementById('navbar')?.offsetHeight || 64;
+            const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight - 10;
 
             window.scrollTo({
                 top: targetPosition,
@@ -239,23 +146,25 @@ function initActiveNavLinks() {
 
     if (!sections.length || !navLinks.length) return;
 
+    let ticking = false;
     function onScroll() {
-        const scrollPos = window.scrollY + 100;
-
-        sections.forEach(section => {
-            const top = section.offsetTop;
-            const height = section.offsetHeight;
-            const id = section.getAttribute('id');
-
-            if (scrollPos >= top && scrollPos < top + height) {
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${id}`) {
-                        link.classList.add('active');
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                const scrollPos = window.scrollY + 100;
+                sections.forEach(section => {
+                    const top = section.offsetTop;
+                    const height = section.offsetHeight;
+                    const id = section.getAttribute('id');
+                    if (scrollPos >= top && scrollPos < top + height) {
+                        navLinks.forEach(link => {
+                            link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+                        });
                     }
                 });
-            }
-        });
+                ticking = false;
+            });
+            ticking = true;
+        }
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });
