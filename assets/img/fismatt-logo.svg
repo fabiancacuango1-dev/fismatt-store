@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" fill="none">
+  <!-- Integral symbol with circle -->
+  <g transform="translate(18, 10)">
+    <!-- Integral curve -->
+    <path d="M52 155 C38 145, 28 125, 32 100 C36 75, 46 55, 52 35 C56 20, 54 8, 44 4" 
+          stroke="#1B5EA8" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- Circle at bottom of integral -->
+    <circle cx="44" cy="158" r="14" stroke="#1B5EA8" stroke-width="4" fill="none"/>
+    <!-- Circle at top of integral -->
+    <circle cx="47" cy="3" r="3" fill="#1B5EA8"/>
+  </g>
+  <!-- "fismatt" text -->
+  <text x="85" y="108" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="62" 
+        font-weight="700" 
+        fill="#1B5EA8"
+        letter-spacing="-1">fismatt</text>
+  <!-- "Física y Matemática" subtitle -->
+  <text x="87" y="138" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="21" 
+        font-weight="400" 
+        fill="#1B5EA8"
+        letter-spacing="0.5">Física y Matemática</text>
+</svg>
