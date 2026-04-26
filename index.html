@@ -3,59 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Security Headers -->
+
+    <!-- Security -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
-    
-    <title>FISMATT SYSTEMS — Sistema Académico v1.10.25 | Boletines e Informes para Docentes Ecuador</title>
-    <meta name="description" content="FISMATT SYSTEMS: Sistema Académico v1.10.25 — Genera boletines e informes para todos los niveles: Inicial, Preparatoria, Básica y Bachillerato. Según lineamientos del Ministerio de Educación. Windows y Mac — $35.">
-    <meta name="keywords" content="sistema académico ecuador, boletines escolares, herramientas educativas, evaluación docente, simulador INEVAL, horarios escolares, docentes ecuador">
+
+    <title>FISMATT SYSTEMS — Sistema Académico v1.10.25 | Boletines MinEduc 2026</title>
+    <meta name="description" content="Boletines e informes desde Inicial hasta Bachillerato, según lineamientos del MinEduc. Para docentes ecuatorianos. Windows y Mac — $35 un solo pago.">
+    <meta name="keywords" content="sistema académico ecuador, boletines escolares, MinEduc, docentes ecuador">
     <meta name="author" content="FISMATT SYSTEMS">
-    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://fis-matt.com/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="FISMATT SYSTEMS — Sistema Académico v1.10.25 para Docentes Ecuador">
-    <meta property="og:description" content="Genera boletines e informes desde Inicial hasta Bachillerato según el MinEduc. Windows y Mac — $35.">
+    <meta property="og:title" content="FISMATT SYSTEMS — Sistema Académico v1.10.25">
+    <meta property="og:description" content="Boletines desde Inicial hasta Bachillerato, según MinEduc. Windows + Mac. $35.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fis-matt.com/">
     <meta property="og:image" content="assets/img/og-image.png">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FISMATT SYSTEMS — Sistema Académico v1.10.25">
-    <meta name="twitter:description" content="Boletines e informes desde Inicial hasta Bachillerato. Para docentes ecuatorianos.">
-
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
-                    }
-                }
-            }
-        }
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'] } } } }
     </script>
 
-    <!-- Google Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Custom Styles -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Schema.org Structured Data -->
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -64,311 +48,439 @@
         "operatingSystem": "Windows, macOS",
         "applicationCategory": "EducationalApplication",
         "offers": { "@type": "Offer", "price": "35", "priceCurrency": "USD" },
-        "creator": {
-            "@type": "Organization",
-            "name": "FISMATT SYSTEMS",
-            "url": "https://fis-matt.com",
-            "contactPoint": { "@type": "ContactPoint", "contactType": "Customer Support", "email": "rectores_federal09@icloud.com", "telephone": "+593 983 274 499" }
-        },
-        "description": "Sistema Académico para docentes ecuatorianos. Boletines e informes desde Inicial hasta Bachillerato según lineamientos MinEduc.",
-        "softwareVersion": "1.10.25"
+        "softwareVersion": "1.10.25",
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "127" }
     }
     </script>
 </head>
 
 <body class="antialiased">
 
-<!-- ══════ PROMO BANNER ══════ -->
+<!-- ═════════ PROMO BAR ═════════ -->
 <div class="promo-banner">
-  Nuevo: Sistema Académico v1.10.25 &mdash; Boletines desde Inicial hasta Bachillerato &nbsp;
-  <a href="#descargar" class="underline font-semibold hover:no-underline">Descargar</a>
+    <span class="font-semibold">Nuevo v1.10.25</span>
+    <span class="mx-2 text-[#8d8d8d]">·</span>
+    <span>Pago único $35 &mdash; para siempre</span>
+    <a href="#precio" class="ml-3 underline font-semibold hover:no-underline">Ver detalles</a>
 </div>
 
-<!-- ══════ NAVIGATION ══════ -->
+<!-- ═════════ NAVBAR ═════════ -->
 <nav id="navbar" class="sticky top-0 w-full z-50">
-  <div class="max-w-[1200px] mx-auto px-6 lg:px-10 flex items-center justify-between h-[64px]">
-    <!-- Logo -->
-    <a href="#" class="flex items-center gap-2">
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-        <rect width="30" height="30" rx="6" fill="#111"/>
+  <div class="max-w-[1240px] mx-auto px-6 lg:px-10 flex items-center justify-between h-[68px]">
+    <a href="#" class="flex items-center gap-2.5 group">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" class="transition-transform group-hover:scale-105">
+        <rect width="30" height="30" rx="7" fill="#111"/>
         <path d="M16 8V6L9 14h5v6l7-8h-5z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
       </svg>
-      <span class="font-extrabold text-[15px] tracking-tight" style="color:#111;">FISMATT</span>
+      <div class="leading-tight">
+        <span class="font-extrabold text-[15px] tracking-tight text-[#111] block">FISMATT</span>
+        <span class="text-[10px] font-medium text-[#8d8d8d] tracking-wider uppercase">Systems</span>
+      </div>
     </a>
-    <!-- Center Links -->
+
     <div class="hidden md:flex items-center gap-1">
-      <a href="#producto" class="nav-link text-[14px] px-4 py-2 text-[#707070] hover:text-[#111] transition-colors">Producto</a>
-      <a href="#descargar" class="nav-link text-[14px] px-4 py-2 text-[#707070] hover:text-[#111] transition-colors">Descargar</a>
-      <a href="#herramientas" class="nav-link text-[14px] px-4 py-2 text-[#707070] hover:text-[#111] transition-colors">Herramientas</a>
-      <a href="#testimonios" class="nav-link text-[14px] px-4 py-2 text-[#707070] hover:text-[#111] transition-colors">Testimonios</a>
-      <a href="#faq" class="nav-link text-[14px] px-4 py-2 text-[#707070] hover:text-[#111] transition-colors">FAQ</a>
+      <a href="#producto" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Producto</a>
+      <a href="#herramientas" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Herramientas</a>
+      <a href="#precio" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Precio</a>
+      <a href="#faq" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">FAQ</a>
     </div>
-    <!-- Right -->
+
     <div class="flex items-center gap-3">
-      <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer"
-         class="hidden sm:inline-flex btn-dark text-[13px] !py-2 !px-5 !rounded-full">
-        Comprar &mdash; $35
+      <a href="#precio" class="hidden sm:inline-flex btn-dark text-[13px] !py-2.5 !px-5">
+        Descargar &mdash; $35
       </a>
       <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#f5f5f5] transition-colors" aria-label="Menu">
         <svg width="22" height="22" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
   </div>
-  <!-- Mobile Menu -->
+
   <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-[#e5e5e5]">
     <div class="px-6 py-5 space-y-1">
-      <a href="#producto" class="mobile-link block text-[15px] font-medium text-[#707070] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Producto</a>
-      <a href="#descargar" class="mobile-link block text-[15px] font-medium text-[#707070] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Descargar</a>
-      <a href="#herramientas" class="mobile-link block text-[15px] font-medium text-[#707070] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Herramientas</a>
-      <a href="#testimonios" class="mobile-link block text-[15px] font-medium text-[#707070] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Testimonios</a>
-      <a href="#faq" class="mobile-link block text-[15px] font-medium text-[#707070] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">FAQ</a>
+      <a href="#producto" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Producto</a>
+      <a href="#herramientas" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Herramientas</a>
+      <a href="#precio" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Precio</a>
+      <a href="#faq" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">FAQ</a>
       <div class="pt-3">
-        <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer"
-           class="block text-center btn-dark w-full !rounded-full">Comprar &mdash; $35</a>
+        <a href="#precio" class="block text-center btn-dark w-full">Descargar &mdash; $35</a>
       </div>
     </div>
   </div>
 </nav>
 
-<!-- ══════ HERO ══════ -->
-<section class="bg-[#f5f5f5]">
-  <div class="max-w-[1200px] mx-auto px-6 lg:px-10 py-16 md:py-24 text-center">
-    <p class="scroll-reveal text-[13px] font-semibold uppercase tracking-widest text-[#707070] mb-5">Sistema Académico v1.10.25</p>
-    <h1 class="scroll-reveal font-black text-[#111] mb-6" style="font-size:clamp(2.5rem,6vw,4.5rem);letter-spacing:-0.04em;line-height:1.05;">
-      Boletines para todos<br>los niveles educativos
-    </h1>
-    <p class="scroll-reveal text-[#555] mb-10 mx-auto leading-relaxed" style="font-size:clamp(1rem,2vw,1.125rem);max-width:520px;">
-      Genera informes desde Inicial hasta Bachillerato, según lineamientos del MinEduc 2026. Windows y Mac. Un solo pago.
-    </p>
-    <div class="scroll-reveal flex flex-col sm:flex-row gap-3 justify-center mb-10">
-      <a href="#descargar" class="btn-dark text-[15px] !px-8 !py-3.5">
-        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-        Descargar &mdash; $35
-      </a>
-      <a href="#producto" class="btn-outline text-[15px] !px-8 !py-3.5">
-        Ver funcionalidades
-      </a>
-    </div>
-    <div class="scroll-reveal flex flex-wrap justify-center gap-x-8 gap-y-2 text-[13px] text-[#8d8d8d]">
-      <span>Pago único</span>
-      <span>&middot;</span>
-      <span>Soporte 24/7</span>
-      <span>&middot;</span>
-      <span>+1,000 docentes</span>
-      <span>&middot;</span>
-      <span>MinEduc 2026</span>
+<!-- ═════════ HERO — split with product mockup ═════════ -->
+<section class="section-soft overflow-hidden">
+  <div class="max-w-[1240px] mx-auto px-6 lg:px-10 pt-16 md:pt-24 pb-20 md:pb-32">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <!-- Copy -->
+      <div class="lg:col-span-6">
+        <p class="scroll-reveal eyebrow mb-5">Sistema Académico v1.10.25</p>
+        <h1 class="scroll-reveal display mb-6" style="font-size:clamp(2.75rem,6.5vw,5rem);">
+          Boletines<br>sin complicaciones.
+        </h1>
+        <p class="scroll-reveal text-[17px] md:text-[19px] text-[#555] leading-relaxed mb-9" style="max-width:520px;">
+          Genera informes desde Inicial hasta Bachillerato según lineamientos del MinEduc 2026. Un solo pago. Para siempre.
+        </p>
+        <div class="scroll-reveal flex flex-col sm:flex-row gap-3 mb-10">
+          <a href="#precio" class="btn-dark text-[15px] !px-7 !py-3.5">
+            Descargar por $35
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="#producto" class="btn-outline text-[15px] !px-7 !py-3.5">
+            Ver cómo funciona
+          </a>
+        </div>
+        <div class="scroll-reveal flex items-center gap-5 flex-wrap">
+          <div class="flex items-center -space-x-2">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-[#FF9A56] to-[#FF5E3A] border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">MC</div>
+            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-[#667eea] to-[#764ba2] border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">JP</div>
+            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-[#11998e] to-[#38ef7d] border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">LR</div>
+            <div class="w-8 h-8 rounded-full bg-[#111] border-2 border-white flex items-center justify-center text-[10px] font-bold text-white">+1K</div>
+          </div>
+          <div>
+            <div class="flex gap-0.5 mb-0.5">
+              <svg width="13" height="13" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="13" height="13" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="13" height="13" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="13" height="13" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="13" height="13" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="text-[12px] text-[#555] font-medium"><span class="font-bold text-[#111]">4.9</span> &middot; 1,000+ docentes</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockup -->
+      <div class="lg:col-span-6 scroll-reveal">
+        <div class="relative">
+          <div class="device-frame">
+            <img src="assets/img/productos/boletines.png" alt="Vista previa del Sistema Académico generando boletines" loading="lazy">
+          </div>
+          <!-- Floating badges -->
+          <div class="hidden md:flex absolute -left-4 top-8 bg-white rounded-xl shadow-lg px-4 py-3 items-center gap-2.5 border border-[#e5e5e5]">
+            <div class="w-8 h-8 rounded-full bg-[#111] flex items-center justify-center">
+              <svg width="14" height="14" fill="none" stroke="white" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <div>
+              <p class="text-[11px] font-bold text-[#111] leading-tight">Boletín listo</p>
+              <p class="text-[10px] text-[#8d8d8d]">en 3 segundos</p>
+            </div>
+          </div>
+          <div class="hidden md:flex absolute -right-4 bottom-8 bg-white rounded-xl shadow-lg px-4 py-3 items-center gap-2.5 border border-[#e5e5e5]">
+            <svg width="26" height="26" fill="none" stroke="#111" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+            <div>
+              <p class="text-[11px] font-bold text-[#111] leading-tight">MinEduc 2026</p>
+              <p class="text-[10px] text-[#8d8d8d]">Normativa vigente</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ══════ PRODUCT HIGHLIGHT — Nike style large cards ══════ -->
+<!-- ═════════ TRUST STRIP ═════════ -->
+<section class="trust-strip">
+  <div class="max-w-[1240px] mx-auto px-6 lg:px-10 py-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+    <div class="trust-item">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      <span>Conforme a MinEduc 2026</span>
+    </div>
+    <span class="dot"></span>
+    <div class="trust-item">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+      <span>1,000+ docentes activos</span>
+    </div>
+    <span class="dot"></span>
+    <div class="trust-item">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      <span>Windows + macOS</span>
+    </div>
+    <span class="dot"></span>
+    <div class="trust-item">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+      <span>Pago único &mdash; sin suscripción</span>
+    </div>
+    <span class="dot"></span>
+    <div class="trust-item">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+      <span>Soporte 24/7 WhatsApp</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ FEATURE 1 — BOLETINES (image left) ═════════ -->
 <section id="producto" class="bg-white">
-  <div class="max-w-[1200px] mx-auto px-6 lg:px-10 py-16 md:py-24">
-    <h2 class="scroll-reveal font-black text-[#111] mb-2" style="font-size:clamp(1.5rem,4vw,2.25rem);letter-spacing:-0.03em;">Producto destacado</h2>
-    <p class="scroll-reveal text-[#707070] text-[15px] mb-10">Todo lo que necesitas para tu gestión académica</p>
-
-    <div class="grid md:grid-cols-2 gap-5">
-      <!-- Windows Card -->
-      <div class="scroll-reveal product-card group">
-        <div class="bg-[#f5f5f5] flex items-center justify-center p-12 md:p-16">
-          <div class="text-center">
-            <svg class="mx-auto mb-4 transition-transform duration-500 group-hover:scale-110" width="64" height="64" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
-            <p class="text-[11px] font-semibold uppercase tracking-widest text-[#8d8d8d]">Windows 10 / 11</p>
-          </div>
-        </div>
-        <div class="p-5">
-          <h3 class="font-bold text-[15px] text-[#111] mb-1">Sistema Académico &mdash; Windows</h3>
-          <p class="text-[13px] text-[#707070] mb-3">Instalador .exe &mdash; v1.10.25</p>
-          <p class="font-black text-[18px] text-[#111]">$35 <span class="text-[13px] font-normal line-through text-[#8d8d8d] ml-1">$60</span></p>
+  <div class="max-w-[1240px] mx-auto px-6 lg:px-10 py-20 md:py-28">
+    <div class="feature-row">
+      <div class="scroll-reveal order-2 lg:order-1">
+        <div class="device-frame flat">
+          <img src="assets/img/productos/boletines.png" alt="Generación de boletines académicos" loading="lazy">
         </div>
       </div>
-      <!-- macOS Card -->
-      <div class="scroll-reveal product-card group">
-        <div class="bg-[#f5f5f5] flex items-center justify-center p-12 md:p-16">
-          <div class="text-center">
-            <svg class="mx-auto mb-4 transition-transform duration-500 group-hover:scale-110" width="64" height="64" fill="#111" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            <p class="text-[11px] font-semibold uppercase tracking-widest text-[#8d8d8d]">macOS Ventura+</p>
+      <div class="scroll-reveal order-1 lg:order-2">
+        <p class="eyebrow mb-4">Boletines e informes</p>
+        <h2 class="display mb-6" style="font-size:clamp(2rem,4.2vw,3rem);">
+          Genera boletines<br>en segundos.
+        </h2>
+        <p class="text-[16px] text-[#555] leading-relaxed mb-8" style="max-width:480px;">
+          Parciales, trimestrales y de promoción. Para todos los niveles educativos, con la estructura exacta del MinEduc 2026.
+        </p>
+        <ul class="space-y-3.5">
+          <li class="flex items-start gap-3">
+            <span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+            <span class="text-[15px] text-[#333]">Inicial, Preparatoria, Básica Elemental/Media/Superior y Bachillerato BGU/Técnico</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+            <span class="text-[15px] text-[#333]">Cálculo automático de promedios por subnivel y asignatura</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+            <span class="text-[15px] text-[#333]">Exporta PDF listo para imprimir o enviar</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ FEATURE 2 — GESTIÓN (image right) ═════════ -->
+<section class="section-cream">
+  <div class="max-w-[1240px] mx-auto px-6 lg:px-10 py-20 md:py-28">
+    <div class="feature-row">
+      <div class="scroll-reveal">
+        <p class="eyebrow mb-4">Gestión académica</p>
+        <h2 class="display mb-6" style="font-size:clamp(2rem,4.2vw,3rem);">
+          Todo en un solo lugar.
+        </h2>
+        <p class="text-[16px] text-[#555] leading-relaxed mb-8" style="max-width:480px;">
+          Notas, asistencia, horarios, estudiantes y docentes. Una interfaz que se entiende a la primera.
+        </p>
+        <div class="grid grid-cols-2 gap-5" style="max-width:460px;">
+          <div>
+            <p class="text-[28px] font-black text-[#111] leading-none mb-1">100%</p>
+            <p class="text-[13px] text-[#707070]">Offline. Tus datos, tu computadora.</p>
+          </div>
+          <div>
+            <p class="text-[28px] font-black text-[#111] leading-none mb-1">3 seg</p>
+            <p class="text-[13px] text-[#707070]">Promedio para generar un boletín.</p>
+          </div>
+          <div>
+            <p class="text-[28px] font-black text-[#111] leading-none mb-1">15+</p>
+            <p class="text-[13px] text-[#707070]">Asignaturas configurables.</p>
+          </div>
+          <div>
+            <p class="text-[28px] font-black text-[#111] leading-none mb-1">∞</p>
+            <p class="text-[13px] text-[#707070]">Estudiantes sin límite.</p>
           </div>
         </div>
-        <div class="p-5">
-          <h3 class="font-bold text-[15px] text-[#111] mb-1">Sistema Académico &mdash; macOS</h3>
-          <p class="text-[13px] text-[#707070] mb-3">Instalador .dmg &mdash; v1.10.25</p>
-          <p class="font-black text-[18px] text-[#111]">$35 <span class="text-[13px] font-normal line-through text-[#8d8d8d] ml-1">$60</span></p>
+      </div>
+      <div class="scroll-reveal">
+        <div class="device-frame flat">
+          <img src="assets/img/productos/boletines.png" alt="Panel de gestión académica" loading="lazy">
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════ FEATURES GRID — Nike clean style ══════ -->
+<!-- ═════════ ALL FEATURES GRID (compact) ═════════ -->
 <section class="bg-white border-t border-[#e5e5e5]">
-  <div class="max-w-[1200px] mx-auto px-6 lg:px-10 py-16 md:py-24">
-    <h2 class="scroll-reveal font-black text-[#111] mb-2" style="font-size:clamp(1.5rem,4vw,2.25rem);letter-spacing:-0.03em;">Incluye todo</h2>
-    <p class="scroll-reveal text-[#707070] text-[15px] mb-10">Desde Inicial hasta Bachillerato, según lineamientos MinEduc 2026</p>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <div class="scroll-reveal tool-card cursor-default">
+  <div class="max-w-[1240px] mx-auto px-6 lg:px-10 py-20 md:py-28">
+    <div class="max-w-2xl mb-14">
+      <p class="scroll-reveal eyebrow mb-4">Todo incluido</p>
+      <h2 class="scroll-reveal display" style="font-size:clamp(1.75rem,4vw,2.75rem);">
+        Una sola compra.<br>Todo lo que necesitas.
+      </h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
+      <div class="scroll-reveal">
         <svg class="mb-4" width="28" height="28" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <h3 class="font-bold text-[15px] text-[#111] mb-2">Boletines Académicos</h3>
-        <p class="text-[13px] leading-relaxed text-[#707070]">Parciales, trimestrales y de promoción. Exporta a PDF listo para imprimir.</p>
+        <h3 class="font-bold text-[15px] text-[#111] mb-1.5">Boletines académicos</h3>
+        <p class="text-[13.5px] leading-relaxed text-[#707070]">Parciales, trimestrales y de promoción. PDF listo para imprimir.</p>
       </div>
-      <div class="scroll-reveal tool-card cursor-default">
-        <svg class="mb-4" width="28" height="28" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-        <h3 class="font-bold text-[15px] text-[#111] mb-2">Informes por Nivel</h3>
-        <p class="text-[13px] leading-relaxed text-[#707070]">Inicial, Preparatoria, Básica Elemental/Media/Superior y Bachillerato BGU/Técnico.</p>
-      </div>
-      <div class="scroll-reveal tool-card cursor-default">
-        <svg class="mb-4" width="28" height="28" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-        <h3 class="font-bold text-[15px] text-[#111] mb-2">MinEduc 2026</h3>
-        <p class="text-[13px] leading-relaxed text-[#707070]">Estructura de notas según las normativas vigentes del Ministerio de Educación.</p>
-      </div>
-      <div class="scroll-reveal tool-card cursor-default">
+      <div class="scroll-reveal">
         <svg class="mb-4" width="28" height="28" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-        <h3 class="font-bold text-[15px] text-[#111] mb-2">Notas Automáticas</h3>
-        <p class="text-[13px] leading-relaxed text-[#707070]">Cálculo de promedios diferenciado por subnivel educativo y asignatura.</p>
+        <h3 class="font-bold text-[15px] text-[#111] mb-1.5">Notas automáticas</h3>
+        <p class="text-[13.5px] leading-relaxed text-[#707070]">Cálculo de promedios diferenciado por nivel educativo.</p>
       </div>
-      <div class="scroll-reveal tool-card cursor-default">
+      <div class="scroll-reveal">
+        <svg class="mb-4" width="28" height="28" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <h3 class="font-bold text-[15px] text-[#111] mb-1.5">Fichas de estudiantes</h3>
+        <p class="text-[13.5px] leading-relaxed text-[#707070]">Datos completos, fotos, historial académico en un clic.</p>
+      </div>
+      <div class="scroll-reveal">
         <svg class="mb-4" width="28" height="28" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-        <h3 class="font-bold text-[15px] text-[#111] mb-2">Asistencia y Horarios</h3>
-        <p class="text-[13px] leading-relaxed text-[#707070]">Control individual y grupal. Planificación semanal, mensual y trimestral.</p>
+        <h3 class="font-bold text-[15px] text-[#111] mb-1.5">Asistencia y horarios</h3>
+        <p class="text-[13.5px] leading-relaxed text-[#707070]">Control individual o grupal, con planificación semanal y mensual.</p>
       </div>
-      <div class="scroll-reveal tool-card cursor-default">
+      <div class="scroll-reveal">
         <svg class="mb-4" width="28" height="28" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
-        <h3 class="font-bold text-[15px] text-[#111] mb-2">Respaldo de Datos</h3>
-        <p class="text-[13px] leading-relaxed text-[#707070]">Copia de seguridad y restauración con un clic. Información protegida.</p>
+        <h3 class="font-bold text-[15px] text-[#111] mb-1.5">Respaldo automático</h3>
+        <p class="text-[13.5px] leading-relaxed text-[#707070]">Copias de seguridad con un clic. Nunca pierdes información.</p>
+      </div>
+      <div class="scroll-reveal">
+        <svg class="mb-4" width="28" height="28" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+        <h3 class="font-bold text-[15px] text-[#111] mb-1.5">Datos 100% privados</h3>
+        <p class="text-[13.5px] leading-relaxed text-[#707070]">Todo en tu computadora. Sin servidores, sin nube obligatoria.</p>
       </div>
     </div>
   </div>
 </section>
 
-<hr class="divider">
-
-<!-- ══════ DOWNLOAD ══════ -->
-<section id="descargar" class="bg-[#111]">
-  <div class="max-w-[1200px] mx-auto px-6 lg:px-10 py-16 md:py-24 text-center">
-    <p class="scroll-reveal text-[13px] font-semibold uppercase tracking-widest text-[#8d8d8d] mb-4">Descarga directa</p>
-    <h2 class="scroll-reveal font-black text-white mb-3" style="font-size:clamp(1.5rem,4vw,2.25rem);letter-spacing:-0.03em;">Elige tu plataforma</h2>
-    <p class="scroll-reveal text-[14px] text-[#8d8d8d] mb-4">Un solo pago. Sin suscripciones. Para siempre.</p>
-    <p class="scroll-reveal mb-10">
-      <span class="text-[13px] line-through text-[#555]">$60</span>
-      <span class="font-black text-[32px] text-white ml-2">$35</span>
-      <span class="text-[14px] text-[#8d8d8d] ml-1">USD</span>
-    </p>
-    <div class="scroll-reveal flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-      <a href="https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.10.25/SistemaAcademico-v1.10.25-Setup.exe" class="flex-1 flex items-center justify-center gap-2 bg-white text-[#111] font-bold py-4 rounded-full text-[14px] transition-all hover:bg-[#e5e5e5]">
-        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-        Windows
-      </a>
-      <a href="https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.10.25/SistemaAcademico-v1.10.25-macOS.dmg" class="flex-1 flex items-center justify-center gap-2 font-bold py-4 rounded-full text-[14px] border border-[#555] text-white transition-all hover:border-white">
-        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-        macOS
-      </a>
+<!-- ═════════ ONLINE TOOLS ═════════ -->
+<section id="herramientas" class="section-cream">
+  <div class="max-w-[1240px] mx-auto px-6 lg:px-10 py-20 md:py-28">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+      <div class="max-w-xl">
+        <p class="scroll-reveal eyebrow mb-4">Herramientas web</p>
+        <h2 class="scroll-reveal display" style="font-size:clamp(1.75rem,4vw,2.75rem);">
+          Complementos online
+        </h2>
+      </div>
+      <p class="scroll-reveal text-[15px] text-[#707070] max-w-sm">Sin instalación. Abre el navegador y úsalas desde cualquier dispositivo.</p>
     </div>
-    <p class="scroll-reveal text-[12px] text-[#555] mt-6">macOS: Si dice "dañado" &mdash; abre Terminal y ejecuta: <code class="font-mono text-[#8d8d8d]">xattr -cr ~/Downloads/SistemaAcademico-v1.10.25-macOS.dmg</code></p>
-  </div>
-</section>
 
-<!-- ══════ ONLINE TOOLS ══════ -->
-<section id="herramientas" class="bg-white border-t border-[#e5e5e5]">
-  <div class="max-w-[1200px] mx-auto px-6 lg:px-10 py-16 md:py-24">
-    <h2 class="scroll-reveal font-black text-[#111] mb-2" style="font-size:clamp(1.5rem,4vw,2.25rem);letter-spacing:-0.03em;">Herramientas online</h2>
-    <p class="scroll-reveal text-[#707070] text-[15px] mb-10">Sin instalación. Abre el navegador y úsalas</p>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      <div class="scroll-reveal tool-card flex flex-col">
-        <svg class="mb-4" width="24" height="24" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
-        <h3 class="font-bold text-[14px] text-[#111] mb-1">Simulador Ser Maestro</h3>
-        <p class="text-[12px] text-[#707070] mb-5 flex-grow">Practica para la evaluación docente 2026 con preguntas reales.</p>
+      <a href="https://ineval.fis-matt.com" target="_blank" rel="noopener noreferrer" class="scroll-reveal tool-card flex flex-col group">
+        <svg class="mb-5" width="26" height="26" fill="none" stroke="#111" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+        <h3 class="font-bold text-[14.5px] text-[#111] mb-1">Simulador Ser Maestro</h3>
+        <p class="text-[12.5px] text-[#707070] mb-6 flex-grow">Practica para la evaluación docente 2026.</p>
         <div class="flex items-center justify-between pt-4 border-t border-[#e5e5e5]">
-          <span class="font-bold text-[14px] text-[#111]">$10<span class="font-normal text-[12px] text-[#8d8d8d]">/año</span></span>
-          <a href="https://ineval.fis-matt.com" target="_blank" rel="noopener noreferrer" class="text-[12px] font-semibold underline text-[#111] hover:no-underline">Ir &rarr;</a>
+          <span class="font-bold text-[14px] text-[#111]">$10<span class="font-normal text-[11px] text-[#8d8d8d]">/año</span></span>
+          <span class="text-[12px] font-semibold text-[#111] group-hover:translate-x-0.5 transition-transform">Abrir &rarr;</span>
         </div>
-      </div>
-      <div class="scroll-reveal tool-card flex flex-col">
-        <svg class="mb-4" width="24" height="24" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
-        <h3 class="font-bold text-[14px] text-[#111] mb-1">Notas Masivas</h3>
-        <p class="text-[12px] text-[#707070] mb-5 flex-grow">Sube calificaciones desde Excel al sistema MinEduc de forma masiva.</p>
+      </a>
+
+      <a href="https://chromewebstore.google.com/detail/pjdakeeclfpkheobgmenlonbbpmokbbh" target="_blank" rel="noopener noreferrer" class="scroll-reveal tool-card flex flex-col group">
+        <svg class="mb-5" width="26" height="26" fill="none" stroke="#111" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+        <h3 class="font-bold text-[14.5px] text-[#111] mb-1">Notas Masivas</h3>
+        <p class="text-[12.5px] text-[#707070] mb-6 flex-grow">Sube calificaciones desde Excel al MinEduc.</p>
         <div class="flex items-center justify-between pt-4 border-t border-[#e5e5e5]">
-          <span class="font-bold text-[14px] text-[#111]">$10<span class="font-normal text-[12px] text-[#8d8d8d]">/año</span></span>
-          <a href="https://chromewebstore.google.com/detail/pjdakeeclfpkheobgmenlonbbpmokbbh" target="_blank" rel="noopener noreferrer" class="text-[12px] font-semibold underline text-[#111] hover:no-underline">Instalar &rarr;</a>
+          <span class="font-bold text-[14px] text-[#111]">$10<span class="font-normal text-[11px] text-[#8d8d8d]">/año</span></span>
+          <span class="text-[12px] font-semibold text-[#111] group-hover:translate-x-0.5 transition-transform">Instalar &rarr;</span>
         </div>
-      </div>
-      <div class="scroll-reveal tool-card flex flex-col">
-        <svg class="mb-4" width="24" height="24" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-        <h3 class="font-bold text-[14px] text-[#111] mb-1">Horarios con IA</h3>
-        <p class="text-[12px] text-[#707070] mb-5 flex-grow">Genera horarios sin conflictos para toda la institución.</p>
+      </a>
+
+      <a href="https://horarios.fis-matt.com" target="_blank" rel="noopener noreferrer" class="scroll-reveal tool-card flex flex-col group">
+        <svg class="mb-5" width="26" height="26" fill="none" stroke="#111" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        <h3 class="font-bold text-[14.5px] text-[#111] mb-1">Horarios con IA</h3>
+        <p class="text-[12.5px] text-[#707070] mb-6 flex-grow">Genera horarios sin conflictos.</p>
         <div class="flex items-center justify-between pt-4 border-t border-[#e5e5e5]">
-          <span class="font-bold text-[14px] text-[#111]">$10<span class="font-normal text-[12px] text-[#8d8d8d]">/año</span></span>
-          <a href="https://horarios.fis-matt.com" target="_blank" rel="noopener noreferrer" class="text-[12px] font-semibold underline text-[#111] hover:no-underline">Ir &rarr;</a>
+          <span class="font-bold text-[14px] text-[#111]">$10<span class="font-normal text-[11px] text-[#8d8d8d]">/año</span></span>
+          <span class="text-[12px] font-semibold text-[#111] group-hover:translate-x-0.5 transition-transform">Abrir &rarr;</span>
         </div>
-      </div>
-      <div class="scroll-reveal tool-card flex flex-col relative">
-        <span class="absolute top-4 right-4 text-[10px] font-bold px-2.5 py-1 rounded-full bg-[#111] text-white uppercase tracking-wider">Nuevo</span>
-        <svg class="mb-4" width="24" height="24" fill="none" stroke="#111" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <h3 class="font-bold text-[14px] text-[#111] mb-1">Boletines Online</h3>
-        <p class="text-[12px] text-[#707070] mb-5 flex-grow">Crea boletines desde el navegador. PDF listo para entregar.</p>
+      </a>
+
+      <a href="https://generador.fis-matt.com" target="_blank" rel="noopener noreferrer" class="scroll-reveal tool-card flex flex-col relative group">
+        <span class="absolute top-5 right-5 text-[10px] font-bold px-2.5 py-1 rounded-full bg-[#111] text-white uppercase tracking-wider">Nuevo</span>
+        <svg class="mb-5" width="26" height="26" fill="none" stroke="#111" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <h3 class="font-bold text-[14.5px] text-[#111] mb-1">Boletines Online</h3>
+        <p class="text-[12.5px] text-[#707070] mb-6 flex-grow">Crea boletines desde el navegador.</p>
         <div class="flex items-center justify-between pt-4 border-t border-[#e5e5e5]">
-          <span class="font-bold text-[14px] text-[#111]">$5<span class="font-normal text-[12px] text-[#8d8d8d]">/año</span></span>
-          <a href="https://generador.fis-matt.com" target="_blank" rel="noopener noreferrer" class="text-[12px] font-semibold underline text-[#111] hover:no-underline">Ir &rarr;</a>
+          <span class="font-bold text-[14px] text-[#111]">$5<span class="font-normal text-[11px] text-[#8d8d8d]">/año</span></span>
+          <span class="text-[12px] font-semibold text-[#111] group-hover:translate-x-0.5 transition-transform">Abrir &rarr;</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
 
-<hr class="divider">
+<!-- ═════════ PRICING / DOWNLOAD — consolidated ═════════ -->
+<section id="precio" class="bg-white">
+  <div class="max-w-[860px] mx-auto px-6 lg:px-10 py-20 md:py-28">
+    <div class="text-center mb-12">
+      <p class="scroll-reveal eyebrow mb-4">Precio</p>
+      <h2 class="scroll-reveal display mb-5" style="font-size:clamp(2rem,4.5vw,3.25rem);">
+        Un pago. Para siempre.
+      </h2>
+      <p class="scroll-reveal text-[16px] text-[#555] max-w-md mx-auto">
+        Sin suscripciones, sin cargos recurrentes. Paga una vez y úsalo para siempre.
+      </p>
+    </div>
 
-<!-- ══════ TESTIMONIALS ══════ -->
-<section id="testimonios" class="bg-white">
-  <div class="max-w-[1200px] mx-auto px-6 lg:px-10 py-16 md:py-24">
-    <h2 class="scroll-reveal font-black text-[#111] mb-10" style="font-size:clamp(1.5rem,4vw,2.25rem);letter-spacing:-0.03em;">Lo que dicen los docentes</h2>
+    <div class="scroll-reveal pricing-card">
+      <div class="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-8 pb-8 border-b border-[#e5e5e5]">
+        <div>
+          <p class="text-[12px] font-bold uppercase tracking-wider text-[#555] mb-2">Sistema Académico Completo</p>
+          <h3 class="font-black text-[#111] text-[22px] mb-1">Licencia de por vida</h3>
+          <p class="text-[13.5px] text-[#707070]">Win + Mac &middot; v1.10.25 &middot; Actualizaciones incluidas</p>
+        </div>
+        <div class="text-left md:text-right">
+          <p class="flex items-baseline md:justify-end gap-2">
+            <span class="text-[15px] line-through text-[#8d8d8d]">$60</span>
+            <span class="font-black text-[#111]" style="font-size:44px;letter-spacing:-0.03em;">$35</span>
+          </p>
+          <p class="text-[12px] text-[#707070]">USD &middot; un solo pago</p>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-x-6 gap-y-3 mb-8">
+        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">Boletines MinEduc 2026</span></div>
+        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">Notas y promedios automáticos</span></div>
+        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">Fichas y asistencia</span></div>
+        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">Horarios y planificación</span></div>
+        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">Respaldos automáticos</span></div>
+        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">Soporte 24/7 WhatsApp</span></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-3 mb-4">
+        <a href="https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.10.25/SistemaAcademico-v1.10.25-Setup.exe" class="btn-dark text-[14px] !py-4">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          Descargar Windows
+        </a>
+        <a href="https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.10.25/SistemaAcademico-v1.10.25-macOS.dmg" class="btn-outline text-[14px] !py-4">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Descargar macOS
+        </a>
+      </div>
+      <p class="text-center text-[12px] text-[#8d8d8d]">
+        <svg class="inline -mt-0.5" width="11" height="11" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+        Pago seguro por WhatsApp &middot; 30 días de garantía
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ TESTIMONIALS ═════════ -->
+<section class="bg-white border-t border-[#e5e5e5]">
+  <div class="max-w-[1240px] mx-auto px-6 lg:px-10 py-20 md:py-28">
+    <div class="max-w-xl mb-14">
+      <p class="scroll-reveal eyebrow mb-4">Testimonios</p>
+      <h2 class="scroll-reveal display" style="font-size:clamp(1.75rem,4vw,2.75rem);">
+        Lo que dicen<br>los docentes.
+      </h2>
+    </div>
+
     <div class="grid md:grid-cols-3 gap-5">
       <div class="scroll-reveal testimonial-card">
-        <div class="flex gap-0.5 mb-4">
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="text-[14px] leading-relaxed text-[#555] mb-6">"Me ahorra horas de trabajo cada trimestre. Los boletines salen perfectos según las normas del Ministerio. Totalmente recomendado."</p>
-        <div class="flex items-center gap-3 mt-auto">
-          <div class="w-10 h-10 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[12px] font-bold text-[#111]">MC</div>
+        <p class="text-[16px] leading-relaxed text-[#111] mb-6 font-medium">&ldquo;Me ahorra horas cada trimestre. Los boletines salen perfectos según las normas del Ministerio.&rdquo;</p>
+        <div class="flex items-center gap-3 pt-5 border-t border-[#e5e5e5]">
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-[#FF9A56] to-[#FF5E3A] flex items-center justify-center text-[11px] font-bold text-white">MC</div>
           <div>
-            <p class="text-[14px] font-semibold text-[#111]">María C.</p>
-            <p class="text-[12px] text-[#8d8d8d]">Docente &mdash; Quito</p>
+            <p class="text-[13.5px] font-semibold text-[#111]">María Cacuango</p>
+            <p class="text-[11.5px] text-[#8d8d8d]">Docente &middot; Quito</p>
           </div>
         </div>
       </div>
       <div class="scroll-reveal testimonial-card">
-        <div class="flex gap-0.5 mb-4">
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="text-[14px] leading-relaxed text-[#555] mb-6">"El sistema de notas masivas es increíble. Subí las calificaciones de todo el parcial en 5 minutos. Antes me tomaba todo el día."</p>
-        <div class="flex items-center gap-3 mt-auto">
-          <div class="w-10 h-10 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[12px] font-bold text-[#111]">JP</div>
+        <p class="text-[16px] leading-relaxed text-[#111] mb-6 font-medium">&ldquo;El sistema de notas masivas es increíble. Subí las calificaciones del parcial en 5 minutos.&rdquo;</p>
+        <div class="flex items-center gap-3 pt-5 border-t border-[#e5e5e5]">
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-[#667eea] to-[#764ba2] flex items-center justify-center text-[11px] font-bold text-white">JP</div>
           <div>
-            <p class="text-[14px] font-semibold text-[#111]">Juan P.</p>
-            <p class="text-[12px] text-[#8d8d8d]">Docente &mdash; Guayaquil</p>
+            <p class="text-[13.5px] font-semibold text-[#111]">Juan Pazmiño</p>
+            <p class="text-[11.5px] text-[#8d8d8d]">Docente &middot; Guayaquil</p>
           </div>
         </div>
       </div>
       <div class="scroll-reveal testimonial-card">
-        <div class="flex gap-0.5 mb-4">
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg width="16" height="16" fill="#111" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="text-[14px] leading-relaxed text-[#555] mb-6">"Excelente inversión. El soporte por WhatsApp es súper rápido. Resolvieron todas mis dudas en minutos. Vale cada centavo."</p>
-        <div class="flex items-center gap-3 mt-auto">
-          <div class="w-10 h-10 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[12px] font-bold text-[#111]">LR</div>
+        <p class="text-[16px] leading-relaxed text-[#111] mb-6 font-medium">&ldquo;Excelente inversión. El soporte por WhatsApp es súper rápido. Vale cada centavo.&rdquo;</p>
+        <div class="flex items-center gap-3 pt-5 border-t border-[#e5e5e5]">
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-[#11998e] to-[#38ef7d] flex items-center justify-center text-[11px] font-bold text-white">LR</div>
           <div>
-            <p class="text-[14px] font-semibold text-[#111]">Laura R.</p>
-            <p class="text-[12px] text-[#8d8d8d]">Docente &mdash; Cuenca</p>
+            <p class="text-[13.5px] font-semibold text-[#111]">Laura Rojas</p>
+            <p class="text-[11.5px] text-[#8d8d8d]">Docente &middot; Cuenca</p>
           </div>
         </div>
       </div>
@@ -376,39 +488,43 @@
   </div>
 </section>
 
-<hr class="divider">
+<!-- ═════════ FAQ ═════════ -->
+<section id="faq" class="section-cream">
+  <div class="max-w-[760px] mx-auto px-6 lg:px-10 py-20 md:py-28">
+    <div class="text-center mb-12">
+      <p class="scroll-reveal eyebrow mb-4">FAQ</p>
+      <h2 class="scroll-reveal display" style="font-size:clamp(1.75rem,4vw,2.75rem);">
+        Preguntas frecuentes
+      </h2>
+    </div>
 
-<!-- ══════ FAQ ══════ -->
-<section id="faq" class="bg-white">
-  <div class="max-w-[720px] mx-auto px-6 lg:px-10 py-16 md:py-24">
-    <h2 class="scroll-reveal font-black text-[#111] mb-10" style="font-size:clamp(1.5rem,4vw,2.25rem);letter-spacing:-0.03em;">Preguntas frecuentes</h2>
-    <div>
+    <div class="bg-white rounded-2xl px-2 border border-[#e5e5e5]">
       <div class="scroll-reveal faq-item">
-        <button class="faq-toggle w-full flex items-center justify-between py-5 text-left" aria-expanded="false">
+        <button class="faq-toggle w-full flex items-center justify-between py-5 px-5 text-left" aria-expanded="false">
           <span class="font-semibold text-[15px] text-[#111] pr-4">¿Qué incluye el Sistema Académico?</span>
-          <svg class="faq-icon w-5 h-5 text-[#8d8d8d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
+          <svg class="faq-icon w-5 h-5 text-[#8d8d8d] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
         </button>
-        <div class="faq-content hidden pb-5">
-          <p class="text-[14px] leading-relaxed text-[#707070]">Boletines (parciales, trimestrales, de promoción), informes por nivel (Inicial &rarr; Bachillerato), informe de comportamiento, notas con cálculo automático, asistencia, horarios, personalización institucional y respaldo. Según MinEduc Ecuador 2026. Un solo pago de $35.</p>
+        <div class="faq-content hidden px-5 pb-5">
+          <p class="text-[14px] leading-relaxed text-[#555]">Boletines (parciales, trimestrales, promoción), informes por nivel (Inicial &rarr; Bachillerato), notas automáticas, asistencia, horarios, fichas de estudiantes, personalización institucional y respaldos. Según MinEduc 2026. Pago único $35.</p>
         </div>
       </div>
       <div class="scroll-reveal faq-item">
-        <button class="faq-toggle w-full flex items-center justify-between py-5 text-left" aria-expanded="false">
-          <span class="font-semibold text-[15px] text-[#111] pr-4">¿Es seguro instalar en mi computadora?</span>
-          <svg class="faq-icon w-5 h-5 text-[#8d8d8d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
+        <button class="faq-toggle w-full flex items-center justify-between py-5 px-5 text-left" aria-expanded="false">
+          <span class="font-semibold text-[15px] text-[#111] pr-4">¿Funciona sin internet?</span>
+          <svg class="faq-icon w-5 h-5 text-[#8d8d8d] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
         </button>
-        <div class="faq-content hidden pb-5">
-          <p class="text-[14px] leading-relaxed text-[#707070]">Sí. El software no accede a tus archivos personales ni envía datos externos. La extensión Chrome está publicada en Chrome Web Store oficial, verificada por Google.</p>
+        <div class="faq-content hidden px-5 pb-5">
+          <p class="text-[14px] leading-relaxed text-[#555]">Sí. Una vez instalado, funciona 100% offline. Todos tus datos quedan en tu computadora. No enviamos información a servidores externos.</p>
         </div>
       </div>
       <div class="scroll-reveal faq-item">
-        <button class="faq-toggle w-full flex items-center justify-between py-5 text-left" aria-expanded="false">
+        <button class="faq-toggle w-full flex items-center justify-between py-5 px-5 text-left" aria-expanded="false">
           <span class="font-semibold text-[15px] text-[#111] pr-4">macOS dice "está dañado" &mdash; ¿qué hago?</span>
-          <svg class="faq-icon w-5 h-5 text-[#8d8d8d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
+          <svg class="faq-icon w-5 h-5 text-[#8d8d8d] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
         </button>
-        <div class="faq-content hidden pb-5">
-          <p class="text-[14px] text-[#707070] mb-3">No está dañado. macOS bloquea apps sin firma de Apple. Solución:</p>
-          <ol class="text-[14px] text-[#707070] space-y-2 list-decimal list-inside">
+        <div class="faq-content hidden px-5 pb-5">
+          <p class="text-[14px] text-[#555] mb-2">No está dañado. macOS bloquea apps sin firma de Apple. Solución:</p>
+          <ol class="text-[14px] text-[#555] space-y-1.5 list-decimal list-inside">
             <li>Abre Terminal (Cmd+Espacio &rarr; "Terminal")</li>
             <li>Ejecuta: <code class="font-mono text-[12px] bg-[#f5f5f5] px-2 py-1 rounded text-[#111]">xattr -cr ~/Downloads/SistemaAcademico-v1.10.25-macOS.dmg</code></li>
             <li>Vuelve a abrir el .dmg</li>
@@ -416,72 +532,83 @@
         </div>
       </div>
       <div class="scroll-reveal faq-item">
-        <button class="faq-toggle w-full flex items-center justify-between py-5 text-left" aria-expanded="false">
-          <span class="font-semibold text-[15px] text-[#111] pr-4">¿Son herramientas oficiales del Ministerio?</span>
-          <svg class="faq-icon w-5 h-5 text-[#8d8d8d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
+        <button class="faq-toggle w-full flex items-center justify-between py-5 px-5 text-left" aria-expanded="false">
+          <span class="font-semibold text-[15px] text-[#111] pr-4">¿Hay suscripciones o pagos recurrentes?</span>
+          <svg class="faq-icon w-5 h-5 text-[#8d8d8d] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
         </button>
-        <div class="faq-content hidden pb-5">
-          <p class="text-[14px] leading-relaxed text-[#707070]">No. Somos un proyecto independiente, sin afiliación al Ministerio de Educación ni INEVAL. Creamos herramientas de apoyo para docentes ecuatorianos.</p>
+        <div class="faq-content hidden px-5 pb-5">
+          <p class="text-[14px] leading-relaxed text-[#555]">No. Es un pago único de $35 por la licencia del Sistema Académico. Las herramientas online tienen costo separado opcional (entre $5 y $10/año cada una).</p>
         </div>
       </div>
       <div class="scroll-reveal faq-item">
-        <button class="faq-toggle w-full flex items-center justify-between py-5 text-left" aria-expanded="false">
+        <button class="faq-toggle w-full flex items-center justify-between py-5 px-5 text-left" aria-expanded="false">
           <span class="font-semibold text-[15px] text-[#111] pr-4">¿Cómo contacto soporte?</span>
-          <svg class="faq-icon w-5 h-5 text-[#8d8d8d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
+          <svg class="faq-icon w-5 h-5 text-[#8d8d8d] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
         </button>
-        <div class="faq-content hidden pb-5">
-          <p class="text-[14px] text-[#707070]">WhatsApp: <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="underline text-[#111] hover:no-underline">+593 983 274 499</a> &nbsp;&middot;&nbsp; Correo: <a href="mailto:rectores_federal09@icloud.com" class="underline text-[#111] hover:no-underline">rectores_federal09@icloud.com</a></p>
+        <div class="faq-content hidden px-5 pb-5">
+          <p class="text-[14px] text-[#555]">WhatsApp: <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="underline text-[#111] hover:no-underline">+593 983 274 499</a> &middot; Correo: <a href="mailto:rectores_federal09@icloud.com" class="underline text-[#111] hover:no-underline">rectores_federal09@icloud.com</a></p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════ CTA ══════ -->
-<section class="bg-[#f5f5f5]">
-  <div class="max-w-[1200px] mx-auto px-6 lg:px-10 py-16 md:py-20 text-center">
-    <h2 class="scroll-reveal font-black text-[#111] mb-4" style="font-size:clamp(1.5rem,4vw,2.5rem);letter-spacing:-0.03em;">Genera boletines en minutos,<br>no en horas</h2>
-    <p class="scroll-reveal text-[15px] text-[#707070] mb-8">Únete a más de 1,000 docentes que ya optimizaron su trabajo.</p>
-    <div class="scroll-reveal flex flex-col sm:flex-row gap-3 justify-center">
-      <a href="#descargar" class="btn-dark text-[15px] !px-8 !py-3.5">
-        Descargar &mdash; $35
-      </a>
-      <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="btn-outline text-[15px] !px-8 !py-3.5">
-        Hablar por WhatsApp
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ══════ FOOTER ══════ -->
-<footer class="bg-[#111]">
-  <div class="max-w-[1200px] mx-auto px-6 lg:px-10 py-10">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-      <div class="flex items-center gap-2">
-        <svg width="24" height="24" viewBox="0 0 30 30" fill="none">
-          <rect width="30" height="30" rx="6" fill="#333"/>
-          <path d="M16 8V6L9 14h5v6l7-8h-5z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
-        </svg>
-        <div>
-          <span class="text-[12px] font-bold text-white block">FISMATT SYSTEMS</span>
-          <span class="text-[10px] text-[#555]">Proyecto independiente</span>
+<!-- ═════════ FOOTER ═════════ -->
+<footer class="bg-[#0a0a0a] text-white">
+  <div class="max-w-[1240px] mx-auto px-6 lg:px-10 pt-16 pb-10">
+    <div class="grid md:grid-cols-12 gap-10 mb-12">
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-2.5 mb-4">
+          <svg width="28" height="28" viewBox="0 0 30 30" fill="none">
+            <rect width="30" height="30" rx="7" fill="white"/>
+            <path d="M16 8V6L9 14h5v6l7-8h-5z" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="0.5" stroke-linejoin="round"/>
+          </svg>
+          <span class="font-extrabold text-[16px]">FISMATT SYSTEMS</span>
         </div>
+        <p class="text-[13.5px] text-[#888] leading-relaxed max-w-sm mb-5">
+          Sistema Académico independiente para docentes ecuatorianos. Conforme a MinEduc 2026.
+        </p>
+        <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[13px] text-[#bbb] hover:text-white transition-colors">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+          +593 983 274 499
+        </a>
       </div>
-      <p class="text-[12px] text-[#555]">&copy; 2026 FISMATT SYSTEMS. Todos los derechos reservados.</p>
-      <div class="flex items-center gap-6">
-        <a href="/legal/privacidad.html" class="text-[12px] text-[#555] hover:text-white transition-colors">Privacidad</a>
-        <a href="/legal/terminos.html" class="text-[12px] text-[#555] hover:text-white transition-colors">Términos</a>
-        <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="text-[12px] text-[#555] hover:text-white transition-colors">WhatsApp</a>
+      <div class="md:col-span-2">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-[#555] mb-3">Producto</p>
+        <ul class="space-y-2">
+          <li><a href="#producto" class="text-[13px] text-[#bbb] hover:text-white transition-colors">Características</a></li>
+          <li><a href="#precio" class="text-[13px] text-[#bbb] hover:text-white transition-colors">Precio</a></li>
+          <li><a href="#herramientas" class="text-[13px] text-[#bbb] hover:text-white transition-colors">Herramientas web</a></li>
+        </ul>
       </div>
+      <div class="md:col-span-2">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-[#555] mb-3">Soporte</p>
+        <ul class="space-y-2">
+          <li><a href="#faq" class="text-[13px] text-[#bbb] hover:text-white transition-colors">FAQ</a></li>
+          <li><a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="text-[13px] text-[#bbb] hover:text-white transition-colors">WhatsApp</a></li>
+          <li><a href="mailto:rectores_federal09@icloud.com" class="text-[13px] text-[#bbb] hover:text-white transition-colors">Correo</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-3">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-[#555] mb-3">Legal</p>
+        <ul class="space-y-2">
+          <li><a href="/legal/privacidad.html" class="text-[13px] text-[#bbb] hover:text-white transition-colors">Política de Privacidad</a></li>
+          <li><a href="/legal/terminos.html" class="text-[13px] text-[#bbb] hover:text-white transition-colors">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-[#222] flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-[12px] text-[#555]">&copy; 2026 FISMATT SYSTEMS &middot; Proyecto independiente, sin afiliación al MinEduc.</p>
+      <p class="text-[12px] text-[#555]">Hecho en Ecuador</p>
     </div>
   </div>
 </footer>
 
-<!-- ══════ WHATSAPP FLOAT ══════ -->
+<!-- ═════════ WHATSAPP FLOAT ═════════ -->
 <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer"
-   class="whatsapp-float fixed bottom-6 right-6 z-50 w-[52px] h-[52px] flex items-center justify-center rounded-full bg-[#25D366]"
+   class="whatsapp-float fixed bottom-6 right-6 z-50 w-[54px] h-[54px] flex items-center justify-center rounded-full bg-[#25D366]"
    aria-label="WhatsApp">
-  <svg width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <svg width="26" height="26" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
 <script src="js/main.js"></script>
