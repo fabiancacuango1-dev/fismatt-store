@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+  command = "echo 'Static site, no build needed'"
+
+[[redirects]]
+  from = "/instaladores/*"
+  to = "/instaladores/:splat"
+  status = 200
+
+[[headers]]
+  for = "/instaladores/*"
+  [headers.values]
+    Content-Disposition = "attachment"
