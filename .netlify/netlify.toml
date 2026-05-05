@@ -1,0 +1,45 @@
+headersOrigin = "config"
+redirectsOrigin = "config"
+plugins = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/luisfabiancacuangoeugenio/Documents/Programacion/tienda online"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "echo 'Static site, no build needed'"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[headers]]
+for = "/instaladores/*"
+
+[headers.values]
+Content-Disposition = "attachment"
+
+[[redirects]]
+from = "/instaladores/*"
+to = "/instaladores/:splat"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
