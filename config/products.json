@@ -2,20 +2,20 @@
   "products": {
     "sistema-academico-windows": {
       "name": "Sistema Académico Completo — Instalador Windows",
-      "version": "1.11.0",
+      "version": "1.12.0",
       "type": "desktop-installer",
       "platform": "windows",
-      "fileName": "SistemaAcademico-v1.11.0-Setup.exe",
+      "fileName": "SistemaAcademico-v1.12.0-Setup.exe",
       "fileSize": "15 MB",
-      "downloadUrl": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.11.0/SistemaAcademico-v1.11.0-Setup.exe",
-      "releaseTag": "v1.11.0",
+      "downloadUrl": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.12.0/SistemaAcademico-v1.12.0-Setup.exe",
+      "releaseTag": "v1.12.0",
       "price": 35,
       "originalPrice": 60,
       "currency": "USD",
       "billing": "one-time",
       "released": "2026-04-17",
-      "updated": "2026-05-05",
-      "changelog": "v1.11.0 — Reportes personalizados, conexión con móvil, notas personalizadas, sincronización mejorada",
+      "updated": "2026-05-07",
+      "changelog": "v1.12.0 — Reportes personalizados, conexión con móvil, notas personalizadas, sincronización mejorada",
       "newFeatures": [
         "Reportes personalizados avanzados por institución",
         "Conexión y sincronización con dispositivos móviles",
@@ -27,24 +27,24 @@
       ],
       "featured": true,
       "starProduct": true,
-      "promoLabel": "v1.11.0"
+      "promoLabel": "v1.12.0"
     },
     "sistema-academico-mac": {
       "name": "Sistema Académico Completo — Instalador macOS",
-      "version": "1.11.0",
+      "version": "1.12.0",
       "type": "desktop-installer",
       "platform": "macos",
-      "fileName": "SistemaAcademico-v1.11.0-macOS.dmg",
+      "fileName": "SistemaAcademico-v1.12.0-macOS.dmg",
       "fileSize": "25 MB",
-      "downloadUrl": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.11.0/SistemaAcademico-v1.11.0-macOS.dmg",
-      "releaseTag": "v1.11.0",
+      "downloadUrl": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.12.0/SistemaAcademico-v1.12.0-macOS.dmg",
+      "releaseTag": "v1.12.0",
       "price": 35,
       "originalPrice": 60,
       "currency": "USD",
       "billing": "one-time",
       "released": "2026-04-17",
-      "updated": "2026-05-05",
-      "changelog": "v1.11.0 — Reportes personalizados, conexión con móvil, notas personalizadas, sincronización mejorada",
+      "updated": "2026-05-07",
+      "changelog": "v1.12.0 — Reportes personalizados, conexión con móvil, notas personalizadas, sincronización mejorada",
       "newFeatures": [
         "Reportes personalizados avanzados por institución",
         "Conexión y sincronización con dispositivos móviles",
@@ -56,7 +56,7 @@
       ],
       "featured": true,
       "starProduct": true,
-      "promoLabel": "v1.11.0"
+      "promoLabel": "v1.12.0"
     },
     "sube-notas-masivas": {
       "name": "Sube Notas Masivas al Sistema Académico",
@@ -112,7 +112,7 @@
     }
   },
   "metadata": {
-    "lastUpdate": "2026-04-25T15:00:00Z",
+    "lastUpdate": "2026-05-07T00:00:00Z",
     "updateFrequency": "manual",
     "autoDetect": true,
     "gitHubOrg": "fabiancacuango1-dev",
