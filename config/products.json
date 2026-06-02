@@ -9,10 +9,10 @@
       "fileSize": "44 MB",
       "downloadUrl": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.16.0/SistemaInstitucional-Setup-1.16.0.exe",
       "releaseTag": "v1.16.0",
-      "price": 15,
+      "price": 36,
       "promoCode": "FISMATT",
-      "promoExpiry": "2026-05-31",
-      "originalPrice": 60,
+      "promoExpiry": "2026-06-30",
+      "originalPrice": 120,
       "currency": "USD",
       "billing": "one-time",
       "released": "2026-04-17",
@@ -29,7 +29,7 @@
       ],
       "featured": true,
       "starProduct": true,
-      "promoLabel": "50% OFF Mayo"
+      "promoLabel": "70% OFF Junio"
     },
     "sistema-academico-mac": {
       "name": "Sistema Académico Completo — Instalador macOS",
@@ -40,8 +40,8 @@
       "fileSize": "25 MB",
       "downloadUrl": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v1.14.0/SistemaAcademico-v1.14.0-macOS.dmg",
       "releaseTag": "v1.14.0",
-      "price": 15,
-      "originalPrice": 35,
+      "price": 36,
+      "originalPrice": 120,
       "currency": "USD",
       "billing": "one-time",
       "released": "2026-04-17",
@@ -58,7 +58,7 @@
       ],
       "featured": true,
       "starProduct": true,
-      "promoLabel": "50% OFF Mayo"
+      "promoLabel": "70% OFF Junio"
     },
     "sube-notas-masivas": {
       "name": "Sube Notas Masivas al Sistema Académico",
