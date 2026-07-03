@@ -5,4 +5,5 @@ instaladores/*.exe
 instaladores/*.dmg
 instaladores/*.zip
 instaladores/*.pkg
+instaladores/*.apk
 instaladores/.DS_Store
