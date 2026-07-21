@@ -168,13 +168,15 @@ body {
     gap: 5px;
     font-size: 0.75rem;
     font-weight: 700;
-    color: #cbcbe0;
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.12);
+    color: #1a1a2e;
+    background: #e8e8f0;
+    border: 1px solid rgba(255,255,255,0.3);
     border-radius: 999px;
     padding: 6px 14px;
     cursor: pointer;
     transition: background 0.2s ease, color 0.2s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .cloud-tab.active {
@@ -188,18 +190,20 @@ body {
     justify-content: center;
     gap: 6px;
     font-size: 0.8125rem;
-    font-weight: 600;
-    color: #cbcbe0;
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.14);
+    font-weight: 700;
+    color: #f0f0f5;
+    background: rgba(255,255,255,0.16);
+    border: 1px solid rgba(255,255,255,0.35);
     border-radius: 999px;
     padding: 10px 12px;
     text-decoration: none;
     transition: background 0.2s ease, transform 0.2s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .cloud-btn:hover {
-    background: rgba(255,255,255,0.14);
+    background: rgba(255,255,255,0.28);
     transform: scale(1.02);
 }
 
