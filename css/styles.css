@@ -161,6 +161,58 @@ body {
     transform: scale(1.02);
 }
 
+/* ---- FISMATT Cloud carousel + button row ---- */
+.cloud-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #cbcbe0;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 999px;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cloud-tab.active {
+    background: #fff;
+    color: #0a0a14;
+}
+
+.cloud-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #cbcbe0;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 999px;
+    padding: 10px 12px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cloud-btn:hover {
+    background: rgba(255,255,255,0.14);
+    transform: scale(1.02);
+}
+
+.cloud-btn-solid {
+    background: #fff;
+    color: #0a0a14;
+    border-color: #fff;
+}
+
+.cloud-btn-solid:hover {
+    background: #e5e5e5;
+}
+
 /* ---- Product / Feature Cards ---- */
 .product-card {
     position: relative;

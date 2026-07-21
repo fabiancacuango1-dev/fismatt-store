@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFAQ();
     initSmoothScroll();
     initActiveNavLinks();
+    initCloudTabs();
 });
 
 /* ---- Navbar Scroll Effect ---- */
@@ -112,6 +113,25 @@ function initFAQ() {
                 content.classList.add('show');
                 toggle.setAttribute('aria-expanded', 'true');
             }
+        });
+    });
+}
+
+/* ---- FISMATT Cloud / Portal de Familias tabs ---- */
+function initCloudTabs() {
+    const tabs = document.querySelectorAll('.cloud-tab');
+    if (!tabs.length) return;
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetId = 'cloud-slide-' + tab.dataset.cloudTarget;
+
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            document.querySelectorAll('.cloud-slide').forEach(slide => {
+                slide.classList.toggle('hidden', slide.id !== targetId);
+            });
         });
     });
 }

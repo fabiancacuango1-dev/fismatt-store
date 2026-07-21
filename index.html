@@ -484,60 +484,84 @@
   </div>
 </section>
 
-<!-- ═════════ FISMATT CLOUD — plataforma institucional ═════════ -->
+<!-- ═════════ FISMATT CLOUD + PORTAL DE FAMILIAS — un solo sistema ═════════ -->
 <section id="cloud" class="bg-white border-t border-[#e5e5e5]">
   <div class="max-w-[1240px] mx-auto px-6 lg:px-10 py-20 md:py-28">
     <div class="max-w-3xl mb-14">
-      <p class="scroll-reveal eyebrow mb-4">Nuevo · Para instituciones</p>
+      <p class="scroll-reveal eyebrow mb-4">Nuevo · Para instituciones, padres y estudiantes</p>
       <h2 class="scroll-reveal display mb-6" style="font-size:clamp(1.75rem,4.2vw,3rem);">
-        FISMATT Cloud.<br>Tu institución, en la nube.
+        FISMATT Cloud.<br>Un solo sistema, conectado.
       </h2>
       <p class="scroll-reveal text-[16px] md:text-[17px] text-[#555] leading-relaxed">
-        Una base de datos institucional en la nube, sincronizada automáticamente desde el Sistema Institucional con el botón Actualizar. Guarda la información de tu institución de forma segura y centralizada.
+        No son productos separados: son parte del mismo Sistema Académico. Con el botón Actualizar sincronizas tu institución a la nube, y desde ahí padres y estudiantes acceden a notas, asistencia y boletines desde cualquier navegador. <strong class="text-[#111] font-semibold">Bono: si tu institución obtiene el plan Cloud, además puede crear su propia página web institucional totalmente gratis.</strong>
       </p>
     </div>
 
     <div class="scroll-reveal rounded-[24px] overflow-hidden border border-[#1a1a2e]" style="background:linear-gradient(135deg,#0a0a14 0%,#14142e 100%);">
-      <div class="p-8 md:p-12 lg:p-14">
-        <div class="flex items-center gap-2 mb-5">
-          <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" style="background:rgba(139,92,246,0.15);color:#a78bfa;border:1px solid rgba(139,92,246,0.3);">Nuevo</span>
-          <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" style="background:rgba(34,211,238,0.15);color:#67e8f9;border:1px solid rgba(34,211,238,0.3);">Institucional</span>
+      <div class="grid lg:grid-cols-12 gap-0 items-stretch">
+        <!-- Carrusel de capturas reales -->
+        <div class="lg:col-span-6 relative order-2 lg:order-1 flex items-center justify-center p-6 lg:p-8" style="background:#050510;border-right:1px solid rgba(255,255,255,0.06);">
+          <div class="w-full">
+            <div id="cloud-slide-cloud" class="cloud-slide">
+              <img src="assets/img/productos/tool-cloud-horarios.png" alt="FISMATT Cloud — Horarios de clase por docente" class="rounded-lg w-full h-auto" style="box-shadow:0 20px 50px -15px rgba(139,92,246,0.35),0 0 0 1px rgba(255,255,255,0.08);" loading="lazy">
+            </div>
+            <div id="cloud-slide-estudiante" class="cloud-slide hidden">
+              <img src="assets/img/productos/tool-portal-estudiante.png" alt="Portal de Familias — Notas del estudiante" class="rounded-lg w-full h-auto" style="box-shadow:0 20px 50px -15px rgba(34,211,238,0.35),0 0 0 1px rgba(255,255,255,0.08);" loading="lazy">
+            </div>
+          </div>
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
+            <button type="button" class="cloud-tab active" data-cloud-target="cloud" aria-label="Ver FISMATT Cloud">☁️ Cloud</button>
+            <button type="button" class="cloud-tab" data-cloud-target="estudiante" aria-label="Ver Portal de Familias">🎓 Familias</button>
+          </div>
         </div>
-        <h3 class="font-black text-white leading-[1.05] mb-4" style="font-size:clamp(1.75rem,3.5vw,2.5rem);letter-spacing:-0.025em;">
-          cloud.fis-matt.com
-        </h3>
-        <p class="text-[15px] leading-relaxed mb-6" style="color:#a8a8c2;max-width:680px;">
-          Administra estudiantes y horarios de forma centralizada. El panel <strong class="text-white">no permite crear docentes</strong> — cada docente se sincroniza automáticamente desde el Sistema Institucional y en la nube <strong class="text-white">ve solo lo suyo</strong>: sus cursos, calificaciones y horario.
-        </p>
-        <div class="grid sm:grid-cols-2 gap-x-6 gap-y-2.5 mb-8" style="max-width:720px;">
-          <div class="flex items-start gap-3 text-[14px]" style="color:#cbcbe0;"><span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#a78bfa;"></span><span>Base de datos institucional segura en la nube</span></div>
-          <div class="flex items-start gap-3 text-[14px]" style="color:#cbcbe0;"><span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#67e8f9;"></span><span>Creación de horarios y administración de estudiantes</span></div>
-          <div class="flex items-start gap-3 text-[14px]" style="color:#cbcbe0;"><span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#fbbf24;"></span><span>Cada docente ve solo sus cursos, notas y horario</span></div>
-          <div class="flex items-start gap-3 text-[14px]" style="color:#cbcbe0;"><span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#34d399;"></span><span>Asistencia en la nube por curso, materia y trimestre</span></div>
-          <div class="flex items-start gap-3 text-[14px]" style="color:#cbcbe0;"><span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#a78bfa;"></span><span>Tutoría automática publicada hacia la nube</span></div>
-          <div class="flex items-start gap-3 text-[14px]" style="color:#cbcbe0;"><span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#67e8f9;"></span><span>Expediente 360° del estudiante, con PDF para el representante</span></div>
-        </div>
-        <div class="flex flex-wrap items-center gap-4">
-          <a href="https://cloud.fis-matt.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-[#0a0a14] font-bold py-3 px-6 rounded-full text-[14px] transition-all hover:bg-[#e5e5e5]">
-            Ingresar a FISMATT Cloud
-            <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </a>
-          <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="text-[13px] underline" style="color:#a8a8c2;">Cotización para tu institución &rarr;</a>
-        </div>
-      </div>
-    </div>
 
-    <!-- Portal de Familias / Estudiante -->
-    <div class="scroll-reveal mt-8 rounded-[24px] overflow-hidden border border-[#e5e5e5] bg-white p-8 md:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-      <div>
-        <span class="inline-block text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3" style="background:#d1fae5;color:#065f46;">Portal de Familias</span>
-        <h3 class="font-black text-[#111] text-[20px] mb-2">¿Eres padre de familia o estudiante?</h3>
-        <p class="text-[14px] text-[#555] leading-relaxed max-w-lg">Consulta calificaciones, asistencia y boletines directamente desde el navegador. 30 días de prueba gratis; luego pide tu código de renovación a tu institución.</p>
+        <!-- Copy + features + botones -->
+        <div class="lg:col-span-6 p-8 md:p-12 lg:p-14 order-1 lg:order-2">
+          <div class="flex items-center gap-2 mb-5">
+            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" style="background:rgba(139,92,246,0.15);color:#a78bfa;border:1px solid rgba(139,92,246,0.3);">Nuevo</span>
+            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" style="background:rgba(34,211,238,0.15);color:#67e8f9;border:1px solid rgba(34,211,238,0.3);">Institucional</span>
+          </div>
+          <h3 class="font-black text-white leading-[1.05] mb-4" style="font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-0.025em;">
+            cloud.fis-matt.com<br>+ estudiante.fis-matt.com
+          </h3>
+          <p class="text-[14px] leading-relaxed mb-6" style="color:#a8a8c2;">
+            El panel institucional <strong class="text-white">no permite crear docentes</strong> — cada docente se sincroniza automáticamente desde el Sistema Institucional y en la nube <strong class="text-white">ve solo lo suyo</strong>: sus cursos, calificaciones y horario. Padres y estudiantes consultan sus notas y boletines desde el Portal de Familias.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-x-5 gap-y-2.5 mb-8">
+            <div class="flex items-start gap-3 text-[13.5px]" style="color:#cbcbe0;"><span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#a78bfa;"></span><span>Base de datos institucional segura en la nube</span></div>
+            <div class="flex items-start gap-3 text-[13.5px]" style="color:#cbcbe0;"><span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#67e8f9;"></span><span>Creación de horarios y administración de estudiantes</span></div>
+            <div class="flex items-start gap-3 text-[13.5px]" style="color:#cbcbe0;"><span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#fbbf24;"></span><span>Asistencia en la nube por curso, materia y trimestre</span></div>
+            <div class="flex items-start gap-3 text-[13.5px]" style="color:#cbcbe0;"><span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#34d399;"></span><span>Expediente 360° del estudiante, con PDF para el representante</span></div>
+            <div class="flex items-start gap-3 text-[13.5px]" style="color:#cbcbe0;"><span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#a78bfa;"></span><span>Portal de Familias: notas, asistencia y boletines online</span></div>
+            <div class="flex items-start gap-3 text-[13.5px]" style="color:#cbcbe0;"><span class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style="background:#67e8f9;"></span><span>Página web institucional gratis con el plan Cloud</span></div>
+          </div>
+
+          <p class="text-[11px] font-bold uppercase tracking-wider mb-3" style="color:#7c7c95;">Descarga o ingresa</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 mb-4">
+            <a href="https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v2.40.2/SistemaInstitucional-Setup-2.40.2.exe" class="cloud-btn" download>
+              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              Windows
+            </a>
+            <a href="https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v2.40.2/SistemaAcademico-v2.40.2-macOS.dmg" class="cloud-btn" download>
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              macOS
+            </a>
+            <a href="https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v2.40.2/SistemaAcademico-v2.40.2-Android.apk" class="cloud-btn" download>
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M17.523 15.34l1.87-3.24a.4.4 0 00-.15-.55.4.4 0 00-.54.15l-1.9 3.28a7.7 7.7 0 00-6.6 0l-1.9-3.28a.4.4 0 00-.54-.15.4.4 0 00-.15.55l1.87 3.24C6.15 16.42 4.5 18.7 4.3 21.4h15.4c-.2-2.7-1.85-4.98-4.18-6.06zM8.8 19.1a1 1 0 110-2 1 1 0 010 2zm6.4 0a1 1 0 110-2 1 1 0 010 2zM7.4 3.4L6 1.8a.3.3 0 01.45-.4l1.5 1.7A8.9 8.9 0 0112 2.4c1.5 0 2.9.35 4.05.7l1.5-1.7a.3.3 0 01.45.4l-1.4 1.6C18.8 4.6 20 6.6 20 9H4c0-2.4 1.2-4.4 3.4-5.6zM9 7.5a.9.9 0 100-1.8.9.9 0 000 1.8zm6 0a.9.9 0 100-1.8.9.9 0 000 1.8z"/></svg>
+              Android
+            </a>
+            <a href="https://cloud.fis-matt.com" target="_blank" rel="noopener noreferrer" class="cloud-btn cloud-btn-solid">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5z"/></svg>
+              Cloud
+            </a>
+            <a href="https://estudiante.fis-matt.com" target="_blank" rel="noopener noreferrer" class="cloud-btn cloud-btn-solid">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+              Familias
+            </a>
+          </div>
+          <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="text-[13px] underline" style="color:#a8a8c2;">Cotización del plan Cloud para tu institución &rarr;</a>
+        </div>
       </div>
-      <a href="https://estudiante.fis-matt.com" target="_blank" rel="noopener noreferrer" class="btn-dark text-[14px] !py-3 !px-6 flex-shrink-0 inline-flex items-center gap-2">
-        Ingresar al portal
-        <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-      </a>
     </div>
   </div>
 </section>
