@@ -582,3 +582,169 @@ body {
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+
+/* ============================================
+   FISMATT Corporate Identity 2026
+   ============================================ */
+:root {
+    --navy: #083b4c;
+    --navy-deep: #052b38;
+    --teal: #1a8b7c;
+    --teal-light: #dff3ee;
+    --gold: #f4c95d;
+    --ink: #102a32;
+    --muted: #527078;
+    --line: #d9e5e4;
+    --paper: #f7faf9;
+    --white: #ffffff;
+    --black: var(--ink);
+    --gray-900: var(--ink);
+    --gray-700: var(--muted);
+    --gray-500: #69838a;
+    --gray-400: #789096;
+    --gray-200: var(--line);
+    --gray-100: var(--paper);
+    --accent: var(--navy);
+    --accent-hover: var(--teal);
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--ink);
+    background: var(--white);
+    letter-spacing: 0;
+}
+
+h1, h2, h3, .display {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 0 !important;
+}
+
+.display { color: var(--navy-deep); font-weight: 800; line-height: 1.08; }
+.display em { color: var(--teal); font-style: normal; }
+
+.promo-banner {
+    min-height: 38px;
+    background: var(--navy-deep);
+    color: #d8e8e7;
+    border: 0;
+    gap: 14px;
+    font-size: 12px;
+}
+.promo-banner .promo-status {
+    padding: 3px 8px;
+    color: var(--navy-deep);
+    background: var(--gold);
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.promo-banner a { color: #fff; font-weight: 700; text-decoration: none; }
+
+#navbar { background: rgba(255,255,255,.96); border-bottom-color: var(--line); }
+#navbar > div:first-child { height: 76px; }
+.brand-link { display: flex; align-items: center; flex: 0 0 auto; }
+.brand-link img { display: block; width: 208px; height: 45px; }
+.nav-link { color: var(--muted) !important; font-weight: 600; }
+.nav-link::after { background: var(--teal); height: 3px; }
+.nav-link:hover, .nav-link.active { color: var(--navy) !important; }
+
+.btn-dark, .btn-outline, .cloud-btn, .cloud-tab {
+    border-radius: 6px;
+    letter-spacing: 0;
+}
+.btn-dark { background: var(--navy); box-shadow: 0 8px 22px rgba(8,59,76,.16); }
+.btn-dark:hover { background: var(--teal); transform: translateY(-2px); }
+.btn-outline { color: var(--navy); border-color: #9ab5b7; background: #fff; }
+.btn-outline:hover { border-color: var(--teal); color: var(--teal); transform: translateY(-2px); }
+
+.hero-section {
+    background: linear-gradient(115deg, #f4faf8 0%, #fff 58%, #edf5f3 100%);
+    position: relative;
+}
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: .42;
+    pointer-events: none;
+    background-image: linear-gradient(rgba(8,59,76,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(8,59,76,.05) 1px, transparent 1px);
+    background-size: 46px 46px;
+    mask-image: linear-gradient(to right, #000, transparent 68%);
+}
+.hero-section > div { position: relative; z-index: 1; }
+.eyebrow { color: var(--teal); font-weight: 800; letter-spacing: 1.4px; }
+.eyebrow span { width: 22px; height: 2px; background: var(--gold); display: inline-block; vertical-align: middle; margin-right: 9px; }
+.hero-section h1 { color: var(--navy-deep); max-width: 720px; }
+.hero-section h1 em { color: var(--teal); font-style: normal; }
+.hero-section .text-\[\#555\] { color: var(--muted) !important; }
+.hero-section .flex.items-center.gap-5.flex-wrap { display: none; }
+
+.device-frame {
+    border-radius: 10px;
+    padding: 10px;
+    background: var(--navy-deep);
+    box-shadow: 0 34px 70px -28px rgba(8,59,76,.48);
+    transform: perspective(1200px) rotateY(-2deg) rotateX(1deg);
+}
+.device-frame::before { background: var(--gold); opacity: .55; }
+.device-frame.flat { border-radius: 8px; background: var(--navy); }
+.product-badge { background: #fff; border: 1px solid var(--line); border-radius: 7px; box-shadow: 0 16px 34px rgba(8,59,76,.15); padding: 12px 16px; }
+
+.trust-strip { border-color: var(--line); background: var(--navy); }
+.trust-item { color: #e5f0ef; }
+.trust-item svg { color: var(--gold); }
+.trust-strip .dot { background: rgba(255,255,255,.25); }
+
+.section-cream, #faq { background: var(--paper); }
+.section-soft { background-color: var(--paper); }
+.feature-row p, .tool-body p { color: var(--muted); }
+.check-icon { background: var(--teal); }
+
+.tool-card, .pricing-card, .faq-item {
+    border-color: var(--line);
+    border-radius: 8px;
+}
+.tool-card:hover { border-color: var(--teal); box-shadow: 0 18px 42px rgba(8,59,76,.11); }
+.tool-thumb { border-color: var(--line); }
+.pricing-card { box-shadow: 0 22px 60px -26px rgba(8,59,76,.28); }
+.pricing-card::before { height: 6px; background: linear-gradient(90deg, var(--navy), var(--teal), var(--gold)); }
+
+#cloud > div > div { border-radius: 8px !important; }
+.cloud-tab { border-radius: 4px; }
+.cloud-btn { border-radius: 5px; }
+
+.faq-toggle span { color: var(--navy) !important; }
+.faq-item.active { background: #fff; border-left: 3px solid var(--teal); }
+
+footer { background: var(--navy-deep) !important; }
+footer .flex.items-center.gap-2\.5 svg { display: none; }
+footer .flex.items-center.gap-2\.5::before {
+    content: '';
+    display: block;
+    width: 190px;
+    height: 41px;
+    background: url('../assets/img/fismatt-logo.svg') center/contain no-repeat;
+    filter: brightness(0) invert(1);
+}
+footer .flex.items-center.gap-2\.5 span { display: none; }
+
+.whatsapp-float { border-radius: 8px !important; box-shadow: 0 10px 30px rgba(18,138,9,.25); }
+#promo-modal { display: none !important; }
+
+@media (max-width: 767px) {
+    .promo-banner { padding: 8px 14px; flex-wrap: wrap; gap: 6px 10px; }
+    .promo-banner .promo-status { display: none; }
+    .brand-link img { width: 165px; height: auto; }
+    #navbar > div:first-child { height: 66px; }
+    .hero-section > div { padding-top: 54px; padding-bottom: 70px; }
+    .hero-section h1 { font-size: 2.55rem !important; }
+    .device-frame { transform: none; padding: 6px; }
+    .trust-strip > div { justify-content: flex-start; }
+    .trust-strip .dot { display: none; }
+    .trust-item { width: calc(50% - 10px); align-items: flex-start; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}

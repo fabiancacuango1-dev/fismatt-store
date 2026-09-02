@@ -34,7 +34,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -58,28 +58,20 @@
 
 <!-- ═════════ PROMO BAR ═════════ -->
 <div class="promo-banner">
-    <span class="font-semibold">🚀 Nuevo v3.43.0 — Recuperación de exámenes e importador flexible</span>
-    <span class="mx-2 text-[#8d8d8d]">·</span>
-    <span>Código <strong>Fismatt</strong> &mdash; 75% OFF &mdash; <span class="line-through opacity-60">$122</span> <strong>$30</strong></span>
-    <a href="#precio" class="ml-3 underline font-semibold hover:no-underline">Ver oferta</a>
+    <span class="promo-status">Actualización estable</span>
+    <span><strong>FISMATT Institucional v3.43.0</strong> para Windows y macOS</span>
+    <a href="#precio">Ver disponibilidad <span aria-hidden="true">&#8594;</span></a>
 </div>
 
 <!-- ═════════ NAVBAR ═════════ -->
 <nav id="navbar" class="sticky top-0 w-full z-50">
   <div class="max-w-[1240px] mx-auto px-6 lg:px-10 flex items-center justify-between h-[68px]">
-    <a href="#" class="flex items-center gap-2.5 group">
-      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" class="transition-transform group-hover:scale-105">
-        <rect width="30" height="30" rx="7" fill="#111"/>
-        <path d="M16 8V6L9 14h5v6l7-8h-5z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/>
-      </svg>
-      <div class="leading-tight">
-        <span class="font-extrabold text-[15px] tracking-tight text-[#111] block">FISMATT</span>
-        <span class="text-[10px] font-medium text-[#8d8d8d] tracking-wider uppercase">Systems</span>
-      </div>
+    <a href="#" class="brand-link" aria-label="FISMATT, inicio">
+      <img src="assets/img/fismatt-logo.svg" alt="FISMATT Sistemas Educativos" width="208" height="45">
     </a>
 
     <div class="hidden md:flex items-center gap-1">
-      <a href="#producto" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Producto</a>
+      <a href="#producto" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Plataforma</a>
       <a href="#herramientas" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Herramientas</a>
       <a href="#cloud" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Cloud</a>
       <a href="#precio" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Precio</a>
@@ -111,25 +103,25 @@
 </nav>
 
 <!-- ═════════ HERO — split with product mockup ═════════ -->
-<section class="section-soft overflow-hidden">
+<section class="section-soft hero-section overflow-hidden">
   <div class="max-w-[1240px] mx-auto px-6 lg:px-10 pt-16 md:pt-24 pb-20 md:pb-32">
     <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
       <!-- Copy -->
       <div class="lg:col-span-6">
-        <p class="scroll-reveal eyebrow mb-5">Sistema Institucional v3.43.0 — Nuevo</p>
+        <p class="scroll-reveal eyebrow mb-5"><span></span>Tecnología educativa hecha en Ecuador</p>
         <h1 class="scroll-reveal display mb-6" style="font-size:clamp(2.5rem,6vw,4.5rem);">
-          Tu institución,<br>en una sola app.
+          La operación académica,<br><em>finalmente conectada.</em>
         </h1>
         <p class="scroll-reveal text-[17px] md:text-[19px] text-[#555] leading-relaxed mb-9" style="max-width:540px;">
-          Sistema Institucional completo: <strong class="text-[#111] font-semibold">planificación curricular, notas, asistencia, boletines MinEduc, portal de padres con comunicación docente–tutor–familia, informes profesionales, horarios y respaldo</strong>. Funciona sin internet en Windows, Mac y Android.
+          FISMATT integra planificación curricular, notas, asistencia, boletines, comunicación con familias y gestión institucional en un sistema diseñado para la realidad educativa ecuatoriana.
         </p>
         <div class="scroll-reveal flex flex-col sm:flex-row gap-3 mb-10">
           <a href="#precio" class="btn-dark text-[15px] !px-7 !py-3.5">
-            Descargar por $30
+            Obtener FISMATT
             <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </a>
           <a href="#producto" class="btn-outline text-[15px] !px-7 !py-3.5">
-            Ver cómo funciona
+            Explorar la plataforma
           </a>
         </div>
         <p class="scroll-reveal text-[13.5px] text-[#555] -mt-6 mb-10">
@@ -680,51 +672,6 @@
   </div>
 </section>
 
-<!-- ═════════ TESTIMONIALS ═════════ -->
-<section class="bg-white border-t border-[#e5e5e5]">
-  <div class="max-w-[1240px] mx-auto px-6 lg:px-10 py-20 md:py-28">
-    <div class="max-w-xl mb-14">
-      <p class="scroll-reveal eyebrow mb-4">Testimonios</p>
-      <h2 class="scroll-reveal display" style="font-size:clamp(1.75rem,4vw,2.75rem);">
-        Lo que dicen<br>los docentes.
-      </h2>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-5">
-      <div class="scroll-reveal testimonial-card">
-        <p class="text-[16px] leading-relaxed text-[#111] mb-6 font-medium">&ldquo;Me ahorra horas cada trimestre. Los boletines salen perfectos según las normas del Ministerio.&rdquo;</p>
-        <div class="flex items-center gap-3 pt-5 border-t border-[#e5e5e5]">
-          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-[#FF9A56] to-[#FF5E3A] flex items-center justify-center text-[11px] font-bold text-white">MC</div>
-          <div>
-            <p class="text-[13.5px] font-semibold text-[#111]">María Cacuango</p>
-            <p class="text-[11.5px] text-[#8d8d8d]">Docente &middot; Quito</p>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-reveal testimonial-card">
-        <p class="text-[16px] leading-relaxed text-[#111] mb-6 font-medium">&ldquo;El sistema de notas masivas es increíble. Subí las calificaciones del parcial en 5 minutos.&rdquo;</p>
-        <div class="flex items-center gap-3 pt-5 border-t border-[#e5e5e5]">
-          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-[#667eea] to-[#764ba2] flex items-center justify-center text-[11px] font-bold text-white">JP</div>
-          <div>
-            <p class="text-[13.5px] font-semibold text-[#111]">Juan Pazmiño</p>
-            <p class="text-[11.5px] text-[#8d8d8d]">Docente &middot; Guayaquil</p>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-reveal testimonial-card">
-        <p class="text-[16px] leading-relaxed text-[#111] mb-6 font-medium">&ldquo;Excelente inversión. El soporte por WhatsApp es súper rápido. Vale cada centavo.&rdquo;</p>
-        <div class="flex items-center gap-3 pt-5 border-t border-[#e5e5e5]">
-          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-[#11998e] to-[#38ef7d] flex items-center justify-center text-[11px] font-bold text-white">LR</div>
-          <div>
-            <p class="text-[13.5px] font-semibold text-[#111]">Laura Rojas</p>
-            <p class="text-[11.5px] text-[#8d8d8d]">Docente &middot; Cuenca</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ═════════ FAQ ═════════ -->
 <section id="faq" class="section-cream">
   <div class="max-w-[760px] mx-auto px-6 lg:px-10 py-20 md:py-28">
@@ -895,6 +842,7 @@
 
 <script>
 (function() {
+  return; // La oferta ya está visible en la página; evitamos interrumpir al visitante.
   // Solo en desktop (>= 1024px)
   if (window.innerWidth < 1024) return;
   var modal = document.getElementById('promo-modal');
