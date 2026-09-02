@@ -748,3 +748,113 @@ footer .flex.items-center.gap-2\.5 span { display: none; }
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+/* ============================================
+   FISMATT Brand Experience v2
+   Full-bleed institutional direction
+   ============================================ */
+.promo-banner {
+    background: #041f29;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+    min-height: 34px;
+}
+
+#navbar {
+    background: var(--navy-deep);
+    border-bottom: 1px solid rgba(255,255,255,.12);
+    box-shadow: none;
+}
+#navbar.scrolled { background: rgba(5,43,56,.98); border-bottom-color: rgba(255,255,255,.15); box-shadow: 0 10px 30px rgba(0,0,0,.13); }
+.brand-link img { width: 224px; height: 40px; }
+.nav-link { color: #c2d4d5 !important; }
+.nav-link:hover, .nav-link.active { color: #fff !important; }
+.nav-link::after { background: var(--gold); }
+#navbar .btn-dark { background: var(--gold); color: var(--navy-deep); box-shadow: none; }
+#navbar .btn-dark:hover { background: #ffdc80; }
+#mobile-menu-btn { color: #fff; }
+#mobile-menu-btn svg { stroke: #fff; }
+#mobile-menu { background: var(--navy-deep) !important; border-color: rgba(255,255,255,.12) !important; }
+#mobile-menu a { color: #fff !important; }
+
+.hero-section {
+    min-height: calc(100vh - 110px);
+    color: #fff;
+    background:
+      linear-gradient(90deg, rgba(3,25,33,.97) 0%, rgba(3,25,33,.87) 38%, rgba(3,25,33,.42) 66%, rgba(3,25,33,.15) 100%),
+      url('../assets/img/productos/app-estudiantes.png') center 18% / cover no-repeat;
+    border-bottom: 8px solid var(--gold);
+}
+.hero-section::before {
+    opacity: .13;
+    background-image: linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.12) 1px, transparent 1px);
+    mask-image: linear-gradient(to right, #000, transparent 55%);
+}
+.hero-section > div { padding-top: clamp(80px, 11vh, 140px); padding-bottom: clamp(80px, 12vh, 150px); }
+.hero-section .grid { display: block; }
+.hero-section .lg\:col-span-6:first-child { max-width: 780px; }
+.hero-section .lg\:col-span-6:last-child { display: none; }
+.hero-section h1 {
+    max-width: 900px;
+    color: #fff;
+    font-size: clamp(3.3rem, 6.8vw, 7rem) !important;
+    line-height: .98;
+    text-wrap: balance;
+    text-shadow: 0 2px 25px rgba(0,0,0,.24);
+}
+.hero-section h1 em { color: var(--gold); }
+.hero-section .eyebrow { color: #bfe2dc; }
+.hero-section p.text-\[17px\], .hero-section p.md\:text-\[19px\] {
+    color: #e3eeee !important;
+    max-width: 680px !important;
+    font-size: 18px !important;
+}
+.hero-section .btn-dark { background: var(--gold); color: var(--navy-deep); box-shadow: none; }
+.hero-section .btn-dark:hover { background: #ffdc80; }
+.hero-section .btn-outline { color: #fff; border-color: rgba(255,255,255,.58); background: rgba(5,43,56,.38); }
+.hero-section .btn-outline:hover { border-color: #fff; color: #fff; background: rgba(255,255,255,.1); }
+.hero-section .text-\[13px\] { color: #d8e5e5 !important; }
+.hero-section .text-\[\#e63030\] { color: var(--gold) !important; }
+
+.trust-strip {
+    background: #fff;
+    border: 0;
+}
+.trust-strip > div { padding-top: 30px; padding-bottom: 30px; justify-content: space-between; }
+.trust-item { color: var(--navy); font-weight: 700; }
+.trust-item svg { color: var(--teal); width: 18px; height: 18px; }
+.trust-strip .dot { display: none; }
+
+#producto > div, .section-cream > div { padding-top: 120px; padding-bottom: 120px; }
+.feature-row { gap: clamp(4rem, 9vw, 9rem); }
+.feature-row .display { font-size: clamp(2.6rem, 5vw, 4.8rem) !important; }
+.feature-row .device-frame.flat { padding: 0; border-radius: 0; border-left: 8px solid var(--gold); box-shadow: 26px 26px 0 #dcece9; }
+.feature-row .device-frame.flat img { border-radius: 0; border: 0; }
+
+section.border-t .grid.sm\:grid-cols-2.lg\:grid-cols-3 > div {
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+}
+section.border-t .grid.sm\:grid-cols-2.lg\:grid-cols-3 svg { color: var(--teal); stroke: currentColor; }
+
+#herramientas .tool-card { border-radius: 0; }
+#herramientas .rounded-\[24px\] { border-radius: 0 !important; }
+#herramientas .max-w-3xl h2 { font-size: clamp(3rem, 6vw, 5.8rem) !important; max-width: 1000px; }
+
+#cloud > div > div { border-radius: 0 !important; border-top: 8px solid var(--gold) !important; }
+.pricing-card { border-radius: 0; border: 0; border-top: 8px solid var(--gold); box-shadow: 0 30px 90px -35px rgba(5,43,56,.35); }
+.pricing-card::before { display: none; }
+
+@media (max-width: 767px) {
+    .brand-link img { width: 190px; height: auto; }
+    .hero-section { min-height: 720px; background-position: 63% center; }
+    .hero-section::after { content: ''; position: absolute; inset: 0; background: rgba(3,25,33,.18); pointer-events: none; }
+    .hero-section > div { padding-top: 76px; padding-bottom: 72px; }
+    .hero-section h1 { font-size: 3.05rem !important; line-height: 1.01; }
+    .hero-section .eyebrow { max-width: 280px; line-height: 1.5; }
+    .hero-section .flex.flex-col.sm\:flex-row { max-width: 320px; }
+    .trust-strip > div { gap: 18px; }
+    .trust-item { width: 100%; }
+    #producto > div, .section-cream > div { padding-top: 82px; padding-bottom: 82px; }
+    .feature-row .display { font-size: 2.65rem !important; }
+    .feature-row .device-frame.flat { box-shadow: 12px 12px 0 #dcece9; border-left-width: 5px; }
+}
