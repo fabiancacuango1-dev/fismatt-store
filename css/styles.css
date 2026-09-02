@@ -724,8 +724,8 @@ footer .flex.items-center.gap-2\.5::before {
     display: block;
     width: 190px;
     height: 41px;
-    background: url('../assets/img/fismatt-logo.svg') center/contain no-repeat;
-    filter: brightness(0) invert(1);
+    background: url('../assets/img/fismatt-logo-white.svg?v=20260902-4') center/contain no-repeat;
+    filter: none;
 }
 footer .flex.items-center.gap-2\.5 span { display: none; }
 
@@ -805,6 +805,45 @@ footer .flex.items-center.gap-2\.5 span { display: none; }
     .ecosystem-product { min-height: 320px; }
     .ecosystem-product > span { left: 22px; right: 22px; bottom: 22px; }
     .ecosystem-product strong,.ecosystem-featured strong { font-size: 1.8rem; }
+}
+
+/* ============================================
+   Video tutorials and social community
+   ============================================ */
+.hero-video-link { width: fit-content; margin-top: -20px; color: #e8f1f0; display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.42); padding-bottom: 5px; }
+.hero-video-link:hover { color: var(--gold); border-color: var(--gold); }
+.hero-play { width: 25px; height: 25px; display: grid; place-items: center; padding-left: 2px; border: 1px solid currentColor; border-radius: 50%; font-size: 8px; }
+
+.video-stage { background: #fff; }
+.video-stage-heading { display: grid; grid-template-columns: 1fr minmax(280px,430px); align-items: end; gap: 70px; margin-bottom: 48px; }
+.video-stage-heading h2 { margin: 0; color: var(--navy-deep); font-size: clamp(2.8rem,5.6vw,5.8rem); line-height: 1; font-weight: 800; }
+.video-stage-heading > p { color: var(--muted); font-size: 16px; line-height: 1.65; }
+.video-layout { display: grid; grid-template-columns: minmax(0,1.7fr) minmax(300px,.7fr); background: var(--navy-deep); }
+.video-frame { aspect-ratio: 16/9; min-width: 0; background: #000; }
+.video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.video-community { color: #fff; padding: clamp(30px,4vw,56px); border-left: 1px solid rgba(255,255,255,.15); display: flex; flex-direction: column; }
+.community-index { color: var(--gold); font-family: 'Manrope',sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 1px; }
+.video-community h3 { margin: auto 0 18px; color: #fff; font-size: clamp(1.8rem,3vw,3rem); line-height: 1.05; }
+.video-community > p { margin: 0 0 28px; color: #abc0c2; font-size: 14px; line-height: 1.65; }
+.social-link { min-height: 58px; display: grid; grid-template-columns: 38px 1fr auto; align-items: center; gap: 12px; color: #fff; text-decoration: none; border-top: 1px solid rgba(255,255,255,.18); transition: background .2s ease; }
+.social-link:last-child { border-bottom: 1px solid rgba(255,255,255,.18); }
+.social-link > span { width: 30px; height: 30px; display: grid; place-items: center; font-size: 9px; font-weight: 900; border: 1px solid currentColor; }
+.social-link strong { font-size: 12px; }
+.social-link b { color: var(--gold); }
+.social-link:hover { background: rgba(255,255,255,.06); }
+.social-youtube > span { color: #ff5c5c; }
+.social-tiktok > span { color: #74f5e3; }
+
+@media (max-width: 900px) {
+    .video-stage-heading { grid-template-columns: 1fr; gap: 24px; }
+    .video-layout { grid-template-columns: 1fr; }
+    .video-community { min-height: 420px; border-left: 0; border-top: 1px solid rgba(255,255,255,.15); }
+}
+
+@media (max-width: 640px) {
+    .video-stage-heading h2 { font-size: 2.65rem; }
+    .video-community { min-height: 390px; padding: 28px 24px; }
+    .hero-video-link { margin-top: -16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
