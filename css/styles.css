@@ -927,6 +927,100 @@ footer .flex.items-center.gap-2\.5 span { display: none; }
 .hero-section .eyebrow span { background: #fff; }
 .hero-section .btn-dark { background: #fff; color: #090b0f; }
 .hero-section .btn-dark:hover { background: #e7e9ee; }
+
+/* ============================================
+   FISMATT Corporate Palette v3
+   Graphite, white, aluminium and signal red
+   ============================================ */
+:root {
+    --navy: #111111;
+    --navy-deep: #050505;
+    --teal: #d40000;
+    --teal-light: #f7e8e8;
+    --gold: #d40000;
+    --ink: #111111;
+    --muted: #6e6e73;
+    --line: #d2d2d7;
+    --paper: #f5f5f7;
+    --accent: #d40000;
+    --accent-hover: #a90000;
+}
+
+body { color: #111; background: #fff; }
+.section-cream,.section-soft,#faq,.ecosystem-showcase { background: #f5f5f7; }
+.promo-banner { background: #050505; color: #b8b8bd; border-bottom: 1px solid #262626; }
+.promo-banner .promo-status { color: #fff; background: #d40000; }
+
+#navbar,#navbar.scrolled { background: rgba(5,5,5,.98); border-bottom-color: #282828; }
+.nav-link { color: #b8b8bd !important; }
+.nav-link:hover,.nav-link.active { color: #fff !important; }
+.nav-link::after { height: 2px; background: #d40000; }
+#navbar .btn-dark { color: #050505; background: #fff; border: 1px solid #fff; }
+#navbar .btn-dark:hover { color: #fff; background: #d40000; border-color: #d40000; }
+#mobile-menu { background: #050505 !important; border-color: #282828 !important; }
+#mobile-menu a { color: #fff !important; border-radius: 0; }
+#mobile-menu a:hover { background: #181818 !important; }
+
+.hero-section { background: #050505; border-bottom: 4px solid #d40000; }
+.hero-section::before { background: linear-gradient(90deg,rgba(0,0,0,.99) 0%,rgba(0,0,0,.96) 38%,rgba(0,0,0,.78) 66%,rgba(0,0,0,.4) 100%); }
+.hero-section h1 em { color: #fff; }
+.hero-section .eyebrow { color: #d2d2d7; }
+.hero-section .eyebrow span { background: #d40000; }
+.hero-section .btn-dark { color: #050505; background: #fff; border-color: #fff; }
+.hero-section .btn-dark:hover { color: #fff; background: #d40000; border-color: #d40000; }
+.hero-section .btn-outline { color: #fff; background: rgba(0,0,0,.48); border-color: #8e8e93; }
+.hero-section .btn-outline:hover { background: #fff; color: #050505; border-color: #fff; }
+.hero-section .text-\[\#e63030\] { color: #fff !important; }
+.hero-carousel-status i::before { background: #d40000; }
+
+.download-hub,.product-proof,.video-layout { background: #050505; }
+.download-hub .eyebrow,.proof-heading .eyebrow { color: #b8b8bd; }
+.download-offer strong,.community-index,.proof-shot figcaption span,.social-link b { color: #d40000; }
+.download-product { background: #050505; }
+.download-product:hover { background: #181818; }
+.download-product-primary { color: #050505; background: #fff; }
+.download-product-primary:hover { color: #fff; background: #d40000; }
+.proof-shot,.proof-shot-wide { background: #0b0b0b; }
+.proof-shot figcaption em,.proof-heading > p:last-child,.video-community > p { color: #a1a1a6; }
+.proof-dots button.active { background: #d40000; }
+.proof-arrows button:hover,.proof-arrows button:focus-visible { color: #fff; background: #d40000; border-color: #d40000; }
+
+.trust-strip { background: #fff; }
+.trust-item { color: #111; }
+.trust-item svg,section.border-t .grid.sm\:grid-cols-2.lg\:grid-cols-3 svg { color: #d40000; }
+.feature-row .device-frame.flat { border-left-color: #d40000; box-shadow: 26px 26px 0 #e5e5e7; }
+.check-icon { color: #fff; background: #111 !important; }
+.tool-card:hover { border-color: #111; box-shadow: 0 18px 42px rgba(0,0,0,.1); }
+
+#herramientas .rounded-\[24px\],#cloud > div > div { border-color: #262626 !important; }
+#herramientas [style*="linear-gradient(135deg"],#cloud [style*="linear-gradient(135deg"] { background: #090909 !important; }
+#herramientas [style*="radial-gradient"] { background: #111 !important; }
+#herramientas span[style*="rgba(139,92,246"],#herramientas span[style*="rgba(34,211,238"],
+#cloud span[style*="rgba(139,92,246"],#cloud span[style*="rgba(34,211,238"] { color: #fff !important; background: #202020 !important; border-color: #505050 !important; }
+#herramientas span.w-1\.5,#cloud span.w-1\.5 { background: #d40000 !important; }
+#herramientas span[style*="background:#d1fae5"],#herramientas span[style*="background:#dbeafe"],
+#herramientas span[style*="background:#fef3c7"],#herramientas span[style*="background:#fee2e2"] { color: #111 !important; background: #e8e8ed !important; }
+
+#cloud > div > div { border-top-color: #d40000 !important; }
+.cloud-tab.active,.cloud-btn,.pricing-card .btn-dark { color: #fff; background: #111; }
+.pricing-card { border-top-color: #d40000; box-shadow: 0 30px 80px -38px rgba(0,0,0,.35); }
+.pricing-card .text-\[\#e63030\] { color: #d40000 !important; }
+#precio [style*="background:#2e7d32"] { background: #111 !important; }
+#precio [style*="background:#d1fae5"],#precio [style*="background:#e8f5e9"] { color: #111 !important; background: #ededf0 !important; border-color: #c7c7cc !important; }
+#precio [style*="background:#fff3cd"] { color: #8a0000 !important; background: #f8eeee !important; border-color: #d40000 !important; }
+.faq-item.active { border-left-color: #d40000; }
+.faq-toggle span { color: #111 !important; }
+footer { background: #050505 !important; }
+
+.social-youtube > span,.social-tiktok > span { color: #fff; }
+.whatsapp-float { background: #111 !important; border: 1px solid #3a3a3a; border-radius: 6px !important; box-shadow: 0 12px 28px rgba(0,0,0,.28); }
+.whatsapp-float:hover { background: #d40000 !important; box-shadow: 0 14px 32px rgba(0,0,0,.36); }
+
+@media (max-width: 767px) {
+    .hero-section::after { background: rgba(0,0,0,.2); }
+    .feature-row .device-frame.flat { box-shadow: 12px 12px 0 #e5e5e7; }
+    .proof-carousel-controls { padding-right: 64px; }
+}
 .hero-section .text-\[\#e63030\] { color: #fff !important; }
 .download-product-primary { background: #4f6df5; color: #fff; }
 .download-product-primary:hover { background: #405bd8; }
@@ -1108,3 +1202,36 @@ section.border-t .grid.sm\:grid-cols-2.lg\:grid-cols-3 svg { color: var(--teal);
 .hero-section .eyebrow span { background: #fff; }
 .hero-section .btn-dark { background: #fff; color: #090b0f; }
 .hero-section .btn-dark:hover { background: #e7e9ee; }
+
+/* Corporate palette final lock */
+.promo-banner { background: #050505; color: #b8b8bd; border-bottom-color: #262626; }
+.promo-banner .promo-status { color: #fff; background: #d40000; }
+#navbar,#navbar.scrolled { background: rgba(5,5,5,.98); border-bottom-color: #282828; }
+.nav-link { color: #b8b8bd !important; }
+.nav-link:hover,.nav-link.active { color: #fff !important; }
+.nav-link::after { background: #d40000; }
+#navbar .btn-dark { color: #050505; background: #fff; border: 1px solid #fff; }
+#navbar .btn-dark:hover { color: #fff; background: #d40000; border-color: #d40000; }
+.hero-section { background: #050505; border-bottom: 4px solid #d40000; }
+.hero-section::before { background: linear-gradient(90deg,rgba(0,0,0,.99) 0%,rgba(0,0,0,.96) 38%,rgba(0,0,0,.78) 66%,rgba(0,0,0,.4) 100%); }
+.hero-section h1 em { color: #fff; }
+.hero-section .eyebrow { color: #d2d2d7; }
+.hero-section .eyebrow span { background: #d40000; }
+.hero-section .btn-dark { color: #050505; background: #fff; border-color: #fff; }
+.hero-section .btn-dark:hover { color: #fff; background: #d40000; border-color: #d40000; }
+.hero-section .btn-outline { color: #fff; background: rgba(0,0,0,.48); border-color: #8e8e93; }
+.hero-section .btn-outline:hover { color: #050505; background: #fff; border-color: #fff; }
+.hero-section .text-\[\#e63030\] { color: #fff !important; }
+.hero-carousel-status i::before { background: #d40000; }
+.download-product-primary { color: #050505; background: #fff; }
+.download-product-primary:hover { color: #fff; background: #d40000; }
+.download-offer strong,.community-index,.proof-shot figcaption span,.social-link b { color: #d40000; }
+.proof-dots button.active { background: #d40000; }
+.feature-row .device-frame.flat { border-left-color: #d40000; box-shadow: 26px 26px 0 #e5e5e7; }
+.pricing-card { border-top-color: #d40000; }
+.social-youtube > span,.social-tiktok > span { color: #fff; }
+
+@media (max-width: 767px) {
+    .hero-section::after { background: rgba(0,0,0,.2); }
+    .feature-row .device-frame.flat { box-shadow: 12px 12px 0 #e5e5e7; }
+}
