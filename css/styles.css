@@ -808,6 +808,33 @@ footer .flex.items-center.gap-2\.5 span { display: none; }
 }
 
 /* ============================================
+   Real product gallery
+   ============================================ */
+.product-proof { background: var(--navy-deep); color: #fff; }
+.proof-heading { max-width: 930px; margin-bottom: 54px; }
+.proof-heading .eyebrow { color: #9dd8ce; }
+.proof-heading h2 { margin: 0 0 22px; color: #fff; font-size: clamp(3rem,6vw,6.2rem); line-height: .98; font-weight: 800; }
+.proof-heading > p:last-child { max-width: 650px; color: #a9bec0; font-size: 17px; line-height: 1.65; }
+.proof-gallery { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 2px; background: rgba(255,255,255,.17); }
+.proof-shot { margin: 0; min-width: 0; background: #061f29; overflow: hidden; }
+.proof-shot-wide { grid-column: span 2; }
+.proof-shot img { width: 100%; aspect-ratio: 16/10; display: block; object-fit: cover; object-position: top left; transition: transform .65s cubic-bezier(.2,.8,.2,1); }
+.proof-shot-wide img { aspect-ratio: 16/8.2; }
+.proof-shot:hover img { transform: scale(1.018); }
+.proof-shot figcaption { min-height: 94px; padding: 18px 22px 20px; display: grid; grid-template-columns: 34px 1fr; column-gap: 12px; align-items: start; }
+.proof-shot figcaption span { grid-row: span 2; color: var(--gold); font-size: 10px; font-weight: 800; padding-top: 4px; }
+.proof-shot figcaption strong { color: #fff; font-family: 'Manrope',sans-serif; font-size: 18px; }
+.proof-shot figcaption em { color: #91aaad; font-size: 12px; font-style: normal; }
+
+@media (max-width: 700px) {
+    .proof-heading h2 { font-size: 2.75rem; }
+    .proof-gallery { grid-template-columns: 1fr; }
+    .proof-shot-wide { grid-column: auto; }
+    .proof-shot img,.proof-shot-wide img { aspect-ratio: 16/10; }
+    .proof-shot figcaption { min-height: 88px; }
+}
+
+/* ============================================
    Video tutorials and social community
    ============================================ */
 .hero-video-link { width: fit-content; margin-top: -20px; color: #e8f1f0; display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.42); padding-bottom: 5px; }
@@ -882,7 +909,7 @@ footer .flex.items-center.gap-2\.5 span { display: none; }
     color: #fff;
     background:
       linear-gradient(90deg, rgba(3,25,33,.97) 0%, rgba(3,25,33,.87) 38%, rgba(3,25,33,.42) 66%, rgba(3,25,33,.15) 100%),
-      url('../assets/img/productos/app-estudiantes.png') center 18% / cover no-repeat;
+      url('../assets/img/productos/capturas/estudiantes.jpg') center 18% / cover no-repeat;
     border-bottom: 8px solid var(--gold);
 }
 .hero-section::before {
