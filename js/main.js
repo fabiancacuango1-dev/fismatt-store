@@ -11,7 +11,66 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initActiveNavLinks();
     initCloudTabs();
+    initProofCarousel();
 });
+
+/* ---- Real product carousel ---- */
+function initProofCarousel() {
+    const carousel = document.querySelector('[data-proof-carousel]');
+    if (!carousel) return;
+
+    const track = carousel.querySelector('.proof-gallery');
+    const slides = Array.from(carousel.querySelectorAll('.proof-shot'));
+    const dotsContainer = carousel.querySelector('[data-proof-dots]');
+    const currentLabel = carousel.querySelector('[data-proof-current]');
+    const previous = carousel.querySelector('[data-proof-prev]');
+    const next = carousel.querySelector('[data-proof-next]');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let current = 0;
+    let timer;
+
+    const dots = slides.map((_, index) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', `Ver imagen ${index + 1}`);
+        dot.addEventListener('click', () => goTo(index, true));
+        dotsContainer.appendChild(dot);
+        return dot;
+    });
+
+    function goTo(index, restart = false) {
+        current = (index + slides.length) % slides.length;
+        track.style.transform = `translate3d(-${current * 100}%, 0, 0)`;
+        currentLabel.textContent = String(current + 1).padStart(2, '0');
+        slides.forEach((slide, slideIndex) => {
+            slide.setAttribute('aria-hidden', slideIndex === current ? 'false' : 'true');
+        });
+        dots.forEach((dot, dotIndex) => {
+            const active = dotIndex === current;
+            dot.classList.toggle('active', active);
+            dot.setAttribute('aria-current', active ? 'true' : 'false');
+        });
+        if (restart) start();
+    }
+
+    function stop() {
+        window.clearInterval(timer);
+    }
+
+    function start() {
+        stop();
+        if (!reducedMotion) timer = window.setInterval(() => goTo(current + 1), 6000);
+    }
+
+    previous.addEventListener('click', () => goTo(current - 1, true));
+    next.addEventListener('click', () => goTo(current + 1, true));
+    carousel.addEventListener('pointerenter', stop);
+    carousel.addEventListener('pointerleave', start);
+    carousel.addEventListener('focusin', stop);
+    carousel.addEventListener('focusout', start);
+    goTo(0);
+    start();
+}
 
 /* ---- Navbar Scroll Effect ---- */
 function initNavbar() {
