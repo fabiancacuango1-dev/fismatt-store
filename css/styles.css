@@ -745,6 +745,68 @@ footer .flex.items-center.gap-2\.5 span { display: none; }
     .trust-item { width: calc(50% - 10px); align-items: flex-start; }
 }
 
+/* ============================================
+   Primary downloads and ecosystem showcase
+   ============================================ */
+.download-hub { background: var(--navy-deep); color: #fff; border-bottom: 1px solid rgba(255,255,255,.1); }
+.download-hub .eyebrow { color: #9dd8ce; }
+.download-heading { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 40px; margin-bottom: 38px; }
+.download-heading h2 { margin: 0; max-width: 760px; color: #fff; font-size: clamp(2.5rem,5vw,5.2rem); font-weight: 800; line-height: 1; }
+.download-offer { min-width: 240px; padding-left: 24px; border-left: 1px solid rgba(255,255,255,.24); display: grid; }
+.download-offer span { color: #9db6b9; font-size: 12px; text-transform: uppercase; font-weight: 700; }
+.download-offer strong { color: var(--gold); font-family: 'Manrope',sans-serif; font-size: 32px; line-height: 1.2; }
+.download-offer small { color: #c8d7d8; font-size: 12px; }
+.download-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); border-top: 1px solid rgba(255,255,255,.18); border-bottom: 1px solid rgba(255,255,255,.18); }
+.download-product { min-width: 0; min-height: 215px; padding: 28px; color: #fff; text-decoration: none; border-right: 1px solid rgba(255,255,255,.18); display: grid; grid-template-rows: auto 1fr auto; transition: background .25s ease,color .25s ease; }
+.download-product:last-child { border-right: 0; }
+.download-product:hover { background: rgba(255,255,255,.07); }
+.download-product-primary { background: var(--gold); color: var(--navy-deep); }
+.download-product-primary:hover { background: #ffdc80; }
+.platform-mark { width: 46px; height: 28px; border: 1px solid currentColor; display: grid; place-items: center; font-size: 10px; font-weight: 800; letter-spacing: 1px; }
+.download-copy { align-self: center; display: grid; gap: 3px; }
+.download-copy small { opacity: .7; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+.download-copy strong { font-family: 'Manrope',sans-serif; font-size: clamp(1.25rem,2vw,1.75rem); line-height: 1.15; }
+.download-copy span { opacity: .7; font-size: 12px; }
+.download-action { display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 13px; }
+.download-action b { font-size: 20px; }
+.download-meta { padding-top: 18px; display: flex; justify-content: space-between; gap: 24px; color: #9db6b9; font-size: 11px; }
+.download-meta a { color: #d8e8e7; text-decoration: underline; }
+
+.ecosystem-showcase { background: #eef5f3; }
+.ecosystem-intro { max-width: 940px; margin-bottom: 48px; }
+.ecosystem-intro h2 { margin: 0 0 22px; color: var(--navy-deep); font-size: clamp(2.5rem,5vw,5.1rem); line-height: 1.02; font-weight: 800; }
+.ecosystem-intro > p:last-child { max-width: 700px; color: var(--muted); font-size: 17px; line-height: 1.65; }
+.ecosystem-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 2px; background: #b9cdca; }
+.ecosystem-product { min-width: 0; min-height: 370px; position: relative; overflow: hidden; color: #fff; background: var(--navy); text-decoration: none; }
+.ecosystem-product img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top left; transition: transform .7s cubic-bezier(.2,.8,.2,1); }
+.ecosystem-product::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg,transparent 34%,rgba(3,25,33,.92) 100%); }
+.ecosystem-product > span { position: absolute; z-index: 1; left: 30px; right: 30px; bottom: 28px; display: grid; }
+.ecosystem-product small { color: #b7d5d1; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; }
+.ecosystem-product strong { color: #fff; font-family: 'Manrope',sans-serif; font-size: 28px; line-height: 1.2; }
+.ecosystem-product em { color: #d3e0e0; font-size: 13px; font-style: normal; }
+.ecosystem-product:hover img { transform: scale(1.035); }
+.ecosystem-featured { grid-column: span 2; min-height: 500px; }
+.ecosystem-featured strong { font-size: clamp(2.2rem,4vw,4.5rem); }
+.ecosystem-all { margin-top: 28px; display: inline-flex; gap: 12px; align-items: center; color: var(--navy); font-weight: 800; text-decoration: none; border-bottom: 2px solid var(--gold); padding-bottom: 5px; }
+
+@media (max-width: 850px) {
+    .download-heading { grid-template-columns: 1fr; align-items: start; }
+    .download-offer { padding: 0; border: 0; }
+    .download-grid { grid-template-columns: 1fr; }
+    .download-product { min-height: 170px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.18); }
+    .download-product:last-child { border-bottom: 0; }
+    .download-meta { flex-direction: column; gap: 7px; }
+}
+
+@media (max-width: 640px) {
+    .download-heading h2,.ecosystem-intro h2 { font-size: 2.65rem; }
+    .ecosystem-grid { grid-template-columns: 1fr; }
+    .ecosystem-featured { grid-column: auto; min-height: 390px; }
+    .ecosystem-product { min-height: 320px; }
+    .ecosystem-product > span { left: 22px; right: 22px; bottom: 22px; }
+    .ecosystem-product strong,.ecosystem-featured strong { font-size: 1.8rem; }
+}
+
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
