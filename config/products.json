@@ -33,7 +33,42 @@
       "featured": true,
       "starProduct": true,
       "promoLabel": "67% OFF Septiembre",
-      "checksums": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.9.1/SHA256SUMS-Windows.txt"
+      "checksums": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.9.1/SHA256SUMS-Windows.txt",
+      "pricing": {
+        "monthly": 9,
+        "yearly": 79,
+        "perpetual": 150,
+        "perpetualPromo": 50,
+        "promoUntil": "2026-09-30",
+        "note": "Los tres planes traen el mismo producto completo; cambia la duracion.",
+        "institutional": [
+          {
+            "fromTeachers": 1,
+            "toTeachers": 4,
+            "perLicense": 50,
+            "saving": "0%"
+          },
+          {
+            "fromTeachers": 5,
+            "toTeachers": 14,
+            "perLicense": 40,
+            "saving": "20%"
+          },
+          {
+            "fromTeachers": 15,
+            "toTeachers": 29,
+            "perLicense": 32,
+            "saving": "36%"
+          },
+          {
+            "fromTeachers": 30,
+            "toTeachers": null,
+            "perLicense": 25,
+            "saving": "50%"
+          }
+        ]
+      },
+      "page": "/"
     },
     "sistema-academico-mac": {
       "name": "Sistema Académico Completo — Instalador macOS",
@@ -67,7 +102,42 @@
       ],
       "featured": true,
       "starProduct": true,
-      "promoLabel": "67% OFF Septiembre"
+      "promoLabel": "67% OFF Septiembre",
+      "pricing": {
+        "monthly": 9,
+        "yearly": 79,
+        "perpetual": 150,
+        "perpetualPromo": 50,
+        "promoUntil": "2026-09-30",
+        "note": "Los tres planes traen el mismo producto completo; cambia la duracion.",
+        "institutional": [
+          {
+            "fromTeachers": 1,
+            "toTeachers": 4,
+            "perLicense": 50,
+            "saving": "0%"
+          },
+          {
+            "fromTeachers": 5,
+            "toTeachers": 14,
+            "perLicense": 40,
+            "saving": "20%"
+          },
+          {
+            "fromTeachers": 15,
+            "toTeachers": 29,
+            "perLicense": 32,
+            "saving": "36%"
+          },
+          {
+            "fromTeachers": 30,
+            "toTeachers": null,
+            "perLicense": 25,
+            "saving": "50%"
+          }
+        ]
+      },
+      "page": "/"
     },
     "sistema-academico-android": {
       "name": "Sistema Académico Completo — App Android",
@@ -100,7 +170,42 @@
         "Los datos de licencia ya no pueden consultarse desde fuera del sistema"
       ],
       "featured": true,
-      "promoLabel": "67% OFF Septiembre"
+      "promoLabel": "67% OFF Septiembre",
+      "pricing": {
+        "monthly": 9,
+        "yearly": 79,
+        "perpetual": 150,
+        "perpetualPromo": 50,
+        "promoUntil": "2026-09-30",
+        "note": "Los tres planes traen el mismo producto completo; cambia la duracion.",
+        "institutional": [
+          {
+            "fromTeachers": 1,
+            "toTeachers": 4,
+            "perLicense": 50,
+            "saving": "0%"
+          },
+          {
+            "fromTeachers": 5,
+            "toTeachers": 14,
+            "perLicense": 40,
+            "saving": "20%"
+          },
+          {
+            "fromTeachers": 15,
+            "toTeachers": 29,
+            "perLicense": 32,
+            "saving": "36%"
+          },
+          {
+            "fromTeachers": 30,
+            "toTeachers": null,
+            "perLicense": 25,
+            "saving": "50%"
+          }
+        ]
+      },
+      "page": "/"
     },
     "sube-notas-masivas": {
       "name": "Sube Notas Masivas al Sistema Académico",
@@ -112,7 +217,12 @@
       "billing": "annual",
       "released": "2026-04-06",
       "updated": "2026-04-06",
-      "changelog": "Initial release"
+      "changelog": "Initial release",
+      "pricing": {
+        "monthly": 1.5,
+        "yearly": 10
+      },
+      "page": "/productos/importador-notas.html"
     },
     "simulador-ser-maestro": {
       "name": "Simulador Examen Ser Maestro 2026",
@@ -124,7 +234,12 @@
       "billing": "annual",
       "released": "2026-04-06",
       "updated": "2026-04-06",
-      "changelog": "Initial release"
+      "changelog": "Initial release",
+      "pricing": {
+        "monthly": 1.5,
+        "yearly": 10
+      },
+      "page": "/productos/simulador-ser-maestro.html"
     },
     "generador-horarios": {
       "name": "Generador de Horarios Docentes y Cursos",
@@ -137,7 +252,12 @@
       "released": "2026-04-06",
       "updated": "2026-04-06",
       "changelog": "AI-powered schedule generation",
-      "subdomain": "https://horarios.fis-matt.com"
+      "subdomain": "https://horarios.fis-matt.com",
+      "pricing": {
+        "monthly": 1.5,
+        "yearly": 10
+      },
+      "page": "/productos/eduhorarios.html"
     },
     "generador-boletines": {
       "name": "Generador de Boletines Escolares",
@@ -152,14 +272,20 @@
       "changelog": "Initial release - Generador de boletines para docentes",
       "subdomain": "https://generador.fis-matt.com",
       "featured": true,
-      "promoLabel": "50% OFF Lanzamiento"
+      "promoLabel": "50% OFF Lanzamiento",
+      "pricing": {
+        "monthly": 0.9,
+        "yearly": 5
+      },
+      "page": "/productos/boletines-online.html"
     }
   },
   "metadata": {
-    "lastUpdate": "2026-09-07T00:00:00Z",
+    "lastUpdate": "2026-09-08T00:00:00Z",
     "updateFrequency": "manual",
     "autoDetect": true,
     "gitHubOrg": "fabiancacuango1-dev",
-    "gitHubRepo": "fismatt-store"
+    "gitHubRepo": "fismatt-store",
+    "pricingModel": "Sistema Academico: mensual $9 / anual $79 / permanente $150 (promo $50). Herramientas: mensual y anual. Instituciones: escala por numero de docentes."
   }
 }

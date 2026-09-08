@@ -39,6 +39,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css?v=20260902-8">
+    <link rel="stylesheet" href="css/productos.css?v=20260908-1">
 
     <!-- Schema.org -->
     <script type="application/ld+json">
@@ -48,7 +49,15 @@
         "name": "FISMATT Sistema Institucional",
         "operatingSystem": "Windows, macOS, Android",
         "applicationCategory": "EducationalApplication",
-        "offers": { "@type": "Offer", "price": "50", "priceCurrency": "USD", "priceValidUntil": "2026-09-30", "description": "Promoción de septiembre; precio regular USD 150" },
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "lowPrice": "9",
+            "highPrice": "150",
+            "offerCount": "3",
+            "priceValidUntil": "2026-09-30",
+            "description": "Mensual USD 9; anual USD 79; licencia permanente USD 150, en promoción de septiembre a USD 50. Escala institucional desde USD 25 por docente."
+        },
         "softwareVersion": "4.9.1",
         "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "127" }
     }
@@ -77,7 +86,7 @@
     <div class="hidden md:flex items-center gap-1">
       <a href="#producto" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Plataforma</a>
       <a href="#tutoriales" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Videos</a>
-      <a href="#herramientas" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Herramientas</a>
+      <a href="#herramientas" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Productos</a>
       <a href="#cloud" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Cloud</a>
       <a href="#precio" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Precio</a>
       <a href="#faq" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">FAQ</a>
@@ -97,7 +106,7 @@
     <div class="px-6 py-5 space-y-1">
       <a href="#producto" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Producto</a>
       <a href="#tutoriales" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Videos y tutoriales</a>
-      <a href="#herramientas" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Herramientas</a>
+      <a href="#herramientas" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Productos</a>
       <a href="#cloud" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Cloud</a>
       <a href="#precio" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Precio</a>
       <a href="#faq" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">FAQ</a>
@@ -105,6 +114,34 @@
         <a href="#precio" class="block text-center btn-dark w-full">Descargar &mdash; $50</a>
       </div>
     </div>
+  </div>
+</nav>
+
+<!-- ═════════ PESTAÑAS DE PRODUCTO ═════════
+     Cada producto tiene su pestaña y su página. El Sistema Académico es la
+     primera porque es la portada, no porque los demás valgan menos.        -->
+<nav class="product-tabs" aria-label="Productos FISMATT">
+  <div class="product-tabs-inner">
+    <a href="/" class="product-tab is-active" aria-current="page">
+      <span class="product-tab-name">Sistema Académico</span>
+      <span class="product-tab-price">Desde $9/mes</span>
+    </a>
+    <a href="productos/simulador-ser-maestro.html" class="product-tab">
+      <span class="product-tab-name">Simulador Ser Maestro</span>
+      <span class="product-tab-price">$10/año</span>
+    </a>
+    <a href="productos/importador-notas.html" class="product-tab">
+      <span class="product-tab-name">Importador de Notas</span>
+      <span class="product-tab-price">$10/año</span>
+    </a>
+    <a href="productos/eduhorarios.html" class="product-tab">
+      <span class="product-tab-name">EduHorarios</span>
+      <span class="product-tab-price">$10/año</span>
+    </a>
+    <a href="productos/boletines-online.html" class="product-tab">
+      <span class="product-tab-name">Boletines Online</span>
+      <span class="product-tab-price">$5/año</span>
+    </a>
   </div>
 </nav>
 
@@ -484,155 +521,81 @@
   </div>
 </section>
 
-<!-- ═════════ ONLINE TOOLS ═════════ -->
+<!-- ═════════ EL ECOSISTEMA — una tarjeta por producto, cada una con su página ═════════ -->
 <section id="herramientas" class="section-cream">
   <div class="max-w-[1240px] mx-auto px-6 lg:px-10 py-20 md:py-28">
-    <!-- Section header -->
-    <div class="max-w-3xl mb-14">
-      <p class="scroll-reveal eyebrow mb-4">Herramientas web complementarias</p>
+    <div class="max-w-3xl mb-12">
+      <p class="scroll-reveal eyebrow mb-4">Los cinco productos FISMATT</p>
       <h2 class="scroll-reveal display mb-6" style="font-size:clamp(1.75rem,4.2vw,3rem);">
-        Más que un sistema.<br>Un ecosistema completo.
+        Cada producto,<br>con su propia página.
       </h2>
       <p class="scroll-reveal text-[16px] md:text-[17px] text-[#555] leading-relaxed">
-        Además de FISMATT Sistema Institucional, hemos creado <strong class="text-[#111] font-semibold">4 herramientas web especializadas</strong> que resuelven los problemas más frecuentes del docente ecuatoriano: simulación para Ser Maestro, carga masiva al MinEduc, generación de horarios institucionales y boletines online. Sin instalaciones, accesibles desde cualquier dispositivo.
+        Junto al Sistema Institucional hemos creado <strong class="text-[#111] font-semibold">cuatro herramientas web</strong> que resuelven, cada una, un problema concreto del docente ecuatoriano. Entre en la que le interese: cada una tiene su pestaña arriba, con todo el detalle y su precio.
       </p>
     </div>
 
-    <!-- ─── FEATURED 1: Simulador Ser Maestro (oscuro — image right) ─── -->
-    <div class="scroll-reveal mb-8 rounded-[24px] overflow-hidden border border-[#1a1a2e]" style="background:linear-gradient(135deg,#0a0a14 0%,#14142e 100%);">
-      <div class="grid lg:grid-cols-12 gap-0 items-stretch">
-        <div class="lg:col-span-6 p-8 md:p-12 lg:p-14 flex flex-col justify-center">
-          <div class="flex items-center gap-2 mb-5">
-            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" style="background:rgba(139,92,246,0.15);color:#a78bfa;border:1px solid rgba(139,92,246,0.3);">Más popular</span>
-            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" style="background:rgba(34,211,238,0.15);color:#67e8f9;border:1px solid rgba(34,211,238,0.3);">Con IA</span>
-          </div>
-          <h3 class="font-black text-white leading-[1.05] mb-4" style="font-size:clamp(1.75rem,3.5vw,2.5rem);letter-spacing:-0.025em;">
-            Simulador<br>Ser Maestro 2026
-          </h3>
-          <p class="text-[15px] leading-relaxed mb-6" style="color:#a8a8c2;">
-            La única plataforma en Ecuador que simula las <strong class="text-white font-semibold">4 fases reales</strong> de la evaluación docente del MinEduc, con corrección automática mediante inteligencia artificial.
-          </p>
-          <ul class="space-y-2.5 mb-8">
-            <li class="flex items-start gap-3 text-[14px]" style="color:#cbcbe0;"><span class="mt-1 w-1.5 h-1.5 rounded-full" style="background:#a78bfa;"></span><span><strong class="text-white">Fase 1:</strong> Prueba de conocimientos &mdash; 99 preguntas reales</span></li>
-            <li class="flex items-start gap-3 text-[14px]" style="color:#cbcbe0;"><span class="mt-1 w-1.5 h-1.5 rounded-full" style="background:#67e8f9;"></span><span><strong class="text-white">Fase 2:</strong> Autoinforme socioemocional Likert</span></li>
-            <li class="flex items-start gap-3 text-[14px]" style="color:#cbcbe0;"><span class="mt-1 w-1.5 h-1.5 rounded-full" style="background:#fbbf24;"></span><span><strong class="text-white">Fase 3:</strong> Responsabilidad profesional</span></li>
-            <li class="flex items-start gap-3 text-[14px]" style="color:#cbcbe0;"><span class="mt-1 w-1.5 h-1.5 rounded-full" style="background:#34d399;"></span><span><strong class="text-white">Fase 4:</strong> Clase demostrativa evaluada por IA</span></li>
-          </ul>
-          <div class="flex flex-wrap items-center gap-4">
-            <a href="https://simulador-2026-9cfaa.web.app/#/login" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-[#0a0a14] font-bold py-3 px-6 rounded-full text-[14px] transition-all hover:bg-[#e5e5e5]">
-              Probar simulador
-              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-            </a>
-            <span class="text-[13px]" style="color:#7c7c95;"><span class="text-white font-bold">$10</span> USD/año</span>
-          </div>
-        </div>
-        <div class="lg:col-span-6 relative overflow-hidden flex items-center justify-center p-8 lg:p-12" style="background:radial-gradient(ellipse at top right,rgba(139,92,246,0.18),transparent 65%),#0a0a14;border-left:1px solid rgba(255,255,255,0.05);">
-          <img src="assets/img/productos/tool-simulador.png" alt="Simulador Ser Maestro &mdash; 4 fases de evaluación" class="rounded-lg w-full h-auto" style="box-shadow:0 20px 50px -15px rgba(139,92,246,0.4),0 0 0 1px rgba(255,255,255,0.08);" loading="lazy">
-        </div>
-      </div>
-    </div>
+    <div class="scroll-reveal eco-grid">
 
-    <!-- ─── FEATURED 2: Importador de Notas (verde — image right) ─── -->
-    <div class="scroll-reveal mb-8 rounded-[24px] overflow-hidden border border-[#e5e5e5] bg-white">
-      <div class="grid lg:grid-cols-12 gap-0 items-stretch">
-        <div class="lg:col-span-6 relative overflow-hidden flex items-center justify-center p-8 lg:p-12 order-2 lg:order-1" style="background:#fafafa;border-right:1px solid #e5e5e5;">
-          <img src="assets/img/productos/tool-importador.png" alt="Importador de Notas — extensión Chrome" class="rounded-lg w-full h-auto" style="box-shadow:0 20px 50px -15px rgba(0,0,0,0.15),0 0 0 1px rgba(0,0,0,0.06);" loading="lazy">
+      <a href="productos/simulador-ser-maestro.html" class="eco-card">
+        <div class="eco-card-shot">
+          <img src="assets/img/productos/tool-simulador.png" alt="Simulador Ser Maestro — las cuatro fases de la evaluación" loading="lazy" width="640" height="400">
         </div>
-        <div class="lg:col-span-6 p-8 md:p-12 lg:p-14 flex flex-col justify-center order-1 lg:order-2">
-          <div class="flex items-center gap-2 mb-5">
-            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" style="background:#d1fae5;color:#065f46;">Extensión Chrome</span>
-            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" style="background:#dbeafe;color:#1e40af;">Carga masiva</span>
-          </div>
-          <h3 class="font-black text-[#111] leading-[1.05] mb-4" style="font-size:clamp(1.75rem,3.5vw,2.5rem);letter-spacing:-0.025em;">
-            Importador de<br>Notas MinEduc
-          </h3>
-          <p class="text-[15px] leading-relaxed text-[#555] mb-6">
-            Sube calificaciones desde Excel al portal docente del MinEduc <strong class="text-[#111] font-semibold">en segundos</strong>. Elimina horas de trabajo repetitivo cada parcial con coincidencia inteligente automática.
-          </p>
-          <ul class="space-y-2.5 mb-8">
-            <li class="flex items-start gap-3 text-[14px] text-[#333]"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span>Compatible con <strong>Excel, CSV, TXT y PDF</strong></span></li>
-            <li class="flex items-start gap-3 text-[14px] text-[#333]"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span>Coincidencia inteligente docente↔estudiante con IA</span></li>
-            <li class="flex items-start gap-3 text-[14px] text-[#333]"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span>Paginación automática y modo "un clic"</span></li>
-            <li class="flex items-start gap-3 text-[14px] text-[#333]"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#10b981]"></span><span>Funciona con cualquier formato de calificación</span></li>
-          </ul>
-          <div class="flex flex-wrap items-center gap-4">
-            <a href="https://chromewebstore.google.com/detail/pjdakeeclfpkheobgmenlonbbpmokbbh" target="_blank" rel="noopener noreferrer" class="btn-dark text-[14px] !py-3 !px-6">
-              Instalar extensión
-              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-            </a>
-            <span class="text-[13px] text-[#707070]"><span class="text-[#111] font-bold">$10</span> USD/año</span>
+        <div class="eco-card-body">
+          <p class="eco-card-tag">Con IA &middot; El más usado</p>
+          <h3>Simulador<br>Ser Maestro 2026</h3>
+          <p>Las <strong>cuatro fases reales</strong> de la evaluación docente del MinEduc, con la clase demostrativa corregida por inteligencia artificial.</p>
+          <div class="eco-card-pie">
+            <span class="eco-card-precio">$10 <small>/año</small></span>
+            <span class="eco-card-ir">Ver &#8594;</span>
           </div>
         </div>
-      </div>
-    </div>
+      </a>
 
-    <!-- ─── FEATURED 3: EduHorarios (azul — image left) ─── -->
-    <div class="scroll-reveal mb-8 rounded-[24px] overflow-hidden border border-[#e5e5e5] bg-white">
-      <div class="grid lg:grid-cols-12 gap-0 items-stretch">
-        <div class="lg:col-span-6 p-8 md:p-12 lg:p-14 flex flex-col justify-center">
-          <div class="flex items-center gap-2 mb-5">
-            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" style="background:#dbeafe;color:#1e40af;">Con IA</span>
-            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" style="background:#fef3c7;color:#92400e;">Institucional</span>
-          </div>
-          <h3 class="font-black text-[#111] leading-[1.05] mb-4" style="font-size:clamp(1.75rem,3.5vw,2.5rem);letter-spacing:-0.025em;">
-            EduHorarios<br>con IA
-          </h3>
-          <p class="text-[15px] leading-relaxed text-[#555] mb-6">
-            Genera horarios institucionales <strong class="text-[#111] font-semibold">óptimos en 1 solo clic</strong>. Asigna materias, docentes, aulas y bloques sin conflictos. Lo que toma días, ahora toma segundos.
-          </p>
-          <ul class="space-y-2.5 mb-8">
-            <li class="flex items-start gap-3 text-[14px] text-[#333]"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#3b82f6]"></span><span>Algoritmo IA detecta y resuelve conflictos automáticamente</span></li>
-            <li class="flex items-start gap-3 text-[14px] text-[#333]"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#3b82f6]"></span><span>Restricciones por docente, aula y carga horaria</span></li>
-            <li class="flex items-start gap-3 text-[14px] text-[#333]"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#3b82f6]"></span><span>Vista por curso, docente o institucional completa</span></li>
-            <li class="flex items-start gap-3 text-[14px] text-[#333]"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#3b82f6]"></span><span>Exportación a <strong>PDF y Excel</strong> de un clic</span></li>
-          </ul>
-          <div class="flex flex-wrap items-center gap-4">
-            <a href="https://horarios.fis-matt.com" target="_blank" rel="noopener noreferrer" class="btn-dark text-[14px] !py-3 !px-6">
-              Generar horario
-              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-            </a>
-            <span class="text-[13px] text-[#707070]"><span class="text-[#111] font-bold">$10</span> USD/año</span>
+      <a href="productos/importador-notas.html" class="eco-card">
+        <div class="eco-card-shot">
+          <img src="assets/img/productos/tool-importador.png" alt="Importador de Notas — extensión de Chrome" loading="lazy" width="640" height="400">
+        </div>
+        <div class="eco-card-body">
+          <p class="eco-card-tag">Extensión de Chrome</p>
+          <h3>Importador de<br>Notas MinEduc</h3>
+          <p>Sube las calificaciones desde Excel al portal docente <strong>en segundos</strong>, emparejando los nombres solo. Se acabó el copiar y pegar de cada parcial.</p>
+          <div class="eco-card-pie">
+            <span class="eco-card-precio">$10 <small>/año</small></span>
+            <span class="eco-card-ir">Ver &#8594;</span>
           </div>
         </div>
-        <div class="lg:col-span-6 relative overflow-hidden flex items-center justify-center p-8 lg:p-12" style="background:#fafafa;border-left:1px solid #e5e5e5;">
-          <img src="assets/img/productos/tool-horarios.png" alt="EduHorarios — generador con IA" class="rounded-lg w-full h-auto" style="box-shadow:0 20px 50px -15px rgba(0,0,0,0.15),0 0 0 1px rgba(0,0,0,0.06);" loading="lazy">
-        </div>
-      </div>
-    </div>
+      </a>
 
-    <!-- ─── FEATURED 4: Boletines Online (cream — image right) ─── -->
-    <div class="scroll-reveal rounded-[24px] overflow-hidden border border-[#e5e5e5] bg-white relative">
-      <span class="absolute top-5 right-5 z-10 text-[10px] font-bold px-2.5 py-1 rounded-full bg-[#111] text-white uppercase tracking-wider shadow-md">Nuevo</span>
-      <div class="grid lg:grid-cols-12 gap-0 items-stretch">
-        <div class="lg:col-span-6 relative overflow-hidden flex items-center justify-center p-8 lg:p-12 order-2 lg:order-1" style="background:#fafafa;border-right:1px solid #e5e5e5;">
-          <img src="assets/img/productos/app-boletines.png" alt="Boletines Online — sin instalación" class="rounded-lg w-full h-auto" style="box-shadow:0 20px 50px -15px rgba(0,0,0,0.15),0 0 0 1px rgba(0,0,0,0.06);" loading="lazy">
+      <a href="productos/eduhorarios.html" class="eco-card">
+        <div class="eco-card-shot">
+          <img src="assets/img/productos/tool-horarios.png" alt="EduHorarios — generador de horarios con IA" loading="lazy" width="640" height="400">
         </div>
-        <div class="lg:col-span-6 p-8 md:p-12 lg:p-14 flex flex-col justify-center order-1 lg:order-2">
-          <div class="flex items-center gap-2 mb-5">
-            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" style="background:#fef3c7;color:#92400e;">100% web</span>
-            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider" style="background:#fee2e2;color:#991b1b;">El más económico</span>
-          </div>
-          <h3 class="font-black text-[#111] leading-[1.05] mb-4" style="font-size:clamp(1.75rem,3.5vw,2.5rem);letter-spacing:-0.025em;">
-            Boletines<br>Online
-          </h3>
-          <p class="text-[15px] leading-relaxed text-[#555] mb-6">
-            Genera boletines académicos directamente desde el navegador. <strong class="text-[#111] font-semibold">Sin instalación, sin descargas</strong>. Ideal para docentes que trabajan desde múltiples dispositivos.
-          </p>
-          <ul class="space-y-2.5 mb-8">
-            <li class="flex items-start gap-3 text-[14px] text-[#333]"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#f59e0b]"></span><span>Plantillas oficiales <strong>MinEduc 2026</strong></span></li>
-            <li class="flex items-start gap-3 text-[14px] text-[#333]"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#f59e0b]"></span><span>Funciona en computadora, tablet y celular</span></li>
-            <li class="flex items-start gap-3 text-[14px] text-[#333]"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#f59e0b]"></span><span>PDF listo para imprimir o enviar por WhatsApp</span></li>
-            <li class="flex items-start gap-3 text-[14px] text-[#333]"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-[#f59e0b]"></span><span>Almacenamiento en la nube opcional</span></li>
-          </ul>
-          <div class="flex flex-wrap items-center gap-4">
-            <a href="https://generador.fis-matt.com" target="_blank" rel="noopener noreferrer" class="btn-dark text-[14px] !py-3 !px-6">
-              Crear boletín
-              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-            </a>
-            <span class="text-[13px] text-[#707070]"><span class="text-[#111] font-bold">$5</span> USD/año &middot; <span class="text-[#16a34a] font-semibold">El más barato</span></span>
+        <div class="eco-card-body">
+          <p class="eco-card-tag">Con IA &middot; Institucional</p>
+          <h3>EduHorarios<br>con IA</h3>
+          <p>El horario de toda la institución <strong>en un clic</strong>, sin choques de docente ni de aula. Lo que llevaba días, en segundos.</p>
+          <div class="eco-card-pie">
+            <span class="eco-card-precio">$10 <small>/año</small></span>
+            <span class="eco-card-ir">Ver &#8594;</span>
           </div>
         </div>
-      </div>
+      </a>
+
+      <a href="productos/boletines-online.html" class="eco-card">
+        <div class="eco-card-shot">
+          <img src="assets/img/productos/app-boletines.png" alt="Boletines Online — sin instalar nada" loading="lazy" width="640" height="400">
+        </div>
+        <div class="eco-card-body">
+          <p class="eco-card-tag">100% web &middot; El más económico</p>
+          <h3>Boletines<br>Online</h3>
+          <p>Boletines con las <strong>plantillas oficiales</strong> desde el navegador. Sin instalar nada, desde la computadora, la tablet o el celular.</p>
+          <div class="eco-card-pie">
+            <span class="eco-card-precio">$5 <small>/año</small></span>
+            <span class="eco-card-ir">Ver &#8594;</span>
+          </div>
+        </div>
+      </a>
+
     </div>
   </div>
 </section>
@@ -719,21 +682,214 @@
   </div>
 </section>
 
-<!-- ═════════ PRICING / DOWNLOAD — consolidated ═════════ -->
+<!-- ═════════ PRECIOS ═════════
+     Tres tablas: los planes del Sistema, la escala para instituciones y el
+     precio de cada herramienta. Los números viven aquí y en config/products.json. -->
 <section id="precio" class="bg-white">
-  <div class="max-w-[860px] mx-auto px-6 lg:px-10 py-20 md:py-28">
-    <div class="text-center mb-12">
-      <p class="scroll-reveal eyebrow mb-4">Precio</p>
+  <div class="max-w-[1080px] mx-auto px-6 lg:px-10 py-20 md:py-28">
+
+    <div class="text-center mb-14">
+      <p class="scroll-reveal eyebrow mb-4">Precios</p>
       <h2 class="scroll-reveal display mb-5" style="font-size:clamp(2rem,4.5vw,3.25rem);">
-        Promoción de septiembre.
+        Elija cómo pagarlo.
       </h2>
-      <p class="scroll-reveal text-[16px] text-[#555] max-w-md mx-auto">
-        Precio regular de $150. Durante septiembre de 2026 puedes adquirirlo por $50 con el código FISMATT.
+      <p class="scroll-reveal text-[16px] text-[#555] max-w-xl mx-auto">
+        El sistema es el mismo en los tres planes: cambia cuánto dura y cuánto cuesta. Nada se le desactiva por pagar menos.
       </p>
     </div>
 
-    <div class="scroll-reveal pricing-card">
-      <!-- Product preview -->
+    <!-- ─── Los tres planes ─────────────────────────────────────────────── -->
+    <div class="scroll-reveal plan-grid mb-8">
+      <div class="plan-card">
+        <h3>Mensual</h3>
+        <p class="plan-precio">$9 <span>/mes</span></p>
+        <p class="plan-para">Para probarlo sin comprometerse. Deja de pagar cuando quiera, sin penalización.</p>
+        <a href="https://wa.me/593983274499?text=Hola%2C%20quiero%20el%20plan%20mensual%20del%20Sistema%20Acad%C3%A9mico%20(%249%2Fmes)" target="_blank" rel="noopener noreferrer" class="btn-outline text-[13.5px] !py-3 w-full justify-center">Empezar mensual</a>
+      </div>
+
+      <div class="plan-card">
+        <h3>Anual</h3>
+        <p class="plan-precio">$79 <span>/año</span></p>
+        <p class="plan-para">El año lectivo completo. Sale $29 más barato que pagar doce meses sueltos.</p>
+        <a href="https://wa.me/593983274499?text=Hola%2C%20quiero%20el%20plan%20anual%20del%20Sistema%20Acad%C3%A9mico%20(%2479%2Fa%C3%B1o)" target="_blank" rel="noopener noreferrer" class="btn-outline text-[13.5px] !py-3 w-full justify-center">Tomar el anual</a>
+      </div>
+
+      <div class="plan-card is-destacada">
+        <span class="plan-card-flag">Septiembre &mdash; 67% off</span>
+        <h3>Permanente</h3>
+        <p class="plan-precio"><span class="cell-antes" style="font-size:18px;">$150</span>$50</p>
+        <p class="plan-para">Un solo pago y es suyo para siempre, con las actualizaciones de por vida. Hasta el 30 de septiembre.</p>
+        <a href="#descargar" class="btn-dark text-[13.5px] !py-3 w-full justify-center">Descargar ahora</a>
+      </div>
+    </div>
+
+    <!-- ─── Tabla comparativa ───────────────────────────────────────────── -->
+    <div class="scroll-reveal price-table-wrap mb-4">
+      <table class="price-table">
+        <caption class="sr-only">Comparación de los planes del Sistema Académico Institucional</caption>
+        <thead>
+          <tr>
+            <th scope="col">Plan</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Hasta cuándo le sirve</th>
+            <th scope="col">Actualizaciones</th>
+            <th scope="col">Ideal para</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cell-plan">Mensual<span class="cell-nota">Se paga cada mes</span></td>
+            <td class="cell-precio">$9 <small>/mes</small></td>
+            <td>Mientras siga pagando</td>
+            <td>Incluidas</td>
+            <td>Probarlo sin comprometerse</td>
+          </tr>
+          <tr>
+            <td class="cell-plan">Anual<span class="cell-nota">Un pago al año</span></td>
+            <td class="cell-precio">$79 <small>/año</small></td>
+            <td>12 meses</td>
+            <td>Incluidas</td>
+            <td>El año lectivo completo &mdash; ahorra $29</td>
+          </tr>
+          <tr class="is-destacada">
+            <td class="cell-plan">Permanente<span class="cell-nota">Un solo pago, nunca vence</span> <span class="tag-plan">Septiembre</span></td>
+            <td class="cell-precio"><span class="cell-antes">$150</span><span class="cell-rojo">$50</span></td>
+            <td>Para siempre</td>
+            <td>De por vida</td>
+            <td>Quien ya se decidió</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-[12.5px] text-[#707070] mb-16">
+      Los tres planes traen el sistema completo en Windows, macOS y Android, con el Portal de Padres y el respaldo automático. El pago se coordina por WhatsApp. Precio promocional válido hasta el 30 de septiembre de 2026 con el código <strong class="text-[#111]">FISMATT</strong>.
+    </p>
+
+    <!-- ─── Instituciones ───────────────────────────────────────────────── -->
+    <div class="max-w-2xl mb-8">
+      <p class="scroll-reveal eyebrow mb-4">Para instituciones</p>
+      <h2 class="scroll-reveal display mb-5" style="font-size:clamp(1.6rem,3.4vw,2.3rem);">
+        Cuantos más docentes,<br>menos cuesta cada uno.
+      </h2>
+      <p class="scroll-reveal text-[15.5px] text-[#555] leading-relaxed">
+        Licencias permanentes, una sola factura y la capacitación al equipo incluida. Es la escala que ya aplicamos al vender por lotes; ahora está publicada, sin tener que negociarla cada vez.
+      </p>
+    </div>
+
+    <div class="scroll-reveal price-table-wrap mb-4">
+      <table class="price-table tier-table">
+        <caption class="sr-only">Precio por licencia según el número de docentes</caption>
+        <thead>
+          <tr>
+            <th scope="col">Docentes</th>
+            <th scope="col">Por licencia</th>
+            <th scope="col">Lo que paga la institución</th>
+            <th scope="col">Ahorro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cell-tramo">1 &ndash; 4</td>
+            <td class="cell-precio">$50</td>
+            <td>4 docentes = <strong>$200</strong></td>
+            <td>&mdash;</td>
+          </tr>
+          <tr>
+            <td class="cell-tramo">5 &ndash; 14</td>
+            <td class="cell-precio">$40</td>
+            <td>14 docentes = <strong>$560</strong></td>
+            <td class="cell-ahorro">20%</td>
+          </tr>
+          <tr>
+            <td class="cell-tramo">15 &ndash; 29</td>
+            <td class="cell-precio">$32</td>
+            <td>20 docentes = <strong>$640</strong></td>
+            <td class="cell-ahorro">36%</td>
+          </tr>
+          <tr class="is-destacada">
+            <td class="cell-tramo">30 o más</td>
+            <td class="cell-precio cell-rojo">$25</td>
+            <td>40 docentes = <strong>$1.000</strong></td>
+            <td class="cell-ahorro">50%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:items-center gap-4 mb-16">
+      <a href="https://wa.me/593983274499?text=Hola%2C%20soy%20de%20una%20instituci%C3%B3n%20y%20quiero%20cotizar%20licencias" target="_blank" rel="noopener noreferrer" class="btn-dark text-[14px] !py-3.5 !px-7">
+        Pedir cotización para mi institución
+      </a>
+      <p class="text-[12.5px] text-[#707070]">
+        Licencia permanente por docente. El precio individual sin promoción es de $150.
+      </p>
+    </div>
+
+    <!-- ─── El resto del ecosistema ─────────────────────────────────────── -->
+    <div class="max-w-2xl mb-8">
+      <p class="scroll-reveal eyebrow mb-4">Todo el ecosistema</p>
+      <h2 class="scroll-reveal display mb-5" style="font-size:clamp(1.6rem,3.4vw,2.3rem);">
+        Los cinco productos<br>y lo que cuesta cada uno.
+      </h2>
+    </div>
+
+    <div class="scroll-reveal price-table-wrap mb-4">
+      <table class="price-table">
+        <caption class="sr-only">Precio de cada producto FISMATT</caption>
+        <thead>
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Al mes</th>
+            <th scope="col">Al año</th>
+            <th scope="col">Qué le resuelve</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="is-destacada">
+            <td class="cell-plan">Sistema Académico<span class="cell-nota">Windows, macOS y Android</span></td>
+            <td class="cell-precio">$9</td>
+            <td class="cell-precio">$79 <small>&middot; o $50 para siempre</small></td>
+            <td>Notas, asistencia, informes y respaldo: el trabajo entero del docente</td>
+            <td><a href="#descargar" class="eco-card-ir">Descargar &#8594;</a></td>
+          </tr>
+          <tr>
+            <td class="cell-plan">Simulador Ser Maestro<span class="cell-nota">Con IA</span></td>
+            <td class="cell-precio">$1,50</td>
+            <td class="cell-precio">$10</td>
+            <td>Las cuatro fases de la evaluación docente, con la clase corregida por IA</td>
+            <td><a href="productos/simulador-ser-maestro.html" class="eco-card-ir">Ver &#8594;</a></td>
+          </tr>
+          <tr>
+            <td class="cell-plan">Importador de Notas<span class="cell-nota">Extensión de Chrome</span></td>
+            <td class="cell-precio">$1,50</td>
+            <td class="cell-precio">$10</td>
+            <td>Subir las calificaciones al portal del MinEduc sin copiar y pegar</td>
+            <td><a href="productos/importador-notas.html" class="eco-card-ir">Ver &#8594;</a></td>
+          </tr>
+          <tr>
+            <td class="cell-plan">EduHorarios<span class="cell-nota">Con IA</span></td>
+            <td class="cell-precio">$1,50</td>
+            <td class="cell-precio">$10</td>
+            <td>El horario de toda la institución sin choques de docente ni de aula</td>
+            <td><a href="productos/eduhorarios.html" class="eco-card-ir">Ver &#8594;</a></td>
+          </tr>
+          <tr>
+            <td class="cell-plan">Boletines Online<span class="cell-nota">100% web</span></td>
+            <td class="cell-precio">$0,90</td>
+            <td class="cell-precio">$5</td>
+            <td>Boletines con las plantillas oficiales, sin instalar nada</td>
+            <td><a href="productos/boletines-online.html" class="eco-card-ir">Ver &#8594;</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-[12.5px] text-[#707070] mb-16">
+      El mes suelto cuesta algo más que el año pagado de una vez: es el precio de poder cortar cuando quiera. ¿Quiere varias herramientas o toda la institución?
+      <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer" class="underline text-[#111] hover:no-underline">Escríbanos y le armamos el precio</a>.
+    </p>
+
+    <!-- ─── Descarga del producto principal ─────────────────────────────── -->
+    <div id="descargar" class="scroll-reveal pricing-card">
       <div class="rounded-2xl overflow-hidden mb-8 border border-[#e5e5e5]" style="background:#f5f5f5;">
         <img src="assets/img/productos/app-estudiantes.png" alt="Sistema Académico Completo — Panel principal" class="block w-full h-auto" loading="lazy">
       </div>
@@ -749,7 +905,7 @@
             <span class="text-[15px] line-through text-[#8d8d8d]">$150</span>
             <span class="font-black text-[#e63030]" style="font-size:44px;letter-spacing:-0.03em;">$50</span>
           </p>
-          <p class="text-[12px] text-[#707070]">USD &middot; precio promocional durante septiembre</p>
+          <p class="text-[12px] text-[#707070]">USD &middot; licencia permanente, promoción de septiembre</p>
           <div class="mt-2 inline-flex items-center gap-1.5 bg-[#fff3cd] border border-[#ffc107] rounded-lg px-3 py-1.5">
             <svg width="12" height="12" fill="none" stroke="#e65c00" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
             <span class="text-[11px] font-bold text-[#e65c00]">Código: <span class="tracking-wider">FISMATT</span> &mdash; 67% OFF</span>
@@ -758,7 +914,6 @@
         </div>
       </div>
 
-      <!-- Badge nuevo -->
       <div class="flex items-center gap-2 mb-5">
         <span class="inline-flex items-center gap-1.5 bg-[#e8f5e9] border border-[#81c784] text-[#2e7d32] text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wide">
           <svg width="10" height="10" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
@@ -767,22 +922,12 @@
       </div>
       <div class="grid sm:grid-cols-2 gap-x-6 gap-y-3 mb-8">
         <div class="flex items-start gap-3"><span class="check-icon mt-0.5" style="background:#2e7d32"><svg width="10" height="10" fill="none" stroke="white" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] font-semibold text-[#111]">Suba su lista de estudiantes venga como venga: Excel, PDF, CSV, tabla de Word o los «.xls» del Ministerio</span></div>
-        <div class="flex items-start gap-3"><span class="check-icon mt-0.5" style="background:#2e7d32"><svg width="10" height="10" fill="none" stroke="white" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] font-semibold text-[#111]">Se acabó el error «custom numFmtId» que dejaba la importación parada sin explicar nada</span></div>
         <div class="flex items-start gap-3"><span class="check-icon mt-0.5" style="background:#2e7d32"><svg width="10" height="10" fill="none" stroke="white" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] font-semibold text-[#111]">Los apellidos ya no entran donde van los nombres: el sistema lo deduce de los datos y usted puede corregirlo</span></div>
         <div class="flex items-start gap-3"><span class="check-icon mt-0.5" style="background:#2e7d32"><svg width="10" height="10" fill="none" stroke="white" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] font-semibold text-[#111]">Asistencia: el tablero le dice qué hay que hacer, agrupado por lo que exige la normativa</span></div>
-        <div class="flex items-start gap-3"><span class="check-icon mt-0.5" style="background:#2e7d32"><svg width="10" height="10" fill="none" stroke="white" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] font-semibold text-[#111]">Le avisa cuántas faltas quedan antes de que el caso suba a inspección o a la autoridad</span></div>
-        <div class="flex items-start gap-3"><span class="check-icon mt-0.5" style="background:#2e7d32"><svg width="10" height="10" fill="none" stroke="white" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] font-semibold text-[#111]">Los feriados vienen puestos, y le avisa antes de pasar lista si el día no era jornada</span></div>
         <div class="flex items-start gap-3"><span class="check-icon mt-0.5" style="background:#2e7d32"><svg width="10" height="10" fill="none" stroke="white" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] font-semibold text-[#111]">El informe de inasistencia sale numerado y en dos minutos, con las actuaciones anteriores</span></div>
-        <div class="flex items-start gap-3"><span class="check-icon mt-0.5" style="background:#2e7d32"><svg width="10" height="10" fill="none" stroke="white" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] font-semibold text-[#111]">La app de Android pasó de 145 MB a 58: se instala en teléfonos donde antes fallaba</span></div>
-        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">Cita el Art. 172 solo cuando corresponde, no antes</span></div>
+        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">Los feriados vienen puestos, y le avisa antes de pasar lista si el día no era jornada</span></div>
+        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">La app de Android pasó de 145 MB a 58: se instala en teléfonos donde antes fallaba</span></div>
         <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">Los apellidos con Ñ y tildes dejan de salir rotos al subir un CSV</span></div>
-        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">Android con diseño propio: arranque, licencia y registro pensados para el teléfono</span></div>
-        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">La sincronización por QR siempre visible, con el estado de la conexión</span></div>
-        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">Probado en pantallas de 320, 360 y 412 píxeles: sin textos cortados</span></div>
-        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">El icono de Android ya se adapta a la forma de cada teléfono</span></div>
-        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">La clave de licencia se ve entera en el móvil</span></div>
-        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">El cuestionario de la institución pasa de seis campos a tres, y no reaparece en un mes</span></div>
-        <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">Sus datos de licencia ya no pueden consultarse desde fuera del sistema</span></div>
         <div class="flex items-start gap-3"><span class="check-icon mt-0.5"><svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><span class="text-[14px] text-[#333]">Respaldo completo de todos los módulos, cada media hora y al cerrar</span></div>
       </div>
 
@@ -903,12 +1048,14 @@
         </a>
       </div>
       <div class="md:col-span-2">
-        <p class="text-[11px] font-bold uppercase tracking-wider text-[#555] mb-3">Producto</p>
+        <p class="text-[11px] font-bold uppercase tracking-wider text-[#555] mb-3">Productos</p>
         <ul class="space-y-2">
-          <li><a href="#producto" class="text-[13px] text-[#bbb] hover:text-white transition-colors">Características</a></li>
-          <li><a href="#precio" class="text-[13px] text-[#bbb] hover:text-white transition-colors">Precio</a></li>
-          <li><a href="#herramientas" class="text-[13px] text-[#bbb] hover:text-white transition-colors">Herramientas web</a></li>
-          <li><a href="#cloud" class="text-[13px] text-[#bbb] hover:text-white transition-colors">FISMATT Cloud</a></li>
+          <li><a href="/" class="text-[13px] text-[#bbb] hover:text-white transition-colors">Sistema Académico</a></li>
+          <li><a href="/productos/simulador-ser-maestro.html" class="text-[13px] text-[#bbb] hover:text-white transition-colors">Simulador Ser Maestro</a></li>
+          <li><a href="/productos/importador-notas.html" class="text-[13px] text-[#bbb] hover:text-white transition-colors">Importador de Notas</a></li>
+          <li><a href="/productos/eduhorarios.html" class="text-[13px] text-[#bbb] hover:text-white transition-colors">EduHorarios</a></li>
+          <li><a href="/productos/boletines-online.html" class="text-[13px] text-[#bbb] hover:text-white transition-colors">Boletines Online</a></li>
+          <li><a href="/#cloud" class="text-[13px] text-[#bbb] hover:text-white transition-colors">FISMATT Cloud</a></li>
         </ul>
       </div>
       <div class="md:col-span-2">
