@@ -8,6 +8,13 @@
         <priority>1.0</priority>
     </url>
 
+    <!-- Índice del ecosistema -->
+    <url>
+        <loc>https://fis-matt.com/productos/</loc>
+        <lastmod>2026-09-08</lastmod>
+        <priority>0.8</priority>
+    </url>
+
     <!-- Páginas de producto: una por cada uno del ecosistema -->
     <url>
         <loc>https://fis-matt.com/productos/simulador-ser-maestro.html</loc>

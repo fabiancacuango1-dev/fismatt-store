@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#050505">
+    <title>Productos FISMATT | FISMATT SYSTEMS</title>
+    <meta name="description" content="Los cinco productos FISMATT para el docente ecuatoriano: Sistema Académico Institucional, Simulador Ser Maestro, Importador de Notas, EduHorarios y Boletines Online.">
+    <link rel="canonical" href="https://fis-matt.com/productos/">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+    <style>
+        /* Igual que la 404: sin CDN ni fuentes externas. Esta pagina existe para
+           que /productos/ nunca devuelva un error, asi que no puede depender de
+           nada que se pueda caer. */
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            margin: 0; min-height: 100vh; padding: 28px;
+            display: flex; align-items: center; justify-content: center;
+            background: #050505; color: #fff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .caja { width: 100%; max-width: 680px; }
+        .marca { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; margin-bottom: 38px; }
+        .marca span { font-weight: 800; font-size: 15px; color: #fff; }
+        .encabezado {
+            font-size: 12px; font-weight: 800; letter-spacing: .16em;
+            text-transform: uppercase; color: #d40000; margin: 0 0 14px;
+        }
+        h1 { font-size: clamp(1.9rem, 5.5vw, 2.8rem); font-weight: 900; line-height: 1.07; letter-spacing: -.035em; margin: 0 0 16px; }
+        p.texto { font-size: 16px; line-height: 1.6; color: #b8b8bd; margin: 0 0 34px; }
+        ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+        li a {
+            display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
+            padding: 17px 20px; border: 1px solid #262626; border-radius: 14px;
+            text-decoration: none; color: #fff;
+            transition: border-color .18s ease, background .18s ease;
+        }
+        li a:hover { border-color: #d40000; background: #0d0d0d; }
+        li .nombre { font-size: 15.5px; font-weight: 700; }
+        li .desc { display: block; font-size: 13px; font-weight: 400; color: #8e8e93; margin-top: 3px; }
+        li .precio { font-size: 14px; font-weight: 800; color: #d40000; white-space: nowrap; }
+        .pie { margin-top: 32px; font-size: 13px; color: #6f6f76; }
+        .pie a { color: #d2d2d7; }
+    </style>
+</head>
+<body>
+    <div class="caja">
+        <a href="../index.html" class="marca" aria-label="FISMATT, inicio">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+                <rect width="30" height="30" rx="7" fill="#fff"/>
+                <path d="M16 8V6L9 14h5v6l7-8h-5z" fill="#050505" stroke="#050505" stroke-width="0.5" stroke-linejoin="round"/>
+            </svg>
+            <span>FISMATT SYSTEMS</span>
+        </a>
+
+        <p class="encabezado">Ecosistema FISMATT</p>
+        <h1>Los cinco productos.</h1>
+        <p class="texto">Cada uno resuelve una cosa concreta del trabajo docente. Entre en el que le interese.</p>
+
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <span class="nombre">Sistema Académico Institucional
+                        <span class="desc">Notas, asistencia, informes y respaldo &middot; Windows, macOS y Android</span>
+                    </span>
+                    <span class="precio">Desde $9/mes</span>
+                </a>
+            </li>
+            <li>
+                <a href="simulador-ser-maestro.html">
+                    <span class="nombre">Simulador Ser Maestro 2026
+                        <span class="desc">Las cuatro fases de la evaluación docente, corregidas por IA</span>
+                    </span>
+                    <span class="precio">$10/año</span>
+                </a>
+            </li>
+            <li>
+                <a href="importador-notas.html">
+                    <span class="nombre">Importador de Notas MinEduc
+                        <span class="desc">Las calificaciones al portal en segundos, sin copiar y pegar</span>
+                    </span>
+                    <span class="precio">$10/año</span>
+                </a>
+            </li>
+            <li>
+                <a href="eduhorarios.html">
+                    <span class="nombre">EduHorarios con IA
+                        <span class="desc">El horario de toda la institución, sin choques</span>
+                    </span>
+                    <span class="precio">$10/año</span>
+                </a>
+            </li>
+            <li>
+                <a href="boletines-online.html">
+                    <span class="nombre">Boletines Online
+                        <span class="desc">Boletines con las plantillas oficiales, sin instalar nada</span>
+                    </span>
+                    <span class="precio">$5/año</span>
+                </a>
+            </li>
+        </ul>
+
+        <p class="pie">
+            ¿Dudas sobre cuál le conviene?
+            <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer">Escríbanos por WhatsApp</a>.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#050505">
+    <title>Página no encontrada | FISMATT SYSTEMS</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+    <style>
+        /* Sin Tailwind ni fuentes externas a proposito: esta pagina tiene que
+           abrir aunque falle la red o el CDN. Es la ultima red de seguridad. */
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28px;
+            background: #050505;
+            color: #fff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .caja { width: 100%; max-width: 620px; }
+        .marca {
+            display: inline-flex; align-items: center; gap: 10px;
+            text-decoration: none; margin-bottom: 40px;
+        }
+        .marca span { font-weight: 800; font-size: 15px; color: #fff; letter-spacing: .02em; }
+        .codigo {
+            font-size: 12px; font-weight: 800; letter-spacing: .16em;
+            text-transform: uppercase; color: #d40000; margin: 0 0 14px;
+        }
+        h1 {
+            font-size: clamp(1.9rem, 6vw, 3rem); font-weight: 900;
+            line-height: 1.06; letter-spacing: -.035em; margin: 0 0 16px;
+        }
+        p.texto { font-size: 16px; line-height: 1.6; color: #b8b8bd; margin: 0 0 32px; }
+        .enlaces { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 34px; }
+        .btn {
+            display: inline-block; padding: 13px 24px; border-radius: 999px;
+            font-size: 14px; font-weight: 700; text-decoration: none;
+            transition: background .18s ease, color .18s ease, border-color .18s ease;
+        }
+        .btn-primario { background: #fff; color: #050505; }
+        .btn-primario:hover { background: #d40000; color: #fff; }
+        .btn-borde { border: 1.5px solid #55555c; color: #fff; }
+        .btn-borde:hover { background: #fff; color: #050505; border-color: #fff; }
+        .lista { border-top: 1px solid #262626; padding-top: 26px; }
+        .lista p.titulo {
+            font-size: 11px; font-weight: 800; text-transform: uppercase;
+            letter-spacing: .12em; color: #6f6f76; margin: 0 0 14px;
+        }
+        .lista ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 11px; }
+        @media (min-width: 620px) { .lista ul { grid-template-columns: repeat(2, 1fr); } }
+        .lista a { color: #d2d2d7; text-decoration: none; font-size: 14.5px; }
+        .lista a:hover { color: #fff; text-decoration: underline; }
+        .pie { margin-top: 34px; font-size: 13px; color: #6f6f76; }
+        .pie a { color: #d2d2d7; }
+    </style>
+</head>
+<body>
+    <div class="caja">
+        <a href="/" class="marca" aria-label="FISMATT, inicio">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+                <rect width="30" height="30" rx="7" fill="#fff"/>
+                <path d="M16 8V6L9 14h5v6l7-8h-5z" fill="#050505" stroke="#050505" stroke-width="0.5" stroke-linejoin="round"/>
+            </svg>
+            <span>FISMATT SYSTEMS</span>
+        </a>
+
+        <p class="codigo">Error 404</p>
+        <h1>Esta dirección<br>no existe.</h1>
+        <p class="texto">
+            Puede que el enlace esté mal escrito o que la página haya cambiado de sitio.
+            El sistema y las descargas siguen funcionando con normalidad: entre por aquí.
+        </p>
+
+        <div class="enlaces">
+            <a href="/" class="btn btn-primario">Ir al inicio</a>
+            <a href="/#precio" class="btn btn-borde">Ver precios y descargas</a>
+        </div>
+
+        <div class="lista">
+            <p class="titulo">Los cinco productos</p>
+            <ul>
+                <li><a href="/">Sistema Académico Institucional</a></li>
+                <li><a href="/productos/simulador-ser-maestro.html">Simulador Ser Maestro</a></li>
+                <li><a href="/productos/importador-notas.html">Importador de Notas</a></li>
+                <li><a href="/productos/eduhorarios.html">EduHorarios</a></li>
+                <li><a href="/productos/boletines-online.html">Boletines Online</a></li>
+            </ul>
+        </div>
+
+        <p class="pie">
+            ¿Sigue sin encontrar lo que buscaba?
+            <a href="https://wa.me/593983274499" target="_blank" rel="noopener noreferrer">Escríbanos por WhatsApp</a>
+            y se lo pasamos al momento.
+        </p>
+    </div>
+</body>
+</html>
