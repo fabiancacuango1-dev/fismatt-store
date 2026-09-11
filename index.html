@@ -74,9 +74,9 @@
 
 <!-- ═════════ PROMO BAR ═════════ -->
 <div class="promo-banner">
-    <span class="promo-status">Precios nuevos</span>
-    <span><strong>Sistema Académico</strong> &mdash; desde $3,99 al mes &middot; $35 al año &middot; $120 en un solo pago</span>
-    <a href="#precio">Ver planes <span aria-hidden="true">&#8594;</span></a>
+    <span class="promo-status">Novedad</span>
+    <span><strong>Celular y computadora, conectados</strong> &mdash; pase lista en el aula y todo llega a su computadora por su WiFi, sin internet</span>
+    <a href="#conexion">Ver cómo <span aria-hidden="true">&#8594;</span></a>
 </div>
 
 <!-- ═════════ NAVBAR ═════════ -->
@@ -91,7 +91,8 @@
 
     <div class="hidden md:flex items-center gap-1">
       <a href="#producto" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Plataforma</a>
-      <a href="#tutoriales" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Videos</a>
+      <a href="#conexion" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Conexión</a>
+      <a href="#inspeccion" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Inspección</a>
       <a href="#cloud" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Cloud</a>
       <a href="#precio" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">Precios</a>
       <a href="#faq" class="nav-link text-[14px] px-4 py-2 text-[#555] hover:text-[#111] transition-colors">FAQ</a>
@@ -110,7 +111,8 @@
   <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-[#e5e5e5]">
     <div class="px-6 py-5 space-y-1">
       <a href="#producto" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Plataforma</a>
-      <a href="#tutoriales" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Videos</a>
+      <a href="#conexion" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Celular y computadora</a>
+      <a href="#inspeccion" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Inspección</a>
       <a href="#cloud" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Cloud</a>
       <a href="#precio" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">Precios</a>
       <a href="#faq" class="block text-[15px] font-medium text-[#555] hover:text-[#111] py-3 px-3 rounded-lg hover:bg-[#f5f5f5] transition-all">FAQ</a>
@@ -494,6 +496,120 @@
   </div>
 </section>
 
+<!-- ═════════ CONEXIÓN — celular, computadora y otra computadora ═════════
+     ⚠️ Lo que se marca «Próximamente · v4.16» NO está en la v4.9.1 que se
+     descarga hoy: la conexión entre dos computadoras llegó en la v4.11 y el
+     módulo de Inspección entre la v4.13 y la v4.15. Cuando se publique esa
+     versión, buscar «v4.16» en este archivo y cambiar esas etiquetas.        -->
+<section id="conexion" class="conexion">
+  <div class="max-w-[1240px] mx-auto px-6 lg:px-10 py-20 md:py-28">
+    <div>
+      <p class="scroll-reveal eyebrow mb-4"><span></span>Trabaje donde esté</p>
+      <h2 class="scroll-reveal conexion-titulo">Su celular y su computadora,<br>con el mismo trabajo.</h2>
+      <p class="scroll-reveal conexion-bajada">
+        Pase lista y registre notas en el aula desde el celular. Al volver, todo llega a su computadora por la red WiFi del colegio o de su casa. <strong>Sin internet, sin nube y sin volver a escribir nada.</strong>
+      </p>
+    </div>
+
+    <div class="scroll-reveal red-diagrama" role="img" aria-label="El celular se conecta con la computadora escaneando un código QR en la misma red WiFi. La computadora se conecta con otra computadora copiando un código de conexión.">
+      <div class="red-nodo">
+        <div class="red-icono"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></svg></div>
+        <p class="red-nombre">Celular</p>
+        <p class="red-detalle">Android &middot; en el aula</p>
+      </div>
+      <div class="red-enlace">
+        <span class="red-linea" aria-hidden="true"></span>
+        <span class="red-chip">Código QR &middot; misma WiFi</span>
+      </div>
+      <div class="red-nodo red-nodo-centro">
+        <div class="red-icono"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4.5" width="16" height="11" rx="1.6"/><path d="M2 19.5h20"/></svg></div>
+        <p class="red-nombre">Computadora</p>
+        <p class="red-detalle">Windows o Mac &middot; su equipo principal</p>
+      </div>
+      <div class="red-enlace red-enlace-nuevo">
+        <span class="red-linea" aria-hidden="true"></span>
+        <span class="red-chip">Código copiado &middot; misma WiFi</span>
+      </div>
+      <div class="red-nodo red-nodo-nuevo">
+        <span class="red-pronto">Próximamente &middot; v4.16</span>
+        <div class="red-icono"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3.5" width="18" height="12.5" rx="1.6"/><path d="M9 20.5h6M12 16v4.5"/></svg></div>
+        <p class="red-nombre">Otra computadora</p>
+        <p class="red-detalle">La de la casa o la del colegio</p>
+      </div>
+    </div>
+
+    <div class="conexion-tarjetas">
+      <div class="scroll-reveal conexion-tarjeta">
+        <span class="estado">Disponible</span>
+        <h3>Celular con computadora</h3>
+        <p>En la computadora aparece un código QR de conexión; desde la app del celular lo escanea y quedan conectados. Estudiantes, asistencia y calificaciones pasan de uno a otro.</p>
+      </div>
+      <div class="scroll-reveal conexion-tarjeta">
+        <span class="estado is-pronto">Próximamente &middot; v4.16</span>
+        <h3>Computadora con computadora</h3>
+        <p>El escritorio del colegio y la laptop de la casa comparten el mismo trabajo. En una se copia el código de conexión, en la otra se pega, y después se mantienen al día solas.</p>
+      </div>
+      <div class="scroll-reveal conexion-tarjeta">
+        <span class="estado">Disponible</span>
+        <h3>Sin internet</h3>
+        <p>Todo viaja por su propia red WiFi, de un equipo al otro. Sus datos no pasan por ningún servidor ni dependen de la señal del colegio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ INSPECCIÓN ═════════ -->
+<section id="inspeccion" class="inspeccion">
+  <div class="max-w-[1240px] mx-auto px-6 lg:px-10 py-20 md:py-28">
+    <div class="inspeccion-grid">
+      <div class="inspeccion-texto">
+        <p class="scroll-reveal eyebrow mb-4"><span></span>Módulo de Inspección</p>
+        <span class="insp-pronto">Próximamente &middot; versión 4.16</span>
+        <h2 class="scroll-reveal display mb-6" style="font-size:clamp(1.9rem,4vw,2.9rem);">
+          La asistencia de todo el colegio, en manos de Inspección.
+        </h2>
+        <p class="scroll-reveal lead">
+          El inspector toma la asistencia curso por curso, recibe lo que marca cada docente y resuelve las justificaciones. Y lleva también el control del personal: atrasos, permisos y salidas, con la base legal de cada uno.
+        </p>
+        <a href="https://wa.me/593983274499?text=Hola%2C%20quiero%20conocer%20el%20m%C3%B3dulo%20de%20Inspecci%C3%B3n%20del%20Sistema%20Acad%C3%A9mico" target="_blank" rel="noopener noreferrer" class="btn-dark text-[14px] !py-3.5 !px-7">Quiero verlo funcionando</a>
+      </div>
+
+      <div class="insp-lista">
+        <div class="scroll-reveal insp-item">
+          <span class="insp-num">01</span>
+          <h3>Toma diaria</h3>
+          <p>Curso por curso, con «Todos presentes» de un clic, marcando solo a quien falta o llega tarde. Varios inspectores se reparten los cursos y ven lo que tomó cada uno.</p>
+        </div>
+        <div class="scroll-reveal insp-item">
+          <span class="insp-num">02</span>
+          <h3>Buzón de Inspección</h3>
+          <p>Las faltas que marca cada docente en su hora le llegan al inspector casi al momento, sin nombres ni cédulas a la vista. Sin internet no se pierde nada: se envía al volver la conexión.</p>
+        </div>
+        <div class="scroll-reveal insp-item">
+          <span class="insp-num">03</span>
+          <h3>Faltas que no se inflan</h3>
+          <p>Un día cuenta como falta cuando lo dice la toma de Inspección o lo marcan al menos dos docentes. Cada caso tiene su «¿De dónde sale esto?», día por día.</p>
+        </div>
+        <div class="scroll-reveal insp-item">
+          <span class="insp-num">04</span>
+          <h3>Justificaciones y resoluciones</h3>
+          <p>Se justifica cualquier rango de fechas viendo en rojo los días que faltó. Cuando Inspección resuelve, la justificación vuelve sola al registro de cada docente que tenga internet.</p>
+        </div>
+        <div class="scroll-reveal insp-item">
+          <span class="insp-num">05</span>
+          <h3>Informes y certificados</h3>
+          <p>Asistencia por curso y por rango de fechas en PDF, y certificado de asistencia del estudiante o de todo el curso, con firmas y sello QR.</p>
+        </div>
+        <div class="scroll-reveal insp-item">
+          <span class="insp-num">06</span>
+          <h3>Control del personal docente</h3>
+          <p>Asistencia del día por jornada, permisos y licencias con los días que fija la ley (RGLOEI y LOSEP), hoja de ruta de salidas, informe mensual y alertas de atrasos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═════════ FISMATT CLOUD + PORTAL DE FAMILIAS — un solo sistema ═════════ -->
 <section id="cloud" class="bg-white border-t border-[#e5e5e5]">
   <div class="max-w-[1240px] mx-auto px-6 lg:px-10 py-20 md:py-28">
@@ -776,6 +892,15 @@
         </button>
         <div class="faq-content hidden px-5 pb-5">
           <p class="text-[14px] leading-relaxed text-[#555]">Los dos tienen que estar en la misma red WiFi. En la computadora aparece un código QR de conexión; desde la app del celular lo escanea y quedan conectados. No hace falta internet: los datos van directo de un equipo al otro.</p>
+        </div>
+      </div>
+      <div class="scroll-reveal faq-item">
+        <button class="faq-toggle w-full flex items-center justify-between py-5 px-5 text-left" aria-expanded="false">
+          <span class="font-semibold text-[15px] text-[#111] pr-4">¿Puedo trabajar en dos computadoras?</span>
+          <svg class="faq-icon w-5 h-5 text-[#8d8d8d] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
+        </button>
+        <div class="faq-content hidden px-5 pb-5">
+          <p class="text-[14px] leading-relaxed text-[#555]">Es una de las novedades de la versión 4.16, que se publicará próximamente: el escritorio del colegio y la laptop de la casa compartirán el mismo trabajo por la red WiFi, copiando un código de conexión de una a otra.</p>
         </div>
       </div>
       <div class="scroll-reveal faq-item">
