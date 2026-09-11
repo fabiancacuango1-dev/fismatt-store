@@ -1,0 +1,345 @@
+/* ════════════════════════════════════════════════════════════════════════
+   PORTADA DEL SISTEMA ACADÉMICO — secciones propias
+   · Conexión: celular, computadora y otra computadora.
+   · Inspección.
+   · Tarjeta para instituciones en los precios.
+
+   Identidad FISMATT: negro #050505, blanco, rojo #d40000. Se carga después
+   de styles.css y productos.css; todas las clases son nuevas.
+   ════════════════════════════════════════════════════════════════════════ */
+
+/* ─── Conexión ─────────────────────────────────────────────────────────── */
+.conexion {
+    background: #050505;
+    color: #fff;
+    border-top: 4px solid #d40000;
+    overflow: hidden;
+}
+
+.conexion .eyebrow { color: #d2d2d7 !important; }
+.conexion .eyebrow span { background: #d40000; }
+
+.conexion-titulo {
+    font-weight: 900;
+    font-size: clamp(2rem, 4.6vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -.035em;
+    color: #fff;
+    margin: 0 0 18px;
+}
+
+.conexion-bajada {
+    color: #b8b8bd;
+    font-size: clamp(1rem, 1.6vw, 1.12rem);
+    line-height: 1.65;
+    max-width: 640px;
+}
+
+.conexion-bajada strong { color: #fff; font-weight: 700; }
+
+/* El diagrama: en el teléfono va de arriba abajo; desde 900 px, en fila. */
+.red-diagrama {
+    margin: 56px 0 44px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    .red-diagrama {
+        grid-template-columns:
+            minmax(0, 1fr) minmax(110px, .75fr) minmax(0, 1fr) minmax(110px, .75fr) minmax(0, 1fr);
+    }
+}
+
+.red-nodo {
+    position: relative;
+    text-align: center;
+    border: 1px solid #2a2a2e;
+    border-radius: 20px;
+    background: #0d0d0f;
+    padding: 28px 18px 22px;
+}
+
+.red-nodo-centro {
+    border-color: #d40000;
+    box-shadow: 0 0 0 1px #d40000, 0 30px 80px -40px rgba(212, 0, 0, .65);
+}
+
+.red-nodo-nuevo { border-style: dashed; border-color: #3d3d44; }
+
+.red-icono {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: #17171a;
+    color: #fff;
+}
+
+.red-icono svg { width: 34px; height: 34px; stroke: currentColor; }
+
+.red-nombre { font-weight: 800; font-size: 16px; letter-spacing: -.01em; }
+
+.red-detalle { font-size: 12.5px; color: #8e8e93; margin-top: 4px; line-height: 1.4; }
+
+.red-pronto {
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background: #fff;
+    color: #050505;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+/* El enlace entre dos equipos: una línea punteada que avanza, con la forma
+   de conectarse escrita encima. */
+.red-enlace {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 78px;
+}
+
+.red-linea {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    transform: translateX(-50%);
+    background: repeating-linear-gradient(180deg, #d40000 0 8px, transparent 8px 15px);
+    background-size: 2px 15px;
+    animation: red-flujo-v 1.1s linear infinite;
+}
+
+.red-enlace-nuevo .red-linea {
+    background: repeating-linear-gradient(180deg, #55555c 0 8px, transparent 8px 15px);
+    background-size: 2px 15px;
+}
+
+.red-chip {
+    position: relative;
+    z-index: 1;
+    max-width: 150px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #d2d2d7;
+    background: #050505;
+    border: 1px solid #3d3d44;
+    padding: 6px 11px;
+    border-radius: 999px;
+}
+
+@media (min-width: 900px) {
+    .red-enlace { min-height: 0; height: 100%; }
+    .red-linea {
+        left: 0;
+        right: 0;
+        top: 50%;
+        bottom: auto;
+        width: auto;
+        height: 2px;
+        transform: translateY(-50%);
+        background: repeating-linear-gradient(90deg, #d40000 0 8px, transparent 8px 15px);
+        background-size: 15px 2px;
+        animation-name: red-flujo-h;
+    }
+    .red-enlace-nuevo .red-linea {
+        background: repeating-linear-gradient(90deg, #55555c 0 8px, transparent 8px 15px);
+        background-size: 15px 2px;
+    }
+}
+
+@keyframes red-flujo-v { to { background-position: 0 15px; } }
+@keyframes red-flujo-h { to { background-position: 15px 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+    .red-linea { animation: none; }
+}
+
+/* Las tres tarjetas bajo el diagrama. */
+.conexion-tarjetas {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .conexion-tarjetas { grid-template-columns: repeat(3, 1fr); }
+}
+
+.conexion-tarjeta {
+    border: 1px solid #2a2a2e;
+    border-radius: 18px;
+    background: #0d0d0f;
+    padding: 24px 22px;
+}
+
+.conexion-tarjeta h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    margin: 12px 0 8px;
+    letter-spacing: -.01em;
+}
+
+.conexion-tarjeta p { font-size: 14px; line-height: 1.6; color: #b8b8bd; }
+
+.estado {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #fff;
+    color: #050505;
+}
+
+.estado.is-pronto { background: transparent; color: #d2d2d7; border: 1px solid #55555c; }
+
+/* ─── Inspección ───────────────────────────────────────────────────────── */
+.inspeccion { background: #f5f5f7; border-top: 1px solid #e5e5e7; }
+
+.inspeccion-grid { display: grid; gap: 44px; }
+
+@media (min-width: 1024px) {
+    .inspeccion-grid { grid-template-columns: 5fr 7fr; gap: 64px; align-items: start; }
+    .inspeccion-texto { position: sticky; top: 150px; }
+}
+
+.insp-pronto {
+    display: inline-block;
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background: #050505;
+    color: #fff;
+    padding: 5px 11px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+}
+
+.inspeccion-texto p.lead {
+    font-size: 16.5px;
+    line-height: 1.65;
+    color: #555;
+    margin-bottom: 28px;
+    max-width: 480px;
+}
+
+.insp-lista { display: grid; gap: 14px; }
+
+@media (min-width: 768px) {
+    .insp-lista { grid-template-columns: repeat(2, 1fr); }
+}
+
+.insp-item {
+    background: #fff;
+    border: 1px solid #e5e5e7;
+    border-radius: 16px;
+    padding: 22px 20px;
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.insp-item:hover { border-color: #050505; transform: translateY(-2px); }
+
+.insp-num {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    color: #d40000;
+}
+
+.insp-item h3 {
+    font-size: 15.5px;
+    font-weight: 800;
+    color: #050505;
+    margin: 6px 0 6px;
+    letter-spacing: -.01em;
+}
+
+.insp-item p { font-size: 13.5px; line-height: 1.58; color: #555; }
+
+/* ─── Precios: tarjeta de instituciones ────────────────────────────────── */
+.plan-institucion {
+    margin-top: 28px;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    border-radius: 18px;
+    background: #050505;
+    color: #fff;
+    padding: 28px 26px;
+}
+
+@media (min-width: 768px) {
+    .plan-institucion { grid-template-columns: 1fr auto; padding: 32px 34px; }
+}
+
+.plan-institucion .etiqueta {
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #d40000;
+}
+
+.plan-institucion h3 {
+    font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+    font-weight: 900;
+    letter-spacing: -.025em;
+    margin: 6px 0 8px;
+}
+
+.plan-institucion p { font-size: 14.5px; line-height: 1.6; color: #b8b8bd; max-width: 560px; }
+
+.plan-institucion-botones { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.btn-blanco-solido {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    color: #050505;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 13px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: background .2s ease, color .2s ease;
+}
+
+.btn-blanco-solido:hover { background: #d40000; color: #fff; }
+
+.btn-borde-claro {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1.5px solid #55555c;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: border-color .2s ease, background .2s ease, color .2s ease;
+}
+
+.btn-borde-claro:hover { background: #fff; color: #050505; border-color: #fff; }
