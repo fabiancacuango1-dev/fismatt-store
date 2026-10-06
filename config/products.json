@@ -1,195 +1,94 @@
 {
-  "products": {
-    "sistema-academico-windows": {
-      "name": "Sistema Académico Completo — Instalador Windows",
-      "version": "4.53.0",
-      "type": "desktop-installer",
-      "platform": "windows",
-      "fileName": "SistemaAcademico-v4.53.0-Windows-Setup.exe",
-      "fileSize": "47 MB",
-      "downloadUrl": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.53.0/SistemaAcademico-v4.53.0-Windows-Setup.exe",
-      "releaseTag": "v4.53.0",
-      "price": 35,
-      "currency": "USD",
-      "billing": "annual",
-      "released": "2026-04-17",
-      "updated": "2026-09-19",
-      "changelog": "v4.53.0 — Todas las planificaciones en tres pasos, la destreza que llena sola indicadores e inserciones, una planificación para varios paralelos, y todo lo de las versiones anteriores",
-      "newFeatures": [
-        "Todas las planificaciones en tres pasos, con ChatGPT: la PUD, la clase y la micro-curricular",
-        "Elija la destreza y se llenan solos los indicadores y las inserciones curriculares",
-        "El respaldo guarda todos los módulos, y restaurar no pisa lo que ya tiene",
-        "Inspección: toma diaria curso por curso, buzón de faltas y control del personal",
-        "Trabaje en dos computadoras: se emparejan una vez y se mantienen al día solas por la WiFi",
-        "Una sola planificación para varios paralelos del mismo curso",
-        "Informes de NEE: súbalos y reciba cómo trabajar con el estudiante",
-        "Los informes firman solo quien usted marca en «¿Quién firma?»"
-      ],
-      "featured": true,
-      "starProduct": true,
-      "checksums": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.53.0/SHA256SUMS-Windows.txt",
-      "pricing": {
-        "monthly": 3.99,
-        "yearly": 35,
-        "oneTime": 120,
-        "perTeacher": true,
-        "institutional": "Propuesta a medida: contacto por WhatsApp",
-        "note": "Los tres planes traen el mismo producto completo; cambia la duracion y la forma de pago."
-      },
-      "page": "/"
+  "sistema": {
+    "nombre": "Sistema Académico Institucional (SAI)",
+    "version": "4.95.0",
+    "actualizado": "2026-10-06",
+    "descargas": {
+      "win": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.95.0/SistemaAcademico-v4.95.0-Windows-Setup.exe",
+      "mac": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.95.0/SistemaAcademico-v4.95.0-macOS.dmg",
+      "apk": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.95.0/SistemaAcademico-v4.95.0-Android.apk",
+      "familia": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.95.0/SAI-Familia-PortalPadres-2.0.0.apk",
+      "sha": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.95.0/SHA256SUMS-Windows.txt"
     },
-    "sistema-academico-mac": {
-      "name": "Sistema Académico Completo — Instalador macOS",
-      "version": "4.53.0",
-      "type": "desktop-installer",
-      "platform": "macos",
-      "fileName": "SistemaAcademico-v4.53.0-macOS.dmg",
-      "fileSize": "30 MB",
-      "downloadUrl": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.53.0/SistemaAcademico-v4.53.0-macOS.dmg",
-      "releaseTag": "v4.53.0",
-      "price": 35,
-      "currency": "USD",
-      "billing": "annual",
-      "released": "2026-04-17",
-      "updated": "2026-09-19",
-      "changelog": "v4.53.0 — Todas las planificaciones en tres pasos, la destreza que llena sola indicadores e inserciones, una planificación para varios paralelos, y todo lo de las versiones anteriores",
-      "newFeatures": [
-        "Todas las planificaciones en tres pasos, con ChatGPT: la PUD, la clase y la micro-curricular",
-        "Elija la destreza y se llenan solos los indicadores y las inserciones curriculares",
-        "El respaldo guarda todos los módulos, y restaurar no pisa lo que ya tiene",
-        "Inspección: toma diaria curso por curso, buzón de faltas y control del personal",
-        "Trabaje en dos computadoras: se emparejan una vez y se mantienen al día solas por la WiFi",
-        "Una sola planificación para varios paralelos del mismo curso",
-        "Informes de NEE: súbalos y reciba cómo trabajar con el estudiante",
-        "Los informes firman solo quien usted marca en «¿Quién firma?»"
-      ],
-      "featured": true,
-      "starProduct": true,
-      "pricing": {
-        "monthly": 3.99,
-        "yearly": 35,
-        "oneTime": 120,
-        "perTeacher": true,
-        "institutional": "Propuesta a medida: contacto por WhatsApp",
-        "note": "Los tres planes traen el mismo producto completo; cambia la duracion y la forma de pago."
+    "planes": [
+      {
+        "id": "mensual",
+        "precio": 3.99,
+        "periodo": "mes"
       },
-      "page": "/"
-    },
-    "sistema-academico-android": {
-      "name": "Sistema Académico Completo — App Android",
-      "version": "4.53.0",
-      "type": "mobile-app",
-      "platform": "android",
-      "fileName": "SistemaAcademico-v4.53.0-Android.apk",
-      "fileSize": "61 MB",
-      "downloadUrl": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.53.0/SistemaAcademico-v4.53.0-Android.apk",
-      "releaseTag": "v4.53.0",
-      "price": 35,
-      "currency": "USD",
-      "billing": "annual",
-      "released": "2026-06-15",
-      "updated": "2026-09-19",
-      "changelog": "v4.53.0 — Todas las planificaciones en tres pasos, la destreza que llena sola indicadores e inserciones, una planificación para varios paralelos, y todo lo de las versiones anteriores",
-      "newFeatures": [
-        "Todas las planificaciones en tres pasos, con ChatGPT: la PUD, la clase y la micro-curricular",
-        "Elija la destreza y se llenan solos los indicadores y las inserciones curriculares",
-        "El respaldo guarda todos los módulos, y restaurar no pisa lo que ya tiene",
-        "Inspección: toma diaria curso por curso, buzón de faltas y control del personal",
-        "Trabaje en dos computadoras: se emparejan una vez y se mantienen al día solas por la WiFi",
-        "Una sola planificación para varios paralelos del mismo curso",
-        "Informes de NEE: súbalos y reciba cómo trabajar con el estudiante",
-        "Los informes firman solo quien usted marca en «¿Quién firma?»"
-      ],
-      "featured": true,
-      "pricing": {
-        "monthly": 3.99,
-        "yearly": 35,
-        "oneTime": 120,
-        "perTeacher": true,
-        "institutional": "Propuesta a medida: contacto por WhatsApp",
-        "note": "Los tres planes traen el mismo producto completo; cambia la duracion y la forma de pago."
+      {
+        "id": "anual",
+        "precio": 35,
+        "periodo": "año"
       },
-      "page": "/"
-    },
-    "sube-notas-masivas": {
-      "name": "Sube Notas Masivas al Sistema Académico",
-      "version": "2.1.0",
-      "type": "chrome-extension",
-      "url": "https://chromewebstore.google.com/detail/pjdakeeclfpkheobgmenlonbbpmokbbh",
-      "price": 10,
-      "currency": "USD",
-      "billing": "annual",
-      "released": "2026-04-06",
-      "updated": "2026-04-06",
-      "changelog": "Initial release",
-      "pricing": {
-        "monthly": 1.5,
-        "yearly": 10
+      {
+        "id": "unico",
+        "precio": 120,
+        "periodo": "único"
+      }
+    ],
+    "complementos": [
+      {
+        "id": "celular",
+        "nombre": "Complemento Celular",
+        "precio": 15,
+        "periodo": "año"
       },
-      "page": "/productos/importador-notas.html"
-    },
-    "simulador-ser-maestro": {
-      "name": "Simulador Examen Ser Maestro 2026",
-      "version": "1.0.0",
-      "type": "simulator",
-      "url": "https://simulador-2026-9cfaa.web.app/#/login",
-      "price": 10,
-      "currency": "USD",
-      "billing": "annual",
-      "released": "2026-04-06",
-      "updated": "2026-04-06",
-      "changelog": "Initial release",
-      "pricing": {
-        "monthly": 1.5,
-        "yearly": 10
+      {
+        "id": "computadora",
+        "nombre": "Complemento Otra computadora",
+        "precio": 15,
+        "periodo": "año"
       },
-      "page": "/productos/simulador-ser-maestro.html"
-    },
-    "generador-horarios": {
-      "name": "Generador de Horarios Docentes y Cursos",
-      "version": "1.0.0",
-      "type": "scheduler",
-      "url": "https://horarios.fis-matt.com",
-      "price": 10,
-      "currency": "USD",
-      "billing": "annual",
-      "released": "2026-04-06",
-      "updated": "2026-04-06",
-      "changelog": "AI-powered schedule generation",
-      "subdomain": "https://horarios.fis-matt.com",
-      "pricing": {
-        "monthly": 1.5,
-        "yearly": 10
-      },
-      "page": "/productos/eduhorarios.html"
-    },
-    "generador-boletines": {
-      "name": "Generador de Boletines Escolares",
-      "version": "1.0.0",
-      "type": "generator",
-      "url": "https://generador.fis-matt.com",
-      "price": 5,
-      "currency": "USD",
-      "billing": "annual",
-      "released": "2026-04-11",
-      "updated": "2026-04-11",
-      "changelog": "Initial release - Generador de boletines para docentes",
-      "subdomain": "https://generador.fis-matt.com",
-      "featured": true,
-      "promoLabel": "50% OFF Lanzamiento",
-      "pricing": {
-        "monthly": 0.9,
-        "yearly": 5
-      },
-      "page": "/productos/boletines-online.html"
-    }
+      {
+        "id": "familias",
+        "nombre": "Complemento Familias",
+        "precio": 10,
+        "periodo": "año"
+      }
+    ],
+    "nota": "Precios en USD, individuales por docente. El SAI incluye una computadora; los complementos son anuales."
   },
-  "metadata": {
-    "lastUpdate": "2026-09-19T00:00:00Z",
-    "updateFrequency": "manual",
-    "autoDetect": true,
-    "gitHubOrg": "fabiancacuango1-dev",
-    "gitHubRepo": "fismatt-store",
-    "pricingModel": "Sistema Academico (individual, por docente): mensual $3,99 / anual $35 / pago unico $120. Instituciones: propuesta por WhatsApp. Herramientas: precio propio en su pagina."
-  }
+  "familia": {
+    "nombre": "SAI Familia",
+    "version": "2.0.0",
+    "descarga": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.95.0/SAI-Familia-PortalPadres-2.0.0.apk",
+    "portal": "https://portal-padres-sai.web.app"
+  },
+  "herramientas": [
+    {
+      "id": "simulador",
+      "nombre": "Simulador Ser Maestro",
+      "precio": 10,
+      "periodo": "año",
+      "pagina": "/productos/simulador-ser-maestro.html"
+    },
+    {
+      "id": "importador",
+      "nombre": "Importador de Notas",
+      "precio": 10,
+      "periodo": "año",
+      "pagina": "/productos/importador-notas.html"
+    },
+    {
+      "id": "horarios",
+      "nombre": "EduHorarios",
+      "precio": 10,
+      "periodo": "año",
+      "pagina": "/productos/eduhorarios.html"
+    },
+    {
+      "id": "boletines",
+      "nombre": "Boletines Online",
+      "precio": 5,
+      "periodo": "año",
+      "pagina": "/productos/boletines-online.html"
+    }
+  ],
+  "pagos": [
+    "Transferencia bancaria",
+    "Depósito o efectivo",
+    "Tarjeta o PayPal"
+  ],
+  "generado_por": "scripts/generar_sitio.py"
 }
