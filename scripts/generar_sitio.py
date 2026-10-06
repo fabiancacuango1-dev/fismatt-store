@@ -33,7 +33,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VERSION = '4.95.0'
 FAMILIA_VERSION = '2.0.0'
 FECHA = '2026-10-06'
-ESTILO_V = '20261006'           # cambia para que el navegador suelte la caché
+ESTILO_V = '20261006b'           # cambia para que el navegador suelte la caché
 
 _REL = 'https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v%s/' % VERSION
 DESCARGAS = {

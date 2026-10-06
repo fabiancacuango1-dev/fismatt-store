@@ -39,6 +39,8 @@ body {
     color: var(--texto);
     background: #fff;
     -webkit-font-smoothing: antialiased;
+    overflow-wrap: break-word;
+    overflow-x: clip;
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -56,7 +58,7 @@ button { cursor: pointer; }
 /* ─── Cabecera ─────────────────────────────────────────────────────────── */
 .cab { position: sticky; top: 0; z-index: 50; background: var(--tinta); border-bottom: 1px solid #262626; }
 .cab-fila { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 62px; }
-.marca { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #fff; flex: 0 0 auto; }
+.marca { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #fff; flex: 0 1 auto; min-width: 0; overflow: hidden; white-space: nowrap; }
 .marca svg { width: 30px; height: 30px; flex: 0 0 auto; }
 .marca b { font-size: 17px; font-weight: 800; letter-spacing: .02em; }
 .marca small { display: block; font-size: 9.5px; letter-spacing: .16em; text-transform: uppercase; color: #9a9aa1; font-weight: 600; margin-top: -3px; }
@@ -84,6 +86,19 @@ button { cursor: pointer; }
 @media (min-width: 960px) {
     .nav { display: flex; }
     .menu { display: none; }
+}
+/* ⚠️ TELÉFONOS PEQUEÑOS (320–400 px). La cabecera medía 372 px —400 con el
+   contador de la cotización— y obligaba a deslizar toda la página de lado.
+   Aquí se aprieta para que quepa entera en 320. */
+@media (max-width: 480px) {
+    .wrap { padding: 0 14px; }
+    .cab-fila { gap: 8px; }
+    .marca { gap: 8px; }
+    .marca small { display: none; }
+    .marca b { font-size: 16px; }
+    .cab-acc { gap: 4px; flex: 0 0 auto; }
+    .btn-carrito { padding: 8px 11px; font-size: 12.5px; gap: 6px; }
+    .menu summary { width: 38px; height: 38px; }
 }
 
 /* ─── Botones ──────────────────────────────────────────────────────────── */
@@ -264,7 +279,7 @@ a.tarjeta:hover { border-color: var(--tinta); transform: translateY(-2px); }
 .faq details[open] summary::after { content: "–"; }
 .faq details p, .faq details ol { padding: 0 0 18px; font-size: 15px; color: var(--gris); }
 .faq details ol { list-style: decimal; padding-left: 20px; }
-.faq code { font-family: var(--mono); font-size: 13px; background: var(--papel); padding: 2px 6px; border-radius: 5px; color: var(--tinta); }
+.faq code { overflow-wrap: anywhere; font-family: var(--mono); font-size: 13px; background: var(--papel); padding: 2px 6px; border-radius: 5px; color: var(--tinta); }
 
 /* ─── Tienda ───────────────────────────────────────────────────────────── */
 .tienda { display: grid; gap: 26px; align-items: start; }
