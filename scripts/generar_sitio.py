@@ -30,17 +30,33 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # ════════════════════════════════════════════════════════════════════════
 #  DATOS — lo único que cambia de una versión a otra
 # ════════════════════════════════════════════════════════════════════════
-VERSION = '4.95.0'
+# Para publicar una versión nueva se cambian SOLO estas líneas: VERSION, FECHA
+# y los pesos (MB_*). Si el celular pasa a Google Play, ANDROID_POR_PLAY = True.
+VERSION = '5.35.0'
 FAMILIA_VERSION = '2.0.0'
-FECHA = '2026-10-06'
-ESTILO_V = '20261006b'           # cambia para que el navegador suelte la caché
+FAMILIA_RELEASE = '4.95.0'       # release de fismatt-store que trae el .apk de SAI Familia (no se vuelve a subir en cada versión)
+FECHA = '2026-11-15'
+ESTILO_V = '20261006b'           # cambia para que el navegador suelte la caché (y solo si cambia css/)
+
+# Peso de cada instalador, tal como lo muestra el release de fismatt-store.
+MB_WINDOWS = '52 MB'
+MB_MAC = '37 MB'
+MB_ANDROID = '71 MB'             # el .apk; no se muestra si el celular va por Google Play
+
+# El celular se instala de UNA de dos maneras:
+#   False → el .apk del release (botón «APK» con su peso).
+#   True  → la ficha de Google Play (los docentes reciben las actualizaciones
+#           por Play; un .apk de la Mac va firmado distinto y Play no lo actualiza).
+ANDROID_POR_PLAY = True
+PLAY_STORE = 'https://play.google.com/store/apps/details?id=com.fismatt.sistemaacademico'
 
 _REL = 'https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v%s/' % VERSION
 DESCARGAS = {
-    'win': {'url': _REL + 'SistemaAcademico-v%s-Windows-Setup.exe' % VERSION, 'mb': '48 MB'},
-    'mac': {'url': _REL + 'SistemaAcademico-v%s-macOS.dmg' % VERSION, 'mb': '33 MB'},
-    'apk': {'url': _REL + 'SistemaAcademico-v%s-Android.apk' % VERSION, 'mb': '64 MB'},
-    'familia': {'url': _REL + 'SAI-Familia-PortalPadres-%s.apk' % FAMILIA_VERSION, 'mb': '20 MB'},
+    'win': {'url': _REL + 'SistemaAcademico-v%s-Windows-Setup.exe' % VERSION, 'mb': MB_WINDOWS},
+    'mac': {'url': _REL + 'SistemaAcademico-v%s-macOS.dmg' % VERSION, 'mb': MB_MAC},
+    'apk': ({'url': PLAY_STORE, 'mb': 'Google Play'} if ANDROID_POR_PLAY else
+            {'url': _REL + 'SistemaAcademico-v%s-Android.apk' % VERSION, 'mb': MB_ANDROID}),
+    'familia': {'url': _REL.replace('/v%s/' % VERSION, '/v%s/' % FAMILIA_RELEASE) + 'SAI-Familia-PortalPadres-%s.apk' % FAMILIA_VERSION, 'mb': '20 MB'},
     'sha': {'url': _REL + 'SHA256SUMS-Windows.txt'},
 }
 
@@ -104,9 +120,10 @@ def escribir(ruta, html):
 
 # nombre → (anchos disponibles, ancho original, alto original)
 IMAGENES = {
-    'estudiantes': ((640, 1100), 1116, 716),
-    'notas': ((640, 1100), 1116, 716),
-    'registro-notas': ((640, 1100), 1600, 1028),
+    # Capturas de la v5.12.0 (estudiantes ficticios): ya vienen a 1100×688.
+    'estudiantes': ((640, 1100), 1100, 688),
+    'notas': ((640, 1100), 1100, 688),
+    'registro-notas': ((640, 1100), 1100, 688),
     'planificador': ((640, 1100), 1600, 1028),
     'cualitativas': ((640, 1100), 1600, 1028),
     'orientacion': ((640, 1100), 1600, 1028),
@@ -312,7 +329,7 @@ def bloque_descargas(raiz=''):
     return f'''<div class="g g3">
       <a class="bajar" href="{d['win']['url']}"><span class="so">WIN</span><span><b>Windows</b><small>Windows 10 y 11 &middot; v{VERSION} &middot; {d['win']['mb']}</small></span><span class="fl" aria-hidden="true">&darr;</span></a>
       <a class="bajar" href="{d['mac']['url']}"><span class="so">MAC</span><span><b>Mac</b><small>Chip Apple &middot; macOS 12+ &middot; v{VERSION} &middot; {d['mac']['mb']}</small></span><span class="fl" aria-hidden="true">&darr;</span></a>
-      <a class="bajar" href="{d['apk']['url']}"><span class="so">APK</span><span><b>Android</b><small>Complemento Celular &middot; v{VERSION} &middot; {d['apk']['mb']}</small></span><span class="fl" aria-hidden="true">&darr;</span></a>
+      <a class="bajar" href="{d['apk']['url']}"{' target="_blank" rel="noopener"' if ANDROID_POR_PLAY else ''}><span class="so">{'PLAY' if ANDROID_POR_PLAY else 'APK'}</span><span><b>Android</b><small>Complemento Celular &middot; v{VERSION} &middot; {d['apk']['mb']}</small></span><span class="fl" aria-hidden="true">{'&rarr;' if ANDROID_POR_PLAY else '&darr;'}</span></a>
     </div>'''
 
 
@@ -355,6 +372,7 @@ def portada():
         <a class="btn btn-borde-claro" href="descargar.html">Descargar v{VERSION}</a>
       </div>
       <p class="hero-precio">Desde <b>{usd(anual)} al año</b> por docente &middot; Windows y Mac</p>
+      <p class="hero-precio"><b>Nuevo en v{VERSION}:</b> notas de cada trimestre en Excel &middot; una sola recuperación al promedio de Lecciones &middot; avisos de clases en el celular &middot; Inspección, Rectorado y más en una misma licencia</p>
     </div>
     <div>{img('estudiantes', 'El SAI con la lista de estudiantes de un curso', clase='hero-img', primera=True, sizes='(min-width: 960px) 560px, 92vw')}</div>
   </div>
@@ -678,12 +696,25 @@ MODULOS = [
             'El tablero agrupa a los estudiantes por lo que exige la normativa y avisa cuántas faltas quedan antes de que el caso suba de instancia.',
             'Los feriados vienen puestos, y avisa si el día no era jornada.',
             'Un recordatorio discreto de las clases de su horario que quedaron sin asistencia.',
-            'Informe de inasistencia numerado, con las actuaciones anteriores. Los informes cuentan días, no registros.']),
+            'Informe de inasistencia numerado, con las actuaciones anteriores. Los informes cuentan días, no registros.',
+            'Asistencia en detalle: toque a un estudiante y vea su historial, justifique, derive a DECE o Inspección y cite al representante.',
+            '«Lista tomada» solo cuando todo el curso tiene asistencia; las clases de sábado y domingo también cuentan.',
+            'Una resolución «No justificada» de Inspección deja la falta como injustificada.']),
         ('calificaciones', 'Calificaciones', 'Insumos, proyecto y examen, con los promedios hechos.', [
             'Registro por actividad, con cálculo automático según el nivel.',
             'Calificación cualitativa para los subniveles que la usan.',
             'Un reloj en cada nota para dejar anotado el trabajo que se entregó con atraso, sin cambiar la nota.',
-            'Recuperación e informes por parcial y por trimestre.']),
+            'Recuperación e informes por parcial y por trimestre.',
+            'La ponderación a la vista: cuánto vale Insumos, Proyecto y Examen, y se cambia tocándola.',
+            'Hoja amplia, con un color por unidad, fila sombreada para no perderse y dictado por voz.',
+            'Desde cada estudiante: citar al representante (con aviso hasta que venga), comportamiento, notas del docente y derivación al tutor con todo el seguimiento.',
+            '«Mi seguimiento docente»: lo que hizo con cada estudiante, por trimestre o del año.',
+            'Incumplimiento de todo el curso en un solo paso: un informe para el tutor, y los avisos y actas de compromiso de todos en un PDF.',
+            'Informe para traslado: todas las notas del estudiante a detalle, para el colegio que lo recibe.',
+            'Cada trimestre en Excel, con cada actividad, los promedios de sección y la nota final, iguales a las del PDF.',
+            'Una sola mejora o recuperación al promedio de una sección, como Lecciones, en vez de una por cada nota: cuenta como un proceso del año y se puede quitar.',
+            'Si el estudiante faltó y entrega después, al calificar usted decide qué pasa con la falta: nada se justifica solo.',
+            'El supletorio aparece solo entre 4,01 y 6,99, y los promedios se truncan igual en la computadora, el celular y los informes.']),
         ('boletines', 'Boletines', 'Parciales, trimestrales y de promoción.', [
             'Para todos los niveles, con la estructura que pide el Ministerio.',
             'En PDF, listos para imprimir o enviar al representante.']),
@@ -705,7 +736,8 @@ MODULOS = [
             'Informe para el representante con las actividades por recuperar y las entregadas con atraso.',
             'Carta de compromiso, autorización de uso de imagen y ficha de datos, con su cuadro de firmas.',
             'Convocatoria general para todo el curso, junta de curso y actas de reunión.',
-            'Convivencia con «Guía rápida»: elija qué pasó y el sistema dice qué corresponde y quién actúa.']),
+            'Convivencia con «Guía rápida»: elija qué pasó y el sistema dice qué corresponde y quién actúa.',
+            'Lo que le envían los docentes no se pierde aunque se corte la luz mientras llega.']),
         ('expediente', 'Expediente y Respaldos', 'Cómo está el curso, de un vistazo.', [
             'Estudiantes, promedio, en riesgo, expedientes al día y NEE.',
             'Qué documentos faltan más y a quién atender primero, con una tarjeta por estudiante.']),
@@ -725,30 +757,39 @@ MODULOS = [
             'Justificaciones y resoluciones que vuelven al registro de cada docente.',
             'Informes y certificados de asistencia, por curso y por estudiante.',
             'Control del personal docente: asistencia por jornada, permisos y licencias según la ley, y hoja de ruta.',
-            'Convivencia: guía rápida de 27 situaciones con su base legal, y las actas de compromiso listas para firmar.']),
+            'Convivencia: guía rápida de 27 situaciones con su base legal, y las actas de compromiso listas para firmar.',
+            'Cada docente cuenta una sola vez, llegue su lista por el portal o por el buzón.',
+            'Se combina con Rectorado, Vicerrectorado, Secretaría o DECE en una misma licencia: si está en su menú, se abre.']),
         ('vicerrectorado', 'Vicerrectorado', 'Las calificaciones de todos los docentes, y los avales.', [
             'Ve las notas que envía cada docente, sin recalcularlas.',
             'Libro de avales, con el documento numerado y su base legal.',
-            'Un reloj avisa de los avales que están por vencer su plazo.']),
+            'Un reloj avisa de los avales que están por vencer su plazo.',
+            'Se combina con otros módulos de autoridad en una misma licencia.']),
         ('rectorado', 'Rectorado', 'La institución, con números reales.', [
             'Indicadores armados con lo que registran los docentes.',
-            'Reparte el código de la institución que conecta a todos los equipos.']),
+            'Reparte el código de la institución que conecta a todos los equipos.',
+            'Se combina con otros módulos de autoridad en una misma licencia.']),
         ('secretaria', 'Secretaría', 'Todos los estudiantes y todas sus notas.', [
             'Las actas de los docentes reposan en Secretaría.',
-            'Certificados con la firma de la máxima autoridad.']),
+            'Certificados con la firma de la máxima autoridad.',
+            'Se combina con otros módulos de autoridad en una misma licencia.']),
         ('dece', 'DECE', 'Casos y protocolos, en su propio módulo.', [
-            'Separado del trabajo del aula, para el personal del departamento.']),
+            'Separado del trabajo del aula, para el personal del departamento.',
+            'Se puede contratar junto con otros módulos en una misma licencia.']),
     ]),
     ('El sistema', [
         ('sincronizar', 'Sincronizar', 'El mismo trabajo en más de un equipo.', [
             'Con el complemento <b>Celular</b>: su teléfono Android, emparejado una vez por código QR.',
             'Con el complemento <b>Otra computadora</b>: una segunda computadora, emparejada una vez por código.',
             'Viajan todos los módulos; lo que se trabajó en los dos equipos se suma, no se pisa.',
-            'Por su propia red WiFi, sin internet. Las dos partes necesitan la misma versión del sistema.']),
+            'Por su propia red WiFi, sin internet. Las dos partes necesitan la misma versión del sistema.',
+            'En el celular: avisos de clases 5, 10 o 15 minutos antes, aunque la app esté cerrada, y si quiere le recuerda tomar lista.',
+            'En el celular, «Atrás» vuelve paso a paso hasta Inicio y los nombres se ven completos.']),
         ('respaldo', 'Respaldo', 'Que nada se pierda.', [
             'Copia automática cada media hora y al cerrar, en su equipo y sin internet.',
             'El respaldo guarda todos los módulos; restaurar suma lo del respaldo a lo que ya tiene.',
-            'Las actualizaciones se buscan aquí, cuando usted quiere. El sistema no interrumpe para avisar.']),
+            'Las actualizaciones se buscan aquí, cuando usted quiere. El sistema no interrumpe para avisar.',
+            'Restaurar un respaldo ya no pisa lo que usted corrigió después.']),
         ('configuracion', 'Configuración', 'Los datos de su institución.', [
             'Nombre, autoridades y logos, que salen en todos los documentos.',
             'Centro legal: términos, privacidad y constancia de aceptación en PDF.']),
@@ -798,6 +839,22 @@ def modulos():
 # ════════════════════════════════════════════════════════════════════════
 #  DESCARGAR
 # ════════════════════════════════════════════════════════════════════════
+ANDROID_COMO_INSTALAR = (
+    'Ábralo en Google Play desde el teléfono y pulse «Instalar»; las actualizaciones llegan solas por Play.'
+    if ANDROID_POR_PLAY else
+    'Descargue el archivo .apk desde el teléfono y ábralo. Si el teléfono pide permiso para instalar desde esa aplicación, concédalo.')
+
+
+ANDROID_DESDE_APK = ('''
+      <div class="tarjeta" style="margin-top:12px"><h3>¿Lo instaló antes con un archivo&nbsp;.apk?</h3><p>Esa copia no recibe las actualizaciones de Google Play. Cámbiela sin perder nada:</p>
+        <ol class="pasos-inst" style="margin-top:12px">
+          <li><b>Haga un respaldo</b> en el celular: Todo &rarr; Respaldo, y guárdelo en Drive o en la computadora.</li>
+          <li><b>Desinstale</b> la app que instaló con el archivo .apk.</li>
+          <li><b>Instálela desde Google Play</b> con el botón de arriba y active su clave.</li>
+          <li><b>Restaure el respaldo</b> desde Todo &rarr; Respaldo.</li>
+        </ol></div>''' if ANDROID_POR_PLAY else '')
+
+
 def descargar():
     d = DESCARGAS
     cuerpo = f'''<section class="sec" style="padding-top:44px">
@@ -838,7 +895,7 @@ def descargar():
       <p class="ceja">Mac y Android</p>
       <h2 class="titulo">En los otros equipos.</h2>
       <div class="tarjeta" style="margin-top:22px"><h3>Mac</h3><p>Abra el archivo .dmg y arrastre el sistema a la carpeta Aplicaciones. La primera vez ábralo con clic derecho &rarr; Abrir. Si macOS dice que «está dañado», la solución está en las <a href="index.html#faq" style="color:var(--rojo);font-weight:700">preguntas frecuentes</a>.</p></div>
-      <div class="tarjeta" style="margin-top:12px"><h3>Android (complemento Celular)</h3><p>Descargue el archivo .apk desde el teléfono y ábralo. Si el teléfono pide permiso para instalar desde esa aplicación, concédalo. Luego emparéjelo con su computadora desde Sincronizar, con el código QR.</p></div>
+      <div class="tarjeta" style="margin-top:12px"><h3>Android (complemento Celular)</h3><p>{ANDROID_COMO_INSTALAR} Luego emparéjelo con su computadora desde Sincronizar, con el código QR.</p></div>{ANDROID_DESDE_APK}
       <div class="tarjeta" style="margin-top:12px"><h3>¿Ya lo tiene instalado?</h3><p>No hace falta descargar nada de aquí: entre a <b>Respaldo &rarr; Buscar actualizaciones</b>. Sus datos no se tocan al actualizar.</p></div>
     </div>
   </div>

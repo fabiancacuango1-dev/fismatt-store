@@ -1,14 +1,14 @@
 {
   "sistema": {
     "nombre": "Sistema Académico Institucional (SAI)",
-    "version": "4.95.0",
-    "actualizado": "2026-10-06",
+    "version": "5.35.0",
+    "actualizado": "2026-11-15",
     "descargas": {
-      "win": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.95.0/SistemaAcademico-v4.95.0-Windows-Setup.exe",
-      "mac": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.95.0/SistemaAcademico-v4.95.0-macOS.dmg",
-      "apk": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.95.0/SistemaAcademico-v4.95.0-Android.apk",
+      "win": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v5.35.0/SistemaAcademico-v5.35.0-Windows-Setup.exe",
+      "mac": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v5.35.0/SistemaAcademico-v5.35.0-macOS.dmg",
+      "apk": "https://play.google.com/store/apps/details?id=com.fismatt.sistemaacademico",
       "familia": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.95.0/SAI-Familia-PortalPadres-2.0.0.apk",
-      "sha": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v4.95.0/SHA256SUMS-Windows.txt"
+      "sha": "https://github.com/fabiancacuango1-dev/fismatt-store/releases/download/v5.35.0/SHA256SUMS-Windows.txt"
     },
     "planes": [
       {
