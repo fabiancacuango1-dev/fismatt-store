@@ -32,14 +32,14 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # ════════════════════════════════════════════════════════════════════════
 # Para publicar una versión nueva se cambian SOLO estas líneas: VERSION, FECHA
 # y los pesos (MB_*). Si el celular pasa a Google Play, ANDROID_POR_PLAY = True.
-VERSION = '5.35.1'
+VERSION = '5.42.0'
 FAMILIA_VERSION = '2.0.0'
 FAMILIA_RELEASE = '4.95.0'       # release de fismatt-store que trae el .apk de SAI Familia (no se vuelve a subir en cada versión)
-FECHA = '2026-11-16'
+FECHA = '2026-11-18'
 ESTILO_V = '20261006b'           # cambia para que el navegador suelte la caché (y solo si cambia css/)
 
 # Peso de cada instalador, tal como lo muestra el release de fismatt-store.
-MB_WINDOWS = '52 MB'
+MB_WINDOWS = '53 MB'
 MB_MAC = '37 MB'
 MB_ANDROID = '71 MB'             # el .apk; no se muestra si el celular va por Google Play
 
@@ -372,7 +372,7 @@ def portada():
         <a class="btn btn-borde-claro" href="descargar.html">Descargar v{VERSION}</a>
       </div>
       <p class="hero-precio">Desde <b>{usd(anual)} al año</b> por docente &middot; Windows y Mac</p>
-      <p class="hero-precio"><b>Nuevo en v{VERSION}:</b> la nómina docente de Inspección llega sola a Rectorado y Vicerrectorado &middot; la autoridad asigna la cédula a cada equipo del colegio &middot; oficios largos sin errores &middot; notas de cada trimestre en Excel &middot; avisos de clases en el celular</p>
+      <p class="hero-precio"><b>Nuevo en v{VERSION}:</b> recuperar toda una unidad con las condiciones del Ministerio &middot; alerta temprana con estrategias y acuerdos &middot; estímulos y evaluación adaptada &middot; notas desde Excel y proyectos interdisciplinarios &middot; el celular rehecho</p>
     </div>
     <div>{img('estudiantes', 'El SAI con la lista de estudiantes de un curso', clase='hero-img', primera=True, sizes='(min-width: 960px) 560px, 92vw')}</div>
   </div>
